@@ -1,0 +1,603 @@
+[0] time=67.56, avg_loss=0.4894, train_err=0.4894
+Eval: test_l2=0.3352
+[1] time=44.74, avg_loss=0.4036, train_err=0.4036
+Eval: test_l2=0.2812
+[2] time=44.74, avg_loss=0.3577, train_err=0.3577
+Eval: test_l2=0.3190
+[3] time=44.19, avg_loss=0.4111, train_err=0.4111
+Eval: test_l2=0.3265
+[4] time=44.73, avg_loss=0.3816, train_err=0.3816
+Eval: test_l2=0.2939
+[5] time=43.97, avg_loss=0.3972, train_err=0.3972
+Eval: test_l2=0.3323
+[6] time=43.99, avg_loss=0.3745, train_err=0.3745
+Eval: test_l2=0.2583
+[7] time=43.97, avg_loss=0.3377, train_err=0.3377
+Eval: test_l2=0.2509
+[8] time=43.98, avg_loss=0.3090, train_err=0.3090
+Eval: test_l2=0.2343
+[9] time=43.99, avg_loss=0.2966, train_err=0.2966
+Eval: test_l2=0.2189
+[10] time=43.99, avg_loss=0.2837, train_err=0.2837
+Eval: test_l2=0.2147
+[11] time=43.99, avg_loss=0.2771, train_err=0.2771
+Eval: test_l2=0.2353
+[12] time=43.99, avg_loss=0.2840, train_err=0.2840
+Eval: test_l2=0.2232
+[13] time=44.01, avg_loss=0.2744, train_err=0.2744
+Eval: test_l2=0.2110
+[14] time=44.00, avg_loss=0.2931, train_err=0.2931
+Eval: test_l2=0.2515
+[15] time=44.00, avg_loss=0.3061, train_err=0.3061
+Eval: test_l2=0.2287
+[16] time=43.99, avg_loss=0.2862, train_err=0.2862
+Eval: test_l2=0.2272
+[17] time=43.99, avg_loss=0.2958, train_err=0.2958
+Eval: test_l2=0.2309
+[18] time=43.99, avg_loss=0.2835, train_err=0.2835
+Eval: test_l2=0.2145
+[19] time=44.00, avg_loss=0.2766, train_err=0.2766
+Eval: test_l2=0.2136
+[20] time=43.99, avg_loss=0.2653, train_err=0.2653
+Eval: test_l2=0.2074
+[21] time=44.01, avg_loss=0.2598, train_err=0.2598
+Eval: test_l2=0.1969
+[22] time=44.01, avg_loss=0.2535, train_err=0.2535
+Eval: test_l2=0.1909
+[23] time=44.00, avg_loss=0.2451, train_err=0.2451
+Eval: test_l2=0.1935
+[24] time=43.99, avg_loss=0.2469, train_err=0.2469
+Eval: test_l2=0.2054
+[25] time=44.00, avg_loss=0.2642, train_err=0.2642
+Eval: test_l2=0.2085
+[26] time=44.00, avg_loss=0.2746, train_err=0.2746
+Eval: test_l2=0.2105
+[27] time=44.01, avg_loss=0.2667, train_err=0.2667
+Eval: test_l2=0.2088
+[28] time=44.00, avg_loss=0.2602, train_err=0.2602
+Eval: test_l2=0.2015
+[29] time=44.00, avg_loss=0.2551, train_err=0.2551
+Eval: test_l2=0.1956
+[30] time=44.01, avg_loss=0.2478, train_err=0.2478
+Eval: test_l2=0.1948
+[31] time=44.00, avg_loss=0.2467, train_err=0.2467
+Eval: test_l2=0.1923
+[32] time=44.00, avg_loss=0.2415, train_err=0.2415
+Eval: test_l2=0.1903
+[33] time=43.99, avg_loss=0.2448, train_err=0.2448
+Eval: test_l2=0.1952
+[34] time=44.00, avg_loss=0.2498, train_err=0.2498
+Eval: test_l2=0.1932
+[35] time=43.99, avg_loss=0.2485, train_err=0.2485
+Eval: test_l2=0.1948
+[36] time=43.99, avg_loss=0.2441, train_err=0.2441
+Eval: test_l2=0.1966
+[37] time=44.00, avg_loss=0.2419, train_err=0.2419
+Eval: test_l2=0.1957
+[38] time=43.99, avg_loss=0.2457, train_err=0.2457
+Eval: test_l2=0.1985
+[39] time=43.98, avg_loss=0.2459, train_err=0.2459
+Eval: test_l2=0.1947
+[40] time=43.99, avg_loss=0.2501, train_err=0.2501
+Eval: test_l2=0.2021
+[41] time=43.98, avg_loss=0.2460, train_err=0.2460
+Eval: test_l2=0.1936
+[42] time=43.99, avg_loss=0.2442, train_err=0.2442
+Eval: test_l2=0.1962
+[43] time=44.00, avg_loss=0.2432, train_err=0.2432
+Eval: test_l2=0.1907
+[44] time=43.99, avg_loss=0.2381, train_err=0.2381
+Eval: test_l2=0.1927
+[45] time=43.99, avg_loss=0.2341, train_err=0.2341
+Eval: test_l2=0.1846
+[46] time=44.00, avg_loss=0.2308, train_err=0.2308
+Eval: test_l2=0.1797
+[47] time=43.98, avg_loss=0.2284, train_err=0.2284
+Eval: test_l2=0.1824
+[48] time=43.99, avg_loss=0.2283, train_err=0.2283
+Eval: test_l2=0.1833
+[49] time=44.01, avg_loss=0.2298, train_err=0.2298
+Eval: test_l2=0.1839
+[50] time=48.75, avg_loss=0.2138, train_err=0.2138
+Eval: test_l2=0.1711
+[51] time=43.99, avg_loss=0.2110, train_err=0.2110
+Eval: test_l2=0.1703
+[52] time=43.99, avg_loss=0.2103, train_err=0.2103
+Eval: test_l2=0.1698
+[53] time=43.98, avg_loss=0.2100, train_err=0.2100
+Eval: test_l2=0.1700
+[54] time=44.01, avg_loss=0.2099, train_err=0.2099
+Eval: test_l2=0.1702
+[55] time=44.00, avg_loss=0.2099, train_err=0.2099
+Eval: test_l2=0.1706
+[56] time=43.99, avg_loss=0.2100, train_err=0.2100
+Eval: test_l2=0.1718
+[57] time=43.98, avg_loss=0.2114, train_err=0.2114
+Eval: test_l2=0.1730
+[58] time=43.99, avg_loss=0.2121, train_err=0.2121
+Eval: test_l2=0.1717
+[59] time=43.99, avg_loss=0.2089, train_err=0.2089
+Eval: test_l2=0.1692
+[60] time=43.99, avg_loss=0.2059, train_err=0.2059
+Eval: test_l2=0.1680
+[61] time=43.99, avg_loss=0.2040, train_err=0.2040
+Eval: test_l2=0.1668
+[62] time=43.99, avg_loss=0.2047, train_err=0.2047
+Eval: test_l2=0.1679
+[63] time=44.00, avg_loss=0.2037, train_err=0.2037
+Eval: test_l2=0.1659
+[64] time=44.00, avg_loss=0.2019, train_err=0.2019
+Eval: test_l2=0.1646
+[65] time=44.01, avg_loss=0.2003, train_err=0.2003
+Eval: test_l2=0.1635
+[66] time=44.00, avg_loss=0.1984, train_err=0.1984
+Eval: test_l2=0.1627
+[67] time=44.02, avg_loss=0.1970, train_err=0.1970
+Eval: test_l2=0.1621
+[68] time=44.02, avg_loss=0.1957, train_err=0.1957
+Eval: test_l2=0.1614
+[69] time=44.02, avg_loss=0.1946, train_err=0.1946
+Eval: test_l2=0.1607
+[70] time=44.01, avg_loss=0.1938, train_err=0.1938
+Eval: test_l2=0.1599
+[71] time=44.02, avg_loss=0.1931, train_err=0.1931
+Eval: test_l2=0.1594
+[72] time=44.01, avg_loss=0.1929, train_err=0.1929
+Eval: test_l2=0.1590
+[73] time=44.02, avg_loss=0.1938, train_err=0.1938
+Eval: test_l2=0.1596
+[74] time=44.02, avg_loss=0.1975, train_err=0.1975
+Eval: test_l2=0.1627
+[75] time=44.02, avg_loss=0.1999, train_err=0.1999
+Eval: test_l2=0.1642
+[76] time=44.02, avg_loss=0.1997, train_err=0.1997
+Eval: test_l2=0.1656
+[77] time=44.00, avg_loss=0.2015, train_err=0.2015
+Eval: test_l2=0.1658
+[78] time=44.00, avg_loss=0.2012, train_err=0.2012
+Eval: test_l2=0.1673
+[79] time=44.02, avg_loss=0.2023, train_err=0.2023
+Eval: test_l2=0.1666
+[80] time=43.99, avg_loss=0.2028, train_err=0.2028
+Eval: test_l2=0.1672
+[81] time=44.00, avg_loss=0.2043, train_err=0.2043
+Eval: test_l2=0.1678
+[82] time=44.00, avg_loss=0.2027, train_err=0.2027
+Eval: test_l2=0.1668
+[83] time=43.99, avg_loss=0.2007, train_err=0.2007
+Eval: test_l2=0.1650
+[84] time=43.99, avg_loss=0.1988, train_err=0.1988
+Eval: test_l2=0.1624
+[85] time=44.00, avg_loss=0.1987, train_err=0.1987
+Eval: test_l2=0.1613
+[86] time=43.99, avg_loss=0.1974, train_err=0.1974
+Eval: test_l2=0.1593
+[87] time=44.00, avg_loss=0.1951, train_err=0.1951
+Eval: test_l2=0.1579
+[88] time=43.99, avg_loss=0.1937, train_err=0.1937
+Eval: test_l2=0.1569
+[89] time=44.14, avg_loss=0.1958, train_err=0.1958
+Eval: test_l2=0.1591
+[90] time=44.83, avg_loss=0.1955, train_err=0.1955
+Eval: test_l2=0.1653
+[91] time=44.83, avg_loss=0.1937, train_err=0.1937
+Eval: test_l2=0.1572
+[92] time=44.26, avg_loss=0.1905, train_err=0.1905
+Eval: test_l2=0.1560
+[93] time=44.98, avg_loss=0.1888, train_err=0.1888
+Eval: test_l2=0.1562
+[94] time=44.66, avg_loss=0.1873, train_err=0.1873
+Eval: test_l2=0.1550
+[95] time=44.76, avg_loss=0.1867, train_err=0.1867
+Eval: test_l2=0.1548
+[96] time=44.63, avg_loss=0.1868, train_err=0.1868
+Eval: test_l2=0.1568
+[97] time=44.00, avg_loss=0.1873, train_err=0.1873
+Eval: test_l2=0.1578
+[98] time=43.99, avg_loss=0.1865, train_err=0.1865
+Eval: test_l2=0.1555
+[99] time=44.00, avg_loss=0.1855, train_err=0.1855
+Eval: test_l2=0.1552
+[100] time=44.78, avg_loss=0.1793, train_err=0.1793
+Eval: test_l2=0.1513
+[101] time=44.67, avg_loss=0.1781, train_err=0.1781
+Eval: test_l2=0.1511
+[102] time=44.32, avg_loss=0.1776, train_err=0.1776
+Eval: test_l2=0.1510
+[103] time=44.68, avg_loss=0.1772, train_err=0.1772
+Eval: test_l2=0.1510
+[104] time=44.49, avg_loss=0.1770, train_err=0.1770
+Eval: test_l2=0.1509
+[105] time=45.29, avg_loss=0.1787, train_err=0.1787
+Eval: test_l2=0.1525
+[106] time=44.25, avg_loss=0.1783, train_err=0.1783
+Eval: test_l2=0.1515
+[107] time=44.03, avg_loss=0.1776, train_err=0.1776
+Eval: test_l2=0.1513
+[108] time=44.02, avg_loss=0.1773, train_err=0.1773
+Eval: test_l2=0.1513
+[109] time=44.02, avg_loss=0.1772, train_err=0.1772
+Eval: test_l2=0.1513
+[110] time=44.02, avg_loss=0.1771, train_err=0.1771
+Eval: test_l2=0.1515
+[111] time=44.02, avg_loss=0.1774, train_err=0.1774
+Eval: test_l2=0.1527
+[112] time=44.01, avg_loss=0.1789, train_err=0.1789
+Eval: test_l2=0.1532
+[113] time=44.02, avg_loss=0.1789, train_err=0.1789
+Eval: test_l2=0.1527
+[114] time=44.02, avg_loss=0.1784, train_err=0.1784
+Eval: test_l2=0.1524
+[115] time=44.01, avg_loss=0.1781, train_err=0.1781
+Eval: test_l2=0.1523
+[116] time=44.00, avg_loss=0.1779, train_err=0.1779
+Eval: test_l2=0.1523
+[117] time=44.02, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1522
+[118] time=44.01, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1521
+[119] time=44.01, avg_loss=0.1777, train_err=0.1777
+Eval: test_l2=0.1521
+[120] time=44.29, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1520
+[121] time=44.50, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1520
+[122] time=44.70, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1520
+[123] time=44.02, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1520
+[124] time=44.02, avg_loss=0.1778, train_err=0.1778
+Eval: test_l2=0.1520
+[125] time=44.01, avg_loss=0.1780, train_err=0.1780
+Eval: test_l2=0.1524
+[126] time=43.99, avg_loss=0.1783, train_err=0.1783
+Eval: test_l2=0.1525
+[127] time=43.99, avg_loss=0.1783, train_err=0.1783
+Eval: test_l2=0.1526
+[128] time=44.43, avg_loss=0.1782, train_err=0.1782
+Eval: test_l2=0.1524
+[129] time=44.71, avg_loss=0.1779, train_err=0.1779
+Eval: test_l2=0.1521
+[130] time=44.58, avg_loss=0.1776, train_err=0.1776
+Eval: test_l2=0.1517
+[131] time=44.02, avg_loss=0.1772, train_err=0.1772
+Eval: test_l2=0.1514
+[132] time=44.72, avg_loss=0.1769, train_err=0.1769
+Eval: test_l2=0.1511
+[133] time=44.56, avg_loss=0.1765, train_err=0.1765
+Eval: test_l2=0.1507
+[134] time=44.55, avg_loss=0.1763, train_err=0.1763
+Eval: test_l2=0.1505
+[135] time=44.55, avg_loss=0.1760, train_err=0.1760
+Eval: test_l2=0.1503
+[136] time=44.17, avg_loss=0.1759, train_err=0.1759
+Eval: test_l2=0.1502
+[137] time=44.17, avg_loss=0.1758, train_err=0.1758
+Eval: test_l2=0.1502
+[138] time=44.11, avg_loss=0.1757, train_err=0.1757
+Eval: test_l2=0.1503
+[139] time=44.24, avg_loss=0.1758, train_err=0.1758
+Eval: test_l2=0.1504
+[140] time=44.11, avg_loss=0.1759, train_err=0.1759
+Eval: test_l2=0.1506
+[141] time=44.10, avg_loss=0.1760, train_err=0.1760
+Eval: test_l2=0.1509
+[142] time=44.13, avg_loss=0.1763, train_err=0.1763
+Eval: test_l2=0.1512
+[143] time=44.12, avg_loss=0.1765, train_err=0.1765
+Eval: test_l2=0.1515
+[144] time=44.21, avg_loss=0.1769, train_err=0.1769
+Eval: test_l2=0.1520
+[145] time=45.12, avg_loss=0.1772, train_err=0.1772
+Eval: test_l2=0.1524
+[146] time=44.11, avg_loss=0.1774, train_err=0.1774
+Eval: test_l2=0.1527
+[147] time=44.04, avg_loss=0.1774, train_err=0.1774
+Eval: test_l2=0.1529
+[148] time=44.03, avg_loss=0.1775, train_err=0.1775
+Eval: test_l2=0.1531
+[149] time=44.03, avg_loss=0.1777, train_err=0.1777
+Eval: test_l2=0.1539
+[150] time=44.03, avg_loss=0.1756, train_err=0.1756
+Eval: test_l2=0.1508
+[151] time=44.02, avg_loss=0.1759, train_err=0.1759
+Eval: test_l2=0.1505
+[152] time=44.02, avg_loss=0.1756, train_err=0.1756
+Eval: test_l2=0.1505
+[153] time=44.03, avg_loss=0.1752, train_err=0.1752
+Eval: test_l2=0.1503
+[154] time=44.02, avg_loss=0.1745, train_err=0.1745
+Eval: test_l2=0.1501
+[155] time=44.01, avg_loss=0.1739, train_err=0.1739
+Eval: test_l2=0.1498
+[156] time=44.01, avg_loss=0.1733, train_err=0.1733
+Eval: test_l2=0.1496
+[157] time=44.00, avg_loss=0.1729, train_err=0.1729
+Eval: test_l2=0.1494
+[158] time=44.00, avg_loss=0.1725, train_err=0.1725
+Eval: test_l2=0.1492
+[159] time=44.00, avg_loss=0.1721, train_err=0.1721
+Eval: test_l2=0.1491
+[160] time=44.00, avg_loss=0.1717, train_err=0.1717
+Eval: test_l2=0.1489
+[161] time=44.00, avg_loss=0.1714, train_err=0.1714
+Eval: test_l2=0.1488
+[162] time=44.00, avg_loss=0.1711, train_err=0.1711
+Eval: test_l2=0.1487
+[163] time=43.99, avg_loss=0.1708, train_err=0.1708
+Eval: test_l2=0.1486
+[164] time=43.98, avg_loss=0.1706, train_err=0.1706
+Eval: test_l2=0.1484
+[165] time=44.00, avg_loss=0.1704, train_err=0.1704
+Eval: test_l2=0.1483
+[166] time=44.00, avg_loss=0.1701, train_err=0.1701
+Eval: test_l2=0.1482
+[167] time=44.01, avg_loss=0.1699, train_err=0.1699
+Eval: test_l2=0.1481
+[168] time=44.04, avg_loss=0.1697, train_err=0.1697
+Eval: test_l2=0.1480
+[169] time=44.03, avg_loss=0.1695, train_err=0.1695
+Eval: test_l2=0.1479
+[170] time=44.05, avg_loss=0.1693, train_err=0.1693
+Eval: test_l2=0.1478
+[171] time=44.05, avg_loss=0.1691, train_err=0.1691
+Eval: test_l2=0.1477
+[172] time=44.04, avg_loss=0.1689, train_err=0.1689
+Eval: test_l2=0.1476
+[173] time=44.04, avg_loss=0.1687, train_err=0.1687
+Eval: test_l2=0.1475
+[174] time=44.04, avg_loss=0.1685, train_err=0.1685
+Eval: test_l2=0.1474
+[175] time=44.05, avg_loss=0.1683, train_err=0.1683
+Eval: test_l2=0.1473
+[176] time=44.05, avg_loss=0.1680, train_err=0.1680
+Eval: test_l2=0.1472
+[177] time=44.03, avg_loss=0.1678, train_err=0.1678
+Eval: test_l2=0.1471
+[178] time=44.05, avg_loss=0.1676, train_err=0.1676
+Eval: test_l2=0.1471
+[179] time=44.05, avg_loss=0.1674, train_err=0.1674
+Eval: test_l2=0.1470
+[180] time=44.05, avg_loss=0.1672, train_err=0.1672
+Eval: test_l2=0.1469
+[181] time=44.09, avg_loss=0.1670, train_err=0.1670
+Eval: test_l2=0.1468
+[182] time=44.05, avg_loss=0.1669, train_err=0.1669
+Eval: test_l2=0.1467
+[183] time=44.05, avg_loss=0.1667, train_err=0.1667
+Eval: test_l2=0.1466
+[184] time=44.05, avg_loss=0.1665, train_err=0.1665
+Eval: test_l2=0.1466
+[185] time=44.01, avg_loss=0.1664, train_err=0.1664
+Eval: test_l2=0.1466
+[186] time=44.05, avg_loss=0.1663, train_err=0.1663
+Eval: test_l2=0.1466
+[187] time=44.04, avg_loss=0.1661, train_err=0.1661
+Eval: test_l2=0.1466
+[188] time=44.03, avg_loss=0.1660, train_err=0.1660
+Eval: test_l2=0.1467
+[189] time=44.04, avg_loss=0.1659, train_err=0.1659
+Eval: test_l2=0.1467
+[190] time=44.05, avg_loss=0.1657, train_err=0.1657
+Eval: test_l2=0.1468
+[191] time=44.04, avg_loss=0.1655, train_err=0.1655
+Eval: test_l2=0.1468
+[192] time=44.04, avg_loss=0.1654, train_err=0.1654
+Eval: test_l2=0.1468
+[193] time=44.05, avg_loss=0.1652, train_err=0.1652
+Eval: test_l2=0.1468
+[194] time=44.05, avg_loss=0.1651, train_err=0.1651
+Eval: test_l2=0.1468
+[195] time=44.06, avg_loss=0.1649, train_err=0.1649
+Eval: test_l2=0.1468
+[196] time=44.05, avg_loss=0.1648, train_err=0.1648
+Eval: test_l2=0.1467
+[197] time=44.05, avg_loss=0.1647, train_err=0.1647
+Eval: test_l2=0.1468
+[198] time=44.05, avg_loss=0.1645, train_err=0.1645
+Eval: test_l2=0.1468
+[199] time=44.05, avg_loss=0.1644, train_err=0.1644
+Eval: test_l2=0.1468
+[200] time=44.04, avg_loss=0.1627, train_err=0.1627
+Eval: test_l2=0.1448
+[201] time=44.04, avg_loss=0.1624, train_err=0.1624
+Eval: test_l2=0.1448
+[202] time=44.06, avg_loss=0.1622, train_err=0.1622
+Eval: test_l2=0.1448
+[203] time=44.05, avg_loss=0.1621, train_err=0.1621
+Eval: test_l2=0.1447
+[204] time=44.05, avg_loss=0.1620, train_err=0.1620
+Eval: test_l2=0.1447
+[205] time=44.04, avg_loss=0.1619, train_err=0.1619
+Eval: test_l2=0.1447
+[206] time=44.05, avg_loss=0.1618, train_err=0.1618
+Eval: test_l2=0.1447
+[207] time=44.04, avg_loss=0.1617, train_err=0.1617
+Eval: test_l2=0.1448
+[208] time=44.11, avg_loss=0.1616, train_err=0.1616
+Eval: test_l2=0.1447
+[209] time=44.02, avg_loss=0.1615, train_err=0.1615
+Eval: test_l2=0.1447
+[210] time=44.03, avg_loss=0.1614, train_err=0.1614
+Eval: test_l2=0.1447
+[211] time=44.02, avg_loss=0.1613, train_err=0.1613
+Eval: test_l2=0.1447
+[212] time=44.03, avg_loss=0.1612, train_err=0.1612
+Eval: test_l2=0.1447
+[213] time=44.01, avg_loss=0.1611, train_err=0.1611
+Eval: test_l2=0.1447
+[214] time=44.03, avg_loss=0.1611, train_err=0.1611
+Eval: test_l2=0.1447
+[215] time=44.03, avg_loss=0.1610, train_err=0.1610
+Eval: test_l2=0.1447
+[216] time=44.03, avg_loss=0.1609, train_err=0.1609
+Eval: test_l2=0.1447
+[217] time=44.01, avg_loss=0.1608, train_err=0.1608
+Eval: test_l2=0.1447
+[218] time=44.04, avg_loss=0.1608, train_err=0.1608
+Eval: test_l2=0.1447
+[219] time=44.02, avg_loss=0.1607, train_err=0.1607
+Eval: test_l2=0.1447
+[220] time=44.02, avg_loss=0.1607, train_err=0.1607
+Eval: test_l2=0.1447
+[221] time=44.02, avg_loss=0.1606, train_err=0.1606
+Eval: test_l2=0.1447
+[222] time=44.01, avg_loss=0.1605, train_err=0.1605
+Eval: test_l2=0.1447
+[223] time=44.00, avg_loss=0.1605, train_err=0.1605
+Eval: test_l2=0.1447
+[224] time=44.01, avg_loss=0.1604, train_err=0.1604
+Eval: test_l2=0.1447
+[225] time=43.99, avg_loss=0.1604, train_err=0.1604
+Eval: test_l2=0.1447
+[226] time=44.03, avg_loss=0.1603, train_err=0.1603
+Eval: test_l2=0.1447
+[227] time=44.02, avg_loss=0.1603, train_err=0.1603
+Eval: test_l2=0.1447
+[228] time=44.64, avg_loss=0.1602, train_err=0.1602
+Eval: test_l2=0.1447
+[229] time=44.40, avg_loss=0.1602, train_err=0.1602
+Eval: test_l2=0.1447
+[230] time=44.59, avg_loss=0.1601, train_err=0.1601
+Eval: test_l2=0.1446
+[231] time=44.95, avg_loss=0.1601, train_err=0.1601
+Eval: test_l2=0.1447
+[232] time=44.92, avg_loss=0.1600, train_err=0.1600
+Eval: test_l2=0.1446
+[233] time=44.57, avg_loss=0.1600, train_err=0.1600
+Eval: test_l2=0.1446
+[234] time=45.16, avg_loss=0.1599, train_err=0.1599
+Eval: test_l2=0.1446
+[235] time=44.35, avg_loss=0.1599, train_err=0.1599
+Eval: test_l2=0.1446
+[236] time=44.22, avg_loss=0.1599, train_err=0.1599
+Eval: test_l2=0.1446
+[237] time=44.69, avg_loss=0.1598, train_err=0.1598
+Eval: test_l2=0.1446
+[238] time=44.84, avg_loss=0.1598, train_err=0.1598
+Eval: test_l2=0.1445
+[239] time=44.66, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1446
+[240] time=44.01, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1446
+[241] time=44.00, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1445
+[242] time=44.01, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1446
+[243] time=44.01, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1446
+[244] time=44.00, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1446
+[245] time=44.01, avg_loss=0.1595, train_err=0.1595
+Eval: test_l2=0.1446
+[246] time=44.02, avg_loss=0.1595, train_err=0.1595
+Eval: test_l2=0.1447
+[247] time=44.01, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1447
+[248] time=44.01, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1447
+[249] time=44.01, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1448
+[250] time=44.16, avg_loss=0.1589, train_err=0.1589
+Eval: test_l2=0.1447
+[251] time=44.19, avg_loss=0.1589, train_err=0.1589
+Eval: test_l2=0.1446
+[252] time=44.01, avg_loss=0.1589, train_err=0.1589
+Eval: test_l2=0.1447
+[253] time=44.02, avg_loss=0.1590, train_err=0.1590
+Eval: test_l2=0.1447
+[254] time=44.03, avg_loss=0.1591, train_err=0.1591
+Eval: test_l2=0.1448
+[255] time=44.02, avg_loss=0.1593, train_err=0.1593
+Eval: test_l2=0.1448
+[256] time=44.03, avg_loss=0.1594, train_err=0.1594
+Eval: test_l2=0.1449
+[257] time=44.03, avg_loss=0.1595, train_err=0.1595
+Eval: test_l2=0.1449
+[258] time=44.02, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1450
+[259] time=44.03, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1450
+[260] time=44.03, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1450
+[261] time=44.04, avg_loss=0.1597, train_err=0.1597
+Eval: test_l2=0.1449
+[262] time=44.02, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1449
+[263] time=44.02, avg_loss=0.1596, train_err=0.1596
+Eval: test_l2=0.1449
+[264] time=44.02, avg_loss=0.1595, train_err=0.1595
+Eval: test_l2=0.1449
+[265] time=44.02, avg_loss=0.1595, train_err=0.1595
+Eval: test_l2=0.1449
+[266] time=44.03, avg_loss=0.1594, train_err=0.1594
+Eval: test_l2=0.1448
+[267] time=44.01, avg_loss=0.1593, train_err=0.1593
+Eval: test_l2=0.1448
+[268] time=44.02, avg_loss=0.1593, train_err=0.1593
+Eval: test_l2=0.1448
+[269] time=44.02, avg_loss=0.1592, train_err=0.1592
+Eval: test_l2=0.1448
+[270] time=44.02, avg_loss=0.1591, train_err=0.1591
+Eval: test_l2=0.1447
+[271] time=44.02, avg_loss=0.1591, train_err=0.1591
+Eval: test_l2=0.1447
+[272] time=44.03, avg_loss=0.1590, train_err=0.1590
+Eval: test_l2=0.1447
+[273] time=44.01, avg_loss=0.1590, train_err=0.1590
+Eval: test_l2=0.1447
+[274] time=44.01, avg_loss=0.1589, train_err=0.1589
+Eval: test_l2=0.1446
+[275] time=44.01, avg_loss=0.1588, train_err=0.1588
+Eval: test_l2=0.1446
+[276] time=44.03, avg_loss=0.1588, train_err=0.1588
+Eval: test_l2=0.1446
+[277] time=44.01, avg_loss=0.1587, train_err=0.1587
+Eval: test_l2=0.1446
+[278] time=44.00, avg_loss=0.1587, train_err=0.1587
+Eval: test_l2=0.1446
+[279] time=44.01, avg_loss=0.1587, train_err=0.1587
+Eval: test_l2=0.1446
+[280] time=44.01, avg_loss=0.1586, train_err=0.1586
+Eval: test_l2=0.1446
+[281] time=44.02, avg_loss=0.1586, train_err=0.1586
+Eval: test_l2=0.1446
+[282] time=44.01, avg_loss=0.1586, train_err=0.1586
+Eval: test_l2=0.1446
+[283] time=44.02, avg_loss=0.1585, train_err=0.1585
+Eval: test_l2=0.1446
+[284] time=44.03, avg_loss=0.1585, train_err=0.1585
+Eval: test_l2=0.1445
+[285] time=44.01, avg_loss=0.1585, train_err=0.1585
+Eval: test_l2=0.1445
+[286] time=44.02, avg_loss=0.1585, train_err=0.1585
+Eval: test_l2=0.1445
+[287] time=44.02, avg_loss=0.1584, train_err=0.1584
+Eval: test_l2=0.1446
+[288] time=44.03, avg_loss=0.1584, train_err=0.1584
+Eval: test_l2=0.1446
+[289] time=44.03, avg_loss=0.1584, train_err=0.1584
+Eval: test_l2=0.1445
+[290] time=44.03, avg_loss=0.1584, train_err=0.1584
+Eval: test_l2=0.1446
+[291] time=44.02, avg_loss=0.1584, train_err=0.1584
+Eval: test_l2=0.1446
+[292] time=44.03, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[293] time=44.02, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[294] time=44.02, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[295] time=44.02, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[296] time=44.03, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[297] time=44.03, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[298] time=44.01, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[299] time=44.00, avg_loss=0.1583, train_err=0.1583
+Eval: test_l2=0.1446
+[300] time=44.02, avg_loss=0.1578, train_err=0.1578
+Eval: test_l2=0.1440
+

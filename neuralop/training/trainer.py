@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Union
 import sys
 import warnings
+from torch.profiler import profile, record_function, ProfilerActivity
 
 import torch
 # from torch.cuda import amp
@@ -23,7 +24,7 @@ except ModuleNotFoundError:
 from neuralop.losses import LpLoss
 from .training_state import load_training_state, save_training_state
 # from neuralop.utils import NeighborSearchLogger
-import sys 
+import sys
 
 
 class Trainer:
@@ -329,8 +330,9 @@ class Trainer:
         #     print(name, type(module).__name__)    
         # sys.exit(0)     
 
-        if self.data_processor:        
+        if self.data_processor:
             self.data_processor.train()
+            
         t1 = default_timer()
         train_err = 0.0
 
@@ -338,9 +340,27 @@ class Trainer:
         self.n_samples = 0
 
         for idx, sample in enumerate(train_loader):
-            loss = self.train_one_batch(idx, sample, training_loss)
-            loss.backward()
-            self.optimizer.step()
+            if idx == 0 and epoch == 0:
+                with profile(
+                    activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA],
+                    record_shapes=True,
+                    with_flops=True,
+                ) as prof:
+                    loss = self.train_one_batch(idx, sample, training_loss)
+                    loss.backward()
+                    self.optimizer.step()
+                print(prof.key_averages().table(sort_by="cuda_time_total", row_limit=40))
+                prof.export_chrome_trace("torch_trace.json")
+            else:
+                loss = self.train_one_batch(idx, sample, training_loss)
+                loss.backward()
+                self.optimizer.step()
+
+
+        # for idx, sample in enumerate(train_loader):
+            # loss = self.train_one_batch(idx, sample, training_loss)
+            # loss.backward()
+            # self.optimizer.step()
 
             train_err += loss.item()
             with torch.no_grad():
@@ -558,6 +578,7 @@ class Trainer:
         self.optimizer.zero_grad(set_to_none=True)
         if self.regularizer:
             self.regularizer.reset()
+
         if self.data_processor is not None:
             sample = self.data_processor.preprocess(sample)
         else:
@@ -573,6 +594,7 @@ class Trainer:
             with torch.autocast(device_type=self.autocast_device_type):
                 out = self.model(**sample)
         else:
+            # print('Running forward pass without mixed precision.')
             out = self.model(**sample)
 
         # Capture first batch neighbor data for logging
@@ -587,12 +609,9 @@ class Trainer:
 
         if self.epoch == 0 and idx == 0 and self.verbose and isinstance(out, torch.Tensor):
             print(f"Raw outputs of shape {out.shape}")
-
         if self.data_processor is not None:
             out, sample = self.data_processor.postprocess(out, sample)
-
         loss = 0.0
-
         if self.mixed_precision:
             with torch.autocast(device_type=self.autocast_device_type):
                 loss += training_loss(out, **sample)

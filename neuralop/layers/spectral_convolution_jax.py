@@ -18,7 +18,6 @@ tl.set_backend("jax")
 use_opt_einsum("optimal")
 einsum_symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-
 class JAXTuckerTensor:
     """Lightweight Tucker tensor for JAX — replaces tltorch.TuckerTensor.
 
@@ -45,7 +44,6 @@ class JAXTuckerTensor:
             new_factors.append(factor[s, :])   # slice rows; keep rank dim intact
         return JAXTuckerTensor(self.core, new_factors)
 
-
 def _contract_dense(x, weight, separable=False):
     order = tl.ndim(x)
     # batch-size, in_channels, x, y...
@@ -67,10 +65,11 @@ def _contract_dense(x, weight, separable=False):
     if not isinstance(weight, jnp.ndarray):
         weight = weight.to_tensor()
 
-    if x.dtype == jnp.complex64:
-        return einsum_complexhalf(eq, x, weight)
-    else:
-        return tl.einsum(eq, x, weight)
+    # if x.dtype == jnp.complex64:
+        # return einsum_complexhalf(eq, x, weight)
+    # else:
+        # return tl.einsum(eq, x, weight)
+    return tl.einsum(eq, x, weight)
 
 
 def _contract_dense_separable(x, weight, separable):
@@ -94,11 +93,11 @@ def _contract_cp(x, cp_weight, separable=False):
     factor_syms += [xs + rank_sym for xs in x_syms[2:]]  # x, y, ...
     eq = f'{x_syms},{rank_sym},{",".join(factor_syms)}->{"".join(out_syms)}'
 
-    if x.dtype == jnp.complex64:
-        return einsum_complexhalf(eq, x, cp_weight.weights, *cp_weight.factors)
-    else:
-        return tl.einsum(eq, x, cp_weight.weights, *cp_weight.factors)
-
+    # if x.dtype == jnp.complex64:
+        # return einsum_complexhalf(eq, x, cp_weight.weights, *cp_weight.factors)
+    # else:
+        # return tl.einsum(eq, x, cp_weight.weights, *cp_weight.factors)
+    return tl.einsum(eq, x, cp_weight.weights, *cp_weight.factors)
 
 def _contract_tucker(x, tucker_weight, separable=False):
     order = tl.ndim(x)
@@ -120,10 +119,11 @@ def _contract_tucker(x, tucker_weight, separable=False):
 
     eq = f'{x_syms},{core_syms},{",".join(factor_syms)}->{"".join(out_syms)}'
 
-    if x.dtype == jnp.complex64:
-        return einsum_complexhalf(eq, x, tucker_weight.core, *tucker_weight.factors)
-    else:
-        return tl.einsum(eq, x, tucker_weight.core, *tucker_weight.factors)
+    # if x.dtype == jnp.complex64:
+        # return einsum_complexhalf(eq, x, tucker_weight.core, *tucker_weight.factors)
+    # else:
+        # return tl.einsum(eq, x, tucker_weight.core, *tucker_weight.factors)
+    return tl.einsum(eq, x, tucker_weight.core, *tucker_weight.factors)
 
 
 def _contract_tt(x, tt_weight, separable=False):
@@ -149,10 +149,11 @@ def _contract_tt(x, tt_weight, separable=False):
         + "".join(out_syms)
     )
 
-    if x.dtype == jnp.complex64:
-        return einsum_complexhalf(eq, x, *tt_weight.factors)
-    else:
-        return tl.einsum(eq, x, *tt_weight.factors)
+    # if x.dtype == jnp.complex64:
+        # return einsum_complexhalf(eq, x, *tt_weight.factors)
+    # else:
+        # return tl.einsum(eq, x, *tt_weight.factors)
+    return tl.einsum(eq, x, *tt_weight.factors)
 
 
 def get_contract_fun(weight, implementation="reconstructed", separable=False):
@@ -309,13 +310,24 @@ class SpectralConv(BaseSpectralConv):
 
         if factorization.lower() == "dense":
             self.weight = self.param("weight", _cx_init, weight_shape)
-
+            
         elif factorization.lower() == "tucker":
-            import math
-            rank = self.rank if isinstance(self.rank, float) else 1.0
-            # Compute per-dimension Tucker ranks
-            tucker_ranks = tuple(max(1, math.ceil(rank * d)) for d in weight_shape)
+            # Use tensorly's validate_tucker_rank for parity with PyTorch's
+            # tltorch.TuckerTensor.new(...), which calls the same function.
+            # For a float rank in (0, 1], it is treated as a compression ratio
+            # (target Tucker params = rank * full tensor params), NOT a
+            # per-dim multiplier. A simple `round(rank * d)` would under-shoot
+            # by a large factor and produce a different shape than PyTorch.
 
+            from tensorly.tucker_tensor import validate_tucker_rank
+            tucker_ranks = tuple(
+                int(r) for r in validate_tucker_rank(
+                    weight_shape,
+                    rank=self.rank,
+                    fixed_modes=self._fixed_rank_modes,
+                )
+            )
+               
             # Core tensor
             self._w_core = self.param("w_core", _cx_init, tucker_ranks)
 
@@ -380,6 +392,7 @@ class SpectralConv(BaseSpectralConv):
         -------
         tensorized_spectral_conv(x)
         """
+        import time
         batchsize, channels, *mode_sizes = x.shape
 
         fft_size = list(mode_sizes)
@@ -390,6 +403,7 @@ class SpectralConv(BaseSpectralConv):
         if self.fno_block_precision == "half":
             x = x.astype(jnp.float16)
 
+        t_fft_start = time.perf_counter()
         if self.complex_data:
             x = jnp.fft.fftn(x, norm=self.fft_norm, axes=fft_dims)
             dims_to_fft_shift = fft_dims
@@ -399,6 +413,8 @@ class SpectralConv(BaseSpectralConv):
 
         if self.order > 1:
             x = jnp.fft.fftshift(x, axes=dims_to_fft_shift)
+        t_fft_end = time.perf_counter()
+        # print(f"    [SpectralConv FFT] Time: {(t_fft_end - t_fft_start)*1000:.3f}ms")
 
         if self.fno_block_precision == "mixed":
             x = x.astype(jnp.complex64)  # JAX has no chalf; use complex64
@@ -456,9 +472,12 @@ class SpectralConv(BaseSpectralConv):
             slices_x[-1] = slice(None)
 
         slices_x = tuple(slices_x)
+        t_contract_start = time.perf_counter()
         out_fft = out_fft.at[slices_x].set(
             self._contract(x[slices_x], weight, separable=self.separable).astype(out_fft.dtype)
         )
+        t_contract_end = time.perf_counter()
+        # print(f"    [SpectralConv Contraction] Time: {(t_contract_end - t_contract_start)*1000:.3f}ms")
 
         if self._resolution_scaling_factor is not None and output_shape is None:
             mode_sizes = tuple([round(s * r) for (s, r) in zip(mode_sizes, self._resolution_scaling_factor)])
@@ -469,6 +488,7 @@ class SpectralConv(BaseSpectralConv):
         if self.order > 1:
             out_fft = jnp.fft.ifftshift(out_fft, axes=fft_dims[:-1])
 
+        t_ifft_start = time.perf_counter()
         # Inverse FFT
         if self.complex_data:
             x = jnp.fft.ifftn(out_fft, s=mode_sizes, axes=fft_dims, norm=self.fft_norm)
@@ -480,17 +500,27 @@ class SpectralConv(BaseSpectralConv):
                 # 0th frequency must be real
                 # out_fft = out_fft.at[..., 0].set(out_fft[..., 0].real + 0j)
                 out_fft = out_fft.at[..., 0].set((out_fft[..., 0].real + 0j).astype(out_fft.dtype))
-                
+
                 # Nyquist frequency must be real if the spatial size is even
                 if mode_sizes[-1] % 2 == 0:
                     # out_fft = out_fft.at[..., -1].set(out_fft[..., -1].real + 0j)
                     out_fft = out_fft.at[..., -1].set((out_fft[..., -1].real + 0j).astype(out_fft.dtype))
-                    
+
                 x = jnp.fft.irfft(out_fft, n=mode_sizes[-1], axis=fft_dims[-1], norm=self.fft_norm)
             else:
                 x = jnp.fft.irfftn(out_fft, s=mode_sizes, axes=fft_dims, norm=self.fft_norm)
+        t_ifft_end = time.perf_counter()
+        # print(f"    [SpectralConv IFFT] Time: {(t_ifft_end - t_ifft_start)*1000:.3f}ms")
 
         if self._bias is not None:
             x = x + self._bias
 
         return x
+
+
+        # elif factorization.lower() == "tucker":
+        #     import math
+        #     rank = self.rank if isinstance(self.rank, float) else 1.0
+        #     # Compute per-dimension Tucker ranks
+        #     # tucker_ranks = tuple(max(1, math.ceil(rank * d)) for d in weight_shape)
+        #     tucker_ranks = tuple(max(1, int(round(rank * d))) for d in weight_shape)

@@ -7,7 +7,6 @@ import flax.linen as nn
 from typing import Any, Optional, Callable
 
 from .base_model_jax import BaseModel
-
 from ..layers.channel_mlp_jax import ChannelMLP
 from ..layers.embeddings_jax import SinusoidalEmbedding
 from ..layers.fno_block_jax import FNOBlocks
@@ -108,6 +107,9 @@ class GINO(BaseModel, name="gino"):
     fno_enforce_hermitian_symmetry: bool = True
 
     def setup(self):
+        
+        # Initialize call counter for debugging
+        # self._latent_embedding_call_count = 0        
         # print('[GINO.setup] Initializing GINO model')
 
         fno_hidden_channels = self.fno_hidden_channels
@@ -262,7 +264,7 @@ class GINO(BaseModel, name="gino"):
     def latent_embedding(self, in_p, ada_in=None):
         # in_p : (batch, n_1 , ... , n_k, in_channels + k)
         # ada_in : (fno_ada_in_dim, )
-
+                
         # permute (b, n_1, ..., n_k, c) -> (b, c, n_1, ..., n_k)
         perm = (0, len(in_p.shape) - 1, *list(range(1, len(in_p.shape) - 1)))
         in_p = jnp.transpose(in_p, perm)

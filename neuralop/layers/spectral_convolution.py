@@ -1,4 +1,5 @@
 from typing import List, Optional, Tuple, Union
+import time
 
 from ..utils import validate_scaling_factor
 
@@ -38,6 +39,10 @@ def _contract_dense(x, weight, separable=False):
 
     if not torch.is_tensor(weight):
         weight = weight.to_tensor()
+        
+    # print(f"[DTYPE CHECK] _contract_dense: x.dtype={x.dtype}, "
+    #       f"is_complex32={x.dtype == torch.complex32}, "
+    #       f"is_complex64={x.dtype == torch.complex64}")
 
     if x.dtype == torch.complex32:
         # if x is half precision, run a specialized einsum
@@ -66,6 +71,10 @@ def _contract_cp(x, cp_weight, separable=False):
         factor_syms = [einsum_symbols[1] + rank_sym, out_sym + rank_sym]  # in, out
     factor_syms += [xs + rank_sym for xs in x_syms[2:]]  # x, y, ...
     eq = f'{x_syms},{rank_sym},{",".join(factor_syms)}->{"".join(out_syms)}'
+
+    # print(f"[DTYPE CHECK] _contract_cp: x.dtype={x.dtype}, "
+    #       f"is_complex32={x.dtype == torch.complex32}, "
+    #       f"is_complex64={x.dtype == torch.complex64}")
 
     if x.dtype == torch.complex32:
         return einsum_complexhalf(eq, x, cp_weight.weights, *cp_weight.factors)
@@ -96,6 +105,10 @@ def _contract_tucker(x, tucker_weight, separable=False):
         factor_syms += [xs + rs for (xs, rs) in zip(x_syms[2:], core_syms[2:])]
 
     eq = f'{x_syms},{core_syms},{",".join(factor_syms)}->{"".join(out_syms)}'
+    
+    # print(f"[DTYPE CHECK] _contract_cp: x.dtype={x.dtype}, "
+    #       f"is_complex32={x.dtype == torch.complex32}, "
+    #       f"is_complex64={x.dtype == torch.complex64}")
 
     if x.dtype == torch.complex32:
         return einsum_complexhalf(eq, x, tucker_weight.core, *tucker_weight.factors)
@@ -125,6 +138,10 @@ def _contract_tt(x, tt_weight, separable=False):
         + "->"
         + "".join(out_syms)
     )
+    
+    # print(f"[DTYPE CHECK] _contract_cp: x.dtype={x.dtype}, "
+    #       f"is_complex32={x.dtype == torch.complex32}, "
+    #       f"is_complex64={x.dtype == torch.complex64}")
 
     if x.dtype == torch.complex32:
         return einsum_complexhalf(eq, x, *tt_weight.factors)
@@ -436,6 +453,7 @@ class SpectralConv(BaseSpectralConv):
         if self.fno_block_precision == "half":
             x = x.half()
 
+        t_fft_start = time.perf_counter()
         if self.complex_data:
             x = torch.fft.fftn(x, norm=self.fft_norm, dim=fft_dims)
             dims_to_fft_shift = fft_dims
@@ -447,6 +465,8 @@ class SpectralConv(BaseSpectralConv):
 
         if self.order > 1:
             x = torch.fft.fftshift(x, dim=dims_to_fft_shift)
+        t_fft_end = time.perf_counter()
+        # print(f"    [SpectralConv FFT] Time: {(t_fft_end - t_fft_start)*1000:.3f}ms")
 
         if self.fno_block_precision == "mixed":
             # if 'mixed', the above fft runs in full precision, but the
@@ -517,9 +537,12 @@ class SpectralConv(BaseSpectralConv):
             slices_x[-1] = slice(None)
 
         slices_x = tuple(slices_x)
+        t_contract_start = time.perf_counter()
         out_fft[slices_x] = self._contract(
             x[slices_x], weight, separable=self.separable
         )
+        t_contract_end = time.perf_counter()
+        # print(f"    [SpectralConv Contraction] Time: {(t_contract_end - t_contract_start)*1000:.3f}ms")
 
         if self.resolution_scaling_factor is not None and output_shape is None:
             mode_sizes = tuple([round(s * r) for (s, r) in zip(mode_sizes, self.resolution_scaling_factor)])
@@ -530,38 +553,40 @@ class SpectralConv(BaseSpectralConv):
 
         if self.order > 1:
             out_fft = torch.fft.ifftshift(out_fft, dim=fft_dims[:-1])
-        
 
-        # Inverse FFT 
+        t_ifft_start = time.perf_counter()
+        # Inverse FFT
         if self.complex_data:
             # For complex data, we can use ifftn.
             x = torch.fft.ifftn(out_fft, s=mode_sizes, dim=fft_dims, norm=self.fft_norm)
-        
+
         else:
             # For real data, we need to enforce Hermitian symmetry conditions for irfft.
-            # On certain GPUs and for certain input sizes, this is not handled within irfftn in cuFFT, 
-            # and as a result causes line artifacts.  
+            # On certain GPUs and for certain input sizes, this is not handled within irfftn in cuFFT,
+            # and as a result causes line artifacts.
             # To fix this, we split the ifftn into a ifftn in (n-1) dimensions and a irfft in the last dimension,
             # although it incurs a small additional computational cost.
-            
+
             if self.enforce_hermitian_symmetry:
                 out_fft = torch.fft.ifftn(out_fft, s=mode_sizes[:-1], dim=fft_dims[:-1], norm=self.fft_norm)
-                
+
                 # Enforce Hermitian symmetry conditions for irfft
                 # 0th frequency must be real
                 out_fft[..., 0].imag.zero_()
-                
+
                 # Nyquist frequency must be real if the spatial size is even
                 if mode_sizes[-1] % 2 == 0:
                     out_fft[..., -1].imag.zero_()
-                
+
                 # Now that the Hermitian symmetry conditions are enforced, we can use irfft on the last dimension.
                 x = torch.fft.irfft(out_fft, n=mode_sizes[-1], dim=fft_dims[-1], norm=self.fft_norm)
-            
+
             else:
-                
+
                 # If Hemrmitian symmetry is not a concern, we can use irfftn on all dimensions.
                 x = torch.fft.irfftn(out_fft, s=mode_sizes, dim=fft_dims, norm=self.fft_norm)
+        t_ifft_end = time.perf_counter()
+        # print(f"    [SpectralConv IFFT] Time: {(t_ifft_end - t_ifft_start)*1000:.3f}ms")
             
 
         if self.bias is not None:

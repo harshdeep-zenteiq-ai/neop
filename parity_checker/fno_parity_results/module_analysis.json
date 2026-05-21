@@ -1,0 +1,25 @@
+{
+  "common_input_shapes": [
+    "(3, 32, 32)",
+    "(1, 64, 64)"
+  ],
+  "common_critical_params": [
+    "batch_size",
+    "input_shape"
+  ],
+  "jax_specifics": [],
+  "pytorch_specifics": [],
+  "recommended_test_config": {
+    "batch_sizes": [
+      1,
+      2,
+      4
+    ],
+    "input_shapes": [
+      "(3, 32, 32)",
+      "(1, 64, 64)"
+    ],
+    "num_test_cases_per_config": 3,
+    "tolerance": 0.0001
+  }
+}

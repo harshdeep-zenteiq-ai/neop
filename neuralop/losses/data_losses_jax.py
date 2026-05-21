@@ -8,7 +8,6 @@ import jax.numpy as jnp
 # Set warning filter to show each warning only once
 warnings.filterwarnings("once", category=UserWarning)
 
-
 #loss function with rel/abs Lp loss
 class LpLoss(object):
     """LpLoss provides the Lp norm between two discretized d-dimensional functions.

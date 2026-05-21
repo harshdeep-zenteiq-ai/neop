@@ -170,7 +170,8 @@ class IntegralTransform(nn.Module):
             x = y
             # print(f"  [branch] x was None -> x set to y, shape={tuple(x.shape)}")
         else:
-            print(f"  [branch] x provided, shape={tuple(x.shape)}")
+            pass 
+            # print(f"  [branch] x provided, shape={tuple(x.shape)}")
 
         rep_features = y[neighbors["neighbors_index"]]
         # print(f"\n  rep_features = y[neighbors_index]")
@@ -194,7 +195,8 @@ class IntegralTransform(nn.Module):
                 # print(f"\n  [branch] f_y.ndim=2 -> batched=False")
                 # print(f"  in_features.shape = {tuple(in_features.shape)}   [total_edges, D_f]")
         else:
-            print(f"\n  [branch] f_y is None -> in_features not computed")
+            pass 
+            # print(f"\n  [branch] f_y is None -> in_features not computed")
 
         num_reps = (
             neighbors["neighbors_row_splits"][1:]
@@ -227,7 +229,8 @@ class IntegralTransform(nn.Module):
             agg_features = torch.cat([agg_features, in_features], dim=-1)
             # print(f"  agg_features (after cat f_y).shape = {tuple(agg_features.shape)}   [total_edges, D_y+D_x+D_f]")
         else:
-            print(f"\n  [branch] transform_type='{self.transform_type}' -> f_y NOT concatenated onto agg_features")
+            pass 
+            # print(f"\n  [branch] transform_type='{self.transform_type}' -> f_y NOT concatenated onto agg_features")
 
         rep_features = self.channel_mlp(agg_features)
         # print(f"\n  rep_features = channel_mlp(agg_features)")
@@ -235,15 +238,16 @@ class IntegralTransform(nn.Module):
         # print(f"  rep_features[:3]   =\n{rep_features[:3]}")
 
         if f_y is not None and self.transform_type != "nonlinear_kernelonly":
-            print(f"\n  [branch] transform_type='{self.transform_type}' and f_y provided -> multiply rep_features * in_features")
+            # print(f"\n  [branch] transform_type='{self.transform_type}' and f_y provided -> multiply rep_features * in_features")
             if rep_features.ndim == 2 and batched:
                 rep_features = rep_features.unsqueeze(0).repeat([batch_size] + [1] * rep_features.ndim)
-                print(f"  [branch] rep_features was 2d but batched -> unsqueeze+repeat, shape={tuple(rep_features.shape)}")
+                # print(f"  [branch] rep_features was 2d but batched -> unsqueeze+repeat, shape={tuple(rep_features.shape)}")
             rep_features.mul_(in_features)
             # print(f"  rep_features (after *= in_features).shape = {tuple(rep_features.shape)}   k(x,y)*f(y) per edge")
         else:
-            print(f"\n  [branch] skipping mul_(in_features): "
-                  f"f_y={'None' if f_y is None else 'provided'}, transform_type='{self.transform_type}'")
+            pass 
+            # print(f"\n  [branch] skipping mul_(in_features): "
+                #   f"f_y={'None' if f_y is None else 'provided'}, transform_type='{self.transform_type}'")
 
         # Weight neighbors in each neighborhood, first according to the neighbor search (mollified GNO)
         # and second according to individually-provided weights.
@@ -251,18 +255,19 @@ class IntegralTransform(nn.Module):
         # print(f"\n  neighbors.get('weights') = {'provided, shape=' + str(tuple(nbr_weights.shape)) if nbr_weights is not None else 'None'}")
         if nbr_weights is None:
             nbr_weights = weights
-            print(f"  fallback to 'weights' arg = {'provided, shape=' + str(tuple(nbr_weights.shape)) if nbr_weights is not None else 'None'}")
+            # print(f"  fallback to 'weights' arg = {'provided, shape=' + str(tuple(nbr_weights.shape)) if nbr_weights is not None else 'None'}")
         if nbr_weights is None and self.weighting_fn is not None:
             raise KeyError("if a weighting function is provided, your neighborhoods must contain weights.")
         if nbr_weights is not None:
             # print(f"  [branch] nbr_weights provided -> applying weights")
             nbr_weights = nbr_weights.unsqueeze(-1).unsqueeze(0)
-            print(f"  nbr_weights (unsqueezed).shape = {tuple(nbr_weights.shape)}")
+            # print(f"  nbr_weights (unsqueezed).shape = {tuple(nbr_weights.shape)}")
             if self.weighting_fn is not None:
                 nbr_weights = self.weighting_fn(nbr_weights)
                 # print(f"  [branch] weighting_fn applied, nbr_weights.shape = {tuple(nbr_weights.shape)}")
             else:
-                print(f"  [branch] no weighting_fn, using raw weights")
+                pass 
+                # print(f"  [branch] no weighting_fn, using raw weights")
             rep_features.mul_(nbr_weights)
             reduction = "sum"  # Force sum reduction for weighted GNO layers
             # print(f"  rep_features (after *= nbr_weights).shape = {tuple(rep_features.shape)}")
@@ -277,7 +282,8 @@ class IntegralTransform(nn.Module):
             splits = splits.unsqueeze(0).repeat([batch_size] + [1] * (splits.ndim))
             # print(f"  [branch] batched -> splits expanded, shape={tuple(splits.shape)}")
         else:
-            print(f"  [branch] not batched -> splits unchanged")
+            pass 
+            # print(f"  [branch] not batched -> splits unchanged")
 
         # print(f"\n  calling segment_csr(rep_features, splits, reduction='{reduction}', use_scatter={self.use_torch_scatter})")
         # print(f"  rep_features.shape = {tuple(rep_features.shape)}")

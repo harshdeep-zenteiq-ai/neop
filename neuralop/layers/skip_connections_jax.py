@@ -91,9 +91,9 @@ class SoftGating(nn.Module):
                 "but these two must be the same for soft-gating"
             )
         weight_shape = (1, self.in_features) + (1,) * self.n_dim
-        self.weight = self.param("weight", nn.initializers.ones, weight_shape)
+        self.weight = self.param("weight", nn.initializers.ones, weight_shape, jnp.float32)
         if self.bias:
-            self.bias_param = self.param("bias", nn.initializers.ones, weight_shape)
+            self.bias_param = self.param("bias", nn.initializers.ones, weight_shape, jnp.float32)
         else:
             self.bias_param = None
 

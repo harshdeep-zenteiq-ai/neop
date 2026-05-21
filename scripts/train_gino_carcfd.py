@@ -73,7 +73,7 @@ data_module = CarCFDDataset(
     download=config.data.download,
 )
 
-print('data_module', data_module)
+# print('data_module', data_module)
 # sys.exit(0) 
 
 # Create data loaders
@@ -122,7 +122,6 @@ elif config.opt.scheduler == "StepLR":
     )
 else:
     raise ValueError(f"Got {config.opt.scheduler=}")
-
 
 l2loss = LpLoss(d=2, p=2)
 
@@ -251,6 +250,45 @@ trainer = Trainer(
 # Log additional dataset information
 # if config.wandb.log:
 #     wandb.log({"time_to_distance": data_module.time_to_distance}, commit=False)
+
+# ── F64 dtype tracer ──────────────────────────────────────────────
+# hooks = []
+# def make_hook(name):
+#     def hook(m, inp, out):
+#         t = out if isinstance(out, torch.Tensor) else (out[0] if isinstance(out, (list, tuple)) else None)
+#         if t is not None and t.dtype == torch.float64:
+#             print(f"[F64 OUTPUT] {name} ({type(m).__name__}) → {t.dtype} {t.shape}")
+#     return hook
+
+# for name, mod in model.named_modules():
+#     hooks.append(mod.register_forward_hook(make_hook(name)))
+
+# # Run just one batch to find the f64 source
+# sample = next(iter(train_loader))
+# for k, v in sample.items():
+#     if isinstance(v, torch.Tensor):
+#         print(f"[RAW] {k}: {v.dtype}")
+
+# sample = data_processor.preprocess(sample)
+# model_inputs = {k: v for k, v in sample.items()
+#                 if k in {'input_geom','latent_queries','output_queries',
+#                          'x','latent_features','ada_in','neighbors_in','neighbors_out'}}
+# model.to(device)
+# with torch.no_grad():
+    
+#     for k, v in model_inputs.items():
+#         if isinstance(v, torch.Tensor):
+#             print(f"  {k}: {v.dtype} {v.shape}")
+#         elif isinstance(v, dict):
+#             for kk, vv in v.items():
+#                 if isinstance(vv, torch.Tensor):
+#                     print(f"  {k}.{kk}: {vv.dtype} {vv.shape}")
+
+#     model(**model_inputs)
+
+# for h in hooks:
+#     h.remove()
+# ─────────────────────────────────────────────────────────────────
 
 # Start training process
 trainer.train(

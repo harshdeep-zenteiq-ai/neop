@@ -7,6 +7,7 @@ import warnings
 import jax
 import jax.numpy as jnp
 from flax import linen as nn
+from jax import profiler
 
 # Only import wandb and use if installed
 wandb_available = False
@@ -282,27 +283,25 @@ class Trainer:
                 self.data_processor.train()
             elif hasattr(self.data_processor, 'training'):
                 self.data_processor.training = True
-
+        
         t1 = default_timer()
 
-        # --- Fast path: jax.lax.scan over pre-stacked data ---
-        # Compiles the entire epoch as one XLA program — no Python loop overhead.
-        # if (self.stacked_train_data is not None
-        #         and hasattr(self.model, 'train_epoch_scan')):
-        #     train_err, avg_loss = self.model.train_epoch_scan(
-        #         self.stacked_train_data, training_loss
-        #     )
-        #     avg_lasso_loss = None
-        #     self.n_samples = 1   # placeholder; scan processed all samples
+        # Profile only batch 0 of epoch 0 (matches PyTorch's one-shot profile)
+        profile_dir = None
+        if epoch == 0:
+            profile_dir = Path("jax_profiles_epoch") / "epoch_0"
+            profile_dir.mkdir(parents=True, exist_ok=True)
 
-        # # --- Per-batch JIT loop (async dispatch, single GPU-CPU sync) ---
-        # else:
-        
         self.n_samples = 0
         batch_losses = []   # accumulate as JAX arrays — no per-batch sync
 
         for idx, sample in enumerate(train_loader):
-            loss = self.train_one_batch(idx, sample, training_loss)
+            if epoch == 0 and idx == 0:
+                trace_file = profile_dir / "batch_0.trace"
+                with profiler.trace(trace_file):
+                    loss = self.train_one_batch(idx, sample, training_loss)
+            else:
+                loss = self.train_one_batch(idx, sample, training_loss)
             batch_losses.append(loss)  # stays on GPU (no float() call)
 
             # Single GPU-CPU sync at end of epoch
@@ -336,6 +335,8 @@ class Trainer:
                 avg_lasso_loss=avg_lasso_loss,
                 lr=lr,
             )
+            if self.verbose and profile_dir is not None:
+                print(f"  Profile traces saved to: {profile_dir}")
 
         return train_err, avg_loss, avg_lasso_loss, epoch_train_time
 
@@ -367,6 +368,9 @@ class Trainer:
         all_metrics : dict
             collected eval metrics for each loader
         """
+        eval_profile_dir = Path("jax_profiles_epoch") / f"epoch_{epoch}" / "eval"
+        eval_profile_dir.mkdir(parents=True, exist_ok=True)
+
         all_metrics = {}
         for loader_name, loader in test_loaders.items():
             loader_eval_mode = eval_modes.get(loader_name, "single_step")
@@ -788,3 +792,59 @@ class Trainer:
         )
         if self.verbose:
             print(f"Saved training state to {save_dir}")
+
+
+# ==============================================================================
+# TensorBoard Profiling Guide
+# ==============================================================================
+#
+# JAX-based trainers automatically save performance traces during training.
+# Traces are saved per-epoch in the directory: ./jax_profiles_epoch/epoch_N/
+#
+# To view profiles with TensorBoard:
+#
+#   1. Install tensorboard: pip install tensorboard
+#
+#   2. Start TensorBoard visualization:
+#      $ tensorboard --logdir=./jax_profiles_epoch
+#
+#   3. Open the web interface at http://localhost:6006
+#
+#   4. Navigate to the "Profile" tab to view operation-level traces
+#
+# Profile Structure:
+#   ./jax_profiles_epoch/
+#   ├── epoch_0/
+#   │   ├── batch_0.trace       (first batch of epoch 0)
+#   │   ├── batch_10.trace      (every 10th batch)
+#   │   └── eval/               (evaluation phase traces)
+#   ├── epoch_1/
+#   │   ├── batch_0.trace
+#   │   ├── batch_10.trace
+#   │   └── eval/
+#   └── ...
+#
+# What to Look For:
+#
+#   - Operation Duration: Identify slow operations (look for operations > 50ms)
+#   - Kernel Selection: Check if XLA compiled to efficient kernels
+#     (Conv, GEMM, pointwise ops are fast; dense GEMM on small ops indicates layout issues)
+#   - GPU Utilization: High HBM usage combined with slow ops indicates memory-bound computation
+#   - Operation Sequence: Trace tensor shapes through operations to spot reshape/flatten
+#
+# Typical Bottlenecks:
+#
+#   - Dense GEMM immediately after convolution: Tensor dimension flattening
+#   - Recomputed operations in backward pass: Missing gradient checkpointing (jax.remat)
+#   - High HBM usage: Inefficient memory layout or excessive intermediate activations
+#
+# Comparing Profile Directories:
+#
+#   When testing fixes, save profiles with identifiers in the directory name:
+#   - jax_profiles_epoch: Baseline (no fixes applied)
+#   - jax_profiles_epoch_fixed_issue1: After applying Issue 1 fix
+#   - jax_profiles_epoch_fixed_issue1_2: After applying Issue 1 + Issue 2 fixes
+#
+#   Then use: $ tensorboard --logdir=./jax_profiles_epoch_fixed_issue1_2
+#
+# ==============================================================================

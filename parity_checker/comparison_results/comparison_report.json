@@ -1,0 +1,48 @@
+{
+  "jax_file": "/home/deepan/neuraloperator/neuralop/layers/spectral_convolution_jax.py",
+  "pytorch_file": "/home/deepan/neuraloperator/neuralop/layers/spectral_convolution.py",
+  "analysis": {
+    "overall_parity": true,
+    "key_differences": [
+      "JAX uses Flax's `param` for parameter handling while PyTorch uses `nn.Parameter`",
+      "JAX implements a custom `JAXTuckerTensor` class while PyTorch uses `tltorch.FactorizedTensor`",
+      "JAX uses `jnp.fft` for FFT operations while PyTorch uses `torch.fft`",
+      "JAX handles complex64 with `einsum_complexhalf` while PyTorch uses complex32/complex64",
+      "JAX enforces Hermitian symmetry via `jnp.fft.ifftn` + `jnp.fft.irfft` while PyTorch uses `torch.fft.irfftn`",
+      "JAX supports only 'dense' and 'tucker' factorizations while PyTorch supports 'dense', 'tucker', 'cp', 'tt'"
+    ],
+    "algorithm_differences": [
+      "JAX uses `jnp.fft.fftshift`/`ifftshift` for frequency domain centering while PyTorch uses `torch.fft.fftshift`/`ifftshift`",
+      "JAX enforces Hermitian symmetry by explicitly zeroing imaginary parts of DC/Nyquist components",
+      "JAX uses `einsum_complexhalf` for complex64 precision while PyTorch uses native complex32/complex64",
+      "JAX's Tucker contraction uses a custom `JAXTuckerTensor` while PyTorch uses `tltorch`'s implementation",
+      "JAX's `resample` function is framework-specific while PyTorch uses a generic implementation"
+    ],
+    "parameter_differences": [
+      "JAX uses Flax-style parameter initialization with `_cx_init` while PyTorch uses `torch.nn.Parameter` with `torch.randn`",
+      "JAX's Tucker factorization uses `JAXTuckerTensor` with explicit core/factors while PyTorch uses `FactorizedTensor`",
+      "JAX supports only 'dense' and 'tucker' factorizations while PyTorch supports 'dense', 'tucker', 'cp', 'tt'",
+      "JAX uses `jnp.complex64` while PyTorch uses `torch.complex32`/`torch.complex64`",
+      "JAX's Tucker rank calculation uses `math.ceil(rank * d)` while PyTorch relies on `tltorch`'s implementation"
+    ],
+    "likely_issues": [
+      "Complex data type differences (complex64 vs complex32) may cause precision discrepancies",
+      "Different FFT implementations (JAX vs PyTorch) may produce slightly different frequency domain representations",
+      "Tucker tensor implementation differences (custom JAX vs tltorch) may affect contraction behavior",
+      "Hermitian symmetry enforcement via different methods may lead to minor output differences",
+      "Different random initialization schemes (Flax vs PyTorch) will produce different weights"
+    ],
+    "compatibility_score": 85,
+    "assessment": "The implementations share the same core logic for spectral convolution with Tucker factorization and Fourier domain operations. Both handle complex data, resolution scaling, and Hermitian symmetry enforcement. Key differences lie in framework-specific implementations (Flax vs PyTorch), tensor factorization handling, and FFT operations. The JAX version has more limited factorization support (only dense/tucker) compared to PyTorch's full tensorly support. The custom JAXTuckerTensor implementation may behave differently from tltorch's FactorizedTensor. Precision differences between complex64 (JAX) and complex32/complex64 (PyTorch) could affect numerical stability.",
+    "recommendations": [
+      "Implement full tensor factorization support (CP/TT) in JAX to match PyTorch's capabilities",
+      "Ensure JAX's Tucker tensor implementation matches tltorch's behavior for consistent contractions",
+      "Standardize complex data types (prefer complex64 in both frameworks)",
+      "Verify FFT implementations produce identical frequency domain representations",
+      "Use identical random initialization schemes for parameter parity",
+      "Add PyTorch-style `FactorizedTensor` support to JAX implementation",
+      "Ensure Hermitian symmetry enforcement is implemented identically in both frameworks"
+    ]
+  },
+  "status": "completed"
+}

@@ -214,14 +214,18 @@ class SinusoidalEmbedding(Embedding):
             freqs = 2 ** jnp.arange(0, self.num_frequencies) * jnp.pi
 
         elif self.embedding_type == "transformer":
-            freqs = jnp.arange(0, self.num_frequencies) / self.num_frequencies * 2
+            # freqs = jnp.arange(0, self.num_frequencies) / self.num_frequencies * 2
+            freqs = jnp.arange(0, self.num_frequencies, dtype=x.dtype) / self.num_frequencies * 2
             freqs = (1 / self.max_positions) ** freqs
 
+        # Cast freqs to input dtype — setup()-pattern Flax modules don't
+        # narrow Python-scalar arithmetic, leaking f64 from the integer
+        # division above.
+        freqs = freqs.astype(x.dtype)
+
         # outer product of wavenumbers and position coordinates
-        # shape b, n_in, channels, len(freqs)
         freqs = jnp.einsum("bij, k -> bijk", x, freqs)
 
-        # shape b, n_in, channels, len(freqs), 2
         freqs = jnp.stack((jnp.sin(freqs), jnp.cos(freqs)), axis=-1)
 
         # transpose the inner per-entry matrix and ravel to interleave sin and cos

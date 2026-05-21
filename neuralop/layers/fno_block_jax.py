@@ -1,5 +1,7 @@
 from typing import List, Union, Callable, Any
+import time
 
+import jax
 import jax.numpy as jnp
 import flax.linen as nn
 from dataclasses import field
@@ -290,7 +292,11 @@ class FNOBlocks(nn.Module):
             else:
                 x = jnp.tanh(x)
 
+        # t_spectral_start = time.perf_counter()
         x_fno = self.convs[index](x, output_shape=output_shape)
+        jax.block_until_ready(x_fno)
+        # t_spectral_end = time.perf_counter()
+        # print(f"    [SpectralConv] forward_with_postactivation Time: {(t_spectral_end - t_spectral_start)*1000:.3f}ms")
 
         x_fno = self._apply_norm(x_fno, self.n_norms * index, ada_in_embeddings, index)
 
@@ -333,7 +339,11 @@ class FNOBlocks(nn.Module):
             else:
                 x = jnp.tanh(x)
 
+        # t_spectral_start = time.perf_counter()
         x_fno = self.convs[index](x, output_shape=output_shape)
+        jax.block_until_ready(x_fno)
+        # t_spectral_end = time.perf_counter()
+        # print(f"    [SpectralConv] forward_with_preactivation Time: {(t_spectral_end - t_spectral_start)*1000:.3f}ms")
 
         x = x_fno + x_skip_fno if self.fno_skips is not None else x_fno
 

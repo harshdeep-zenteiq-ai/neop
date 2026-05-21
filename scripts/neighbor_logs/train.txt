@@ -2,1002 +2,2002 @@ Neighbor search summary — train
 ============================================================
 
 Sample 001
-  gno_in  — total: 16659  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16659  min: 2  max: 8  mean: 4.65
+  gno_in  — total: 16631  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16631  min: 2  max: 8  mean: 4.64
 
 Sample 002
-  gno_in  — total: 16107  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16107  min: 2  max: 8  mean: 4.49
+  gno_in  — total: 16059  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16059  min: 2  max: 8  mean: 4.48
 
 Sample 003
-  gno_in  — total: 15873  min: 0  max: 15  mean: 0.48
-  gno_out — total: 15873  min: 2  max: 8  mean: 4.43
+  gno_in  — total: 15931  min: 0  max: 15  mean: 0.49
+  gno_out — total: 15931  min: 2  max: 8  mean: 4.44
 
 Sample 004
-  gno_in  — total: 16015  min: 0  max: 15  mean: 0.49
-  gno_out — total: 16015  min: 2  max: 8  mean: 4.47
+  gno_in  — total: 15958  min: 0  max: 15  mean: 0.49
+  gno_out — total: 15958  min: 2  max: 8  mean: 4.45
 
 Sample 005
-  gno_in  — total: 16353  min: 0  max: 19  mean: 0.50
-  gno_out — total: 16353  min: 2  max: 8  mean: 4.56
-
-Sample 006
-  gno_in  — total: 15729  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15729  min: 2  max: 8  mean: 4.39
-
-Sample 007
-  gno_in  — total: 16621  min: 0  max: 13  mean: 0.51
-  gno_out — total: 16621  min: 2  max: 8  mean: 4.63
-
-Sample 008
-  gno_in  — total: 15903  min: 0  max: 11  mean: 0.49
-  gno_out — total: 15903  min: 2  max: 8  mean: 4.43
-
-Sample 009
-  gno_in  — total: 16211  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16211  min: 2  max: 8  mean: 4.52
-
-Sample 010
-  gno_in  — total: 16195  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16195  min: 2  max: 8  mean: 4.52
-
-Sample 011
-  gno_in  — total: 16564  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16564  min: 2  max: 8  mean: 4.62
-
-Sample 012
-  gno_in  — total: 16615  min: 0  max: 19  mean: 0.51
-  gno_out — total: 16615  min: 2  max: 8  mean: 4.63
-
-Sample 013
-  gno_in  — total: 15999  min: 0  max: 11  mean: 0.49
-  gno_out — total: 15999  min: 2  max: 8  mean: 4.46
-
-Sample 014
-  gno_in  — total: 16057  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16057  min: 2  max: 8  mean: 4.48
-
-Sample 015
-  gno_in  — total: 15877  min: 0  max: 17  mean: 0.48
-  gno_out — total: 15877  min: 2  max: 8  mean: 4.43
-
-Sample 016
-  gno_in  — total: 16377  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16377  min: 2  max: 8  mean: 4.57
-
-Sample 017
-  gno_in  — total: 15727  min: 0  max: 20  mean: 0.48
-  gno_out — total: 15727  min: 2  max: 8  mean: 4.39
-
-Sample 018
-  gno_in  — total: 15608  min: 0  max: 9  mean: 0.48
-  gno_out — total: 15608  min: 2  max: 8  mean: 4.35
-
-Sample 019
-  gno_in  — total: 16041  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16041  min: 2  max: 8  mean: 4.47
-
-Sample 020
-  gno_in  — total: 16692  min: 0  max: 11  mean: 0.51
-  gno_out — total: 16692  min: 2  max: 8  mean: 4.65
-
-Sample 021
-  gno_in  — total: 15652  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15652  min: 2  max: 8  mean: 4.36
-
-Sample 022
-  gno_in  — total: 16568  min: 0  max: 14  mean: 0.51
-  gno_out — total: 16568  min: 2  max: 8  mean: 4.62
-
-Sample 023
-  gno_in  — total: 16178  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16178  min: 2  max: 8  mean: 4.51
-
-Sample 024
-  gno_in  — total: 16357  min: 0  max: 10  mean: 0.50
-  gno_out — total: 16357  min: 2  max: 8  mean: 4.56
-
-Sample 025
-  gno_in  — total: 15735  min: 0  max: 14  mean: 0.48
-  gno_out — total: 15735  min: 2  max: 8  mean: 4.39
-
-Sample 026
-  gno_in  — total: 16266  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16266  min: 2  max: 8  mean: 4.54
-
-Sample 027
-  gno_in  — total: 15942  min: 0  max: 14  mean: 0.49
-  gno_out — total: 15942  min: 2  max: 8  mean: 4.45
-
-Sample 028
-  gno_in  — total: 15944  min: 0  max: 13  mean: 0.49
-  gno_out — total: 15944  min: 2  max: 8  mean: 4.45
-
-Sample 029
-  gno_in  — total: 16367  min: 0  max: 14  mean: 0.50
-  gno_out — total: 16367  min: 2  max: 8  mean: 4.56
-
-Sample 030
-  gno_in  — total: 16037  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16037  min: 2  max: 8  mean: 4.47
-
-Sample 031
-  gno_in  — total: 16297  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16297  min: 2  max: 8  mean: 4.54
-
-Sample 032
-  gno_in  — total: 16349  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16349  min: 2  max: 8  mean: 4.56
-
-Sample 033
-  gno_in  — total: 16492  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16492  min: 2  max: 8  mean: 4.60
-
-Sample 034
-  gno_in  — total: 15951  min: 0  max: 13  mean: 0.49
-  gno_out — total: 15951  min: 2  max: 8  mean: 4.45
-
-Sample 035
-  gno_in  — total: 15567  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15567  min: 2  max: 8  mean: 4.34
-
-Sample 036
-  gno_in  — total: 16320  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16320  min: 2  max: 8  mean: 4.55
-
-Sample 037
-  gno_in  — total: 16505  min: 0  max: 10  mean: 0.50
-  gno_out — total: 16505  min: 2  max: 8  mean: 4.60
-
-Sample 038
-  gno_in  — total: 16290  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16290  min: 2  max: 8  mean: 4.54
-
-Sample 039
-  gno_in  — total: 15812  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15812  min: 2  max: 8  mean: 4.41
-
-Sample 040
-  gno_in  — total: 15819  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15819  min: 2  max: 8  mean: 4.41
-
-Sample 041
-  gno_in  — total: 16040  min: 0  max: 20  mean: 0.49
-  gno_out — total: 16040  min: 2  max: 8  mean: 4.47
-
-Sample 042
-  gno_in  — total: 15663  min: 0  max: 14  mean: 0.48
-  gno_out — total: 15663  min: 2  max: 8  mean: 4.37
-
-Sample 043
-  gno_in  — total: 16388  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16388  min: 2  max: 8  mean: 4.57
-
-Sample 044
-  gno_in  — total: 16476  min: 0  max: 14  mean: 0.50
-  gno_out — total: 16476  min: 2  max: 8  mean: 4.59
-
-Sample 045
-  gno_in  — total: 16727  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16727  min: 2  max: 8  mean: 4.66
-
-Sample 046
-  gno_in  — total: 16275  min: 0  max: 17  mean: 0.50
-  gno_out — total: 16275  min: 2  max: 8  mean: 4.54
-
-Sample 047
-  gno_in  — total: 16276  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16276  min: 2  max: 8  mean: 4.54
-
-Sample 048
-  gno_in  — total: 15742  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15742  min: 2  max: 8  mean: 4.39
-
-Sample 049
-  gno_in  — total: 15868  min: 0  max: 11  mean: 0.48
-  gno_out — total: 15868  min: 2  max: 8  mean: 4.42
-
-Sample 050
-  gno_in  — total: 16128  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16128  min: 2  max: 8  mean: 4.50
-
-Sample 051
-  gno_in  — total: 16217  min: 0  max: 15  mean: 0.49
-  gno_out — total: 16217  min: 2  max: 8  mean: 4.52
-
-Sample 052
-  gno_in  — total: 15916  min: 0  max: 22  mean: 0.49
-  gno_out — total: 15916  min: 2  max: 8  mean: 4.44
-
-Sample 053
-  gno_in  — total: 16037  min: 0  max: 19  mean: 0.49
-  gno_out — total: 16037  min: 2  max: 8  mean: 4.47
-
-Sample 054
-  gno_in  — total: 15288  min: 0  max: 17  mean: 0.47
-  gno_out — total: 15288  min: 2  max: 8  mean: 4.26
-
-Sample 055
-  gno_in  — total: 16257  min: 0  max: 14  mean: 0.50
-  gno_out — total: 16257  min: 2  max: 8  mean: 4.53
-
-Sample 056
-  gno_in  — total: 16597  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16597  min: 2  max: 8  mean: 4.63
-
-Sample 057
-  gno_in  — total: 16322  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16322  min: 2  max: 8  mean: 4.55
-
-Sample 058
-  gno_in  — total: 16182  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16182  min: 2  max: 8  mean: 4.51
-
-Sample 059
-  gno_in  — total: 16150  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16150  min: 2  max: 8  mean: 4.50
-
-Sample 060
-  gno_in  — total: 16184  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16184  min: 2  max: 8  mean: 4.51
-
-Sample 061
-  gno_in  — total: 15763  min: 0  max: 16  mean: 0.48
-  gno_out — total: 15763  min: 2  max: 8  mean: 4.40
-
-Sample 062
-  gno_in  — total: 16405  min: 0  max: 11  mean: 0.50
+  gno_in  — total: 16405  min: 0  max: 20  mean: 0.50
   gno_out — total: 16405  min: 2  max: 8  mean: 4.57
 
-Sample 063
-  gno_in  — total: 16488  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16488  min: 2  max: 8  mean: 4.60
+Sample 006
+  gno_in  — total: 15777  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15777  min: 2  max: 8  mean: 4.40
 
-Sample 064
-  gno_in  — total: 15972  min: 0  max: 10  mean: 0.49
-  gno_out — total: 15972  min: 2  max: 8  mean: 4.45
+Sample 007
+  gno_in  — total: 16647  min: 0  max: 13  mean: 0.51
+  gno_out — total: 16647  min: 2  max: 8  mean: 4.64
 
-Sample 065
-  gno_in  — total: 16299  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16299  min: 2  max: 8  mean: 4.55
+Sample 008
+  gno_in  — total: 15959  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15959  min: 2  max: 8  mean: 4.45
 
-Sample 066
-  gno_in  — total: 16085  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16085  min: 2  max: 8  mean: 4.49
+Sample 009
+  gno_in  — total: 16097  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16097  min: 2  max: 8  mean: 4.49
 
-Sample 067
-  gno_in  — total: 16310  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16310  min: 2  max: 8  mean: 4.55
+Sample 010
+  gno_in  — total: 16117  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16117  min: 2  max: 8  mean: 4.49
 
-Sample 068
-  gno_in  — total: 16133  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16133  min: 2  max: 8  mean: 4.50
+Sample 011
+  gno_in  — total: 16674  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16674  min: 2  max: 8  mean: 4.65
 
-Sample 069
-  gno_in  — total: 16224  min: 0  max: 18  mean: 0.50
-  gno_out — total: 16224  min: 2  max: 8  mean: 4.52
+Sample 012
+  gno_in  — total: 16625  min: 0  max: 18  mean: 0.51
+  gno_out — total: 16625  min: 2  max: 8  mean: 4.64
 
-Sample 070
+Sample 013
+  gno_in  — total: 15951  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15951  min: 2  max: 8  mean: 4.45
+
+Sample 014
+  gno_in  — total: 16228  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16228  min: 2  max: 8  mean: 4.53
+
+Sample 015
+  gno_in  — total: 15813  min: 0  max: 17  mean: 0.48
+  gno_out — total: 15813  min: 2  max: 8  mean: 4.41
+
+Sample 016
   gno_in  — total: 16338  min: 0  max: 12  mean: 0.50
   gno_out — total: 16338  min: 2  max: 8  mean: 4.56
 
-Sample 071
-  gno_in  — total: 15918  min: 0  max: 11  mean: 0.49
-  gno_out — total: 15918  min: 2  max: 8  mean: 4.44
+Sample 017
+  gno_in  — total: 15602  min: 0  max: 19  mean: 0.48
+  gno_out — total: 15602  min: 2  max: 8  mean: 4.35
 
-Sample 072
-  gno_in  — total: 16200  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16200  min: 2  max: 8  mean: 4.52
+Sample 018
+  gno_in  — total: 15578  min: 0  max: 10  mean: 0.48
+  gno_out — total: 15578  min: 2  max: 8  mean: 4.34
 
-Sample 073
-  gno_in  — total: 16622  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16622  min: 2  max: 8  mean: 4.64
+Sample 019
+  gno_in  — total: 16160  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16160  min: 2  max: 8  mean: 4.51
 
-Sample 074
-  gno_in  — total: 16672  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16672  min: 2  max: 8  mean: 4.65
+Sample 020
+  gno_in  — total: 16799  min: 0  max: 11  mean: 0.51
+  gno_out — total: 16799  min: 2  max: 8  mean: 4.68
 
-Sample 075
-  gno_in  — total: 15921  min: 0  max: 10  mean: 0.49
-  gno_out — total: 15921  min: 2  max: 8  mean: 4.44
+Sample 021
+  gno_in  — total: 15493  min: 0  max: 13  mean: 0.47
+  gno_out — total: 15493  min: 2  max: 8  mean: 4.32
 
-Sample 076
-  gno_in  — total: 16231  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16231  min: 2  max: 8  mean: 4.53
+Sample 022
+  gno_in  — total: 16626  min: 0  max: 14  mean: 0.51
+  gno_out — total: 16626  min: 2  max: 8  mean: 4.64
 
-Sample 077
-  gno_in  — total: 16297  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16297  min: 2  max: 8  mean: 4.54
+Sample 023
+  gno_in  — total: 16363  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16363  min: 2  max: 8  mean: 4.56
 
-Sample 078
-  gno_in  — total: 16134  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16134  min: 2  max: 8  mean: 4.50
+Sample 024
+  gno_in  — total: 16431  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16431  min: 2  max: 8  mean: 4.58
 
-Sample 079
-  gno_in  — total: 15998  min: 0  max: 11  mean: 0.49
-  gno_out — total: 15998  min: 2  max: 8  mean: 4.46
+Sample 025
+  gno_in  — total: 15766  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15766  min: 2  max: 8  mean: 4.40
 
-Sample 080
-  gno_in  — total: 15511  min: 0  max: 20  mean: 0.47
-  gno_out — total: 15511  min: 2  max: 8  mean: 4.33
+Sample 026
+  gno_in  — total: 16288  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16288  min: 2  max: 8  mean: 4.54
 
-Sample 081
-  gno_in  — total: 15958  min: 0  max: 16  mean: 0.49
-  gno_out — total: 15958  min: 2  max: 8  mean: 4.45
+Sample 027
+  gno_in  — total: 15962  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15962  min: 2  max: 8  mean: 4.45
 
-Sample 082
-  gno_in  — total: 16178  min: 0  max: 10  mean: 0.49
-  gno_out — total: 16178  min: 2  max: 8  mean: 4.51
+Sample 028
+  gno_in  — total: 16020  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16020  min: 2  max: 8  mean: 4.47
 
-Sample 083
-  gno_in  — total: 16107  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16107  min: 2  max: 8  mean: 4.49
+Sample 029
+  gno_in  — total: 16453  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16453  min: 2  max: 8  mean: 4.59
 
-Sample 084
-  gno_in  — total: 16447  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16447  min: 2  max: 8  mean: 4.59
+Sample 030
+  gno_in  — total: 16171  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16171  min: 2  max: 8  mean: 4.51
 
-Sample 085
-  gno_in  — total: 16688  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16688  min: 2  max: 8  mean: 4.65
+Sample 031
+  gno_in  — total: 16316  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16316  min: 2  max: 8  mean: 4.55
 
-Sample 086
-  gno_in  — total: 15990  min: 0  max: 10  mean: 0.49
-  gno_out — total: 15990  min: 2  max: 8  mean: 4.46
+Sample 032
+  gno_in  — total: 16445  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16445  min: 2  max: 8  mean: 4.59
 
-Sample 087
-  gno_in  — total: 16265  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16265  min: 2  max: 8  mean: 4.54
+Sample 033
+  gno_in  — total: 16461  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16461  min: 2  max: 8  mean: 4.59
 
-Sample 088
-  gno_in  — total: 16417  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16417  min: 2  max: 8  mean: 4.58
+Sample 034
+  gno_in  — total: 16125  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16125  min: 2  max: 8  mean: 4.50
 
-Sample 089
-  gno_in  — total: 16142  min: 0  max: 10  mean: 0.49
-  gno_out — total: 16142  min: 2  max: 8  mean: 4.50
+Sample 035
+  gno_in  — total: 15562  min: 0  max: 12  mean: 0.47
+  gno_out — total: 15562  min: 2  max: 8  mean: 4.34
 
-Sample 090
-  gno_in  — total: 15978  min: 0  max: 15  mean: 0.49
-  gno_out — total: 15978  min: 2  max: 8  mean: 4.46
+Sample 036
+  gno_in  — total: 16371  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16371  min: 2  max: 8  mean: 4.57
 
-Sample 091
-  gno_in  — total: 15869  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15869  min: 2  max: 8  mean: 4.43
+Sample 037
+  gno_in  — total: 16480  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16480  min: 2  max: 8  mean: 4.60
 
-Sample 092
-  gno_in  — total: 16117  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16117  min: 2  max: 8  mean: 4.49
+Sample 038
+  gno_in  — total: 16340  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16340  min: 2  max: 8  mean: 4.56
 
-Sample 093
-  gno_in  — total: 16292  min: 0  max: 16  mean: 0.50
-  gno_out — total: 16292  min: 2  max: 8  mean: 4.54
+Sample 039
+  gno_in  — total: 15787  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15787  min: 2  max: 8  mean: 4.40
 
-Sample 094
-  gno_in  — total: 15932  min: 0  max: 13  mean: 0.49
-  gno_out — total: 15932  min: 2  max: 8  mean: 4.44
+Sample 040
+  gno_in  — total: 15730  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15730  min: 2  max: 8  mean: 4.39
 
-Sample 095
-  gno_in  — total: 16565  min: 0  max: 10  mean: 0.51
-  gno_out — total: 16565  min: 2  max: 8  mean: 4.62
-
-Sample 096
-  gno_in  — total: 16197  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16197  min: 2  max: 8  mean: 4.52
-
-Sample 097
-  gno_in  — total: 16415  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16415  min: 2  max: 8  mean: 4.58
-
-Sample 098
-  gno_in  — total: 15875  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15875  min: 2  max: 8  mean: 4.43
-
-Sample 099
-  gno_in  — total: 15884  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15884  min: 2  max: 8  mean: 4.43
-
-Sample 100
-  gno_in  — total: 16418  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16418  min: 2  max: 8  mean: 4.58
-
-Sample 101
-  gno_in  — total: 15963  min: 0  max: 14  mean: 0.49
-  gno_out — total: 15963  min: 2  max: 8  mean: 4.45
-
-Sample 102
-  gno_in  — total: 16080  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16080  min: 2  max: 8  mean: 4.48
-
-Sample 103
-  gno_in  — total: 16320  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16320  min: 2  max: 8  mean: 4.55
-
-Sample 104
-  gno_in  — total: 16216  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16216  min: 2  max: 8  mean: 4.52
-
-Sample 105
-  gno_in  — total: 16022  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16022  min: 2  max: 8  mean: 4.47
-
-Sample 106
-  gno_in  — total: 16449  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16449  min: 2  max: 8  mean: 4.59
-
-Sample 107
-  gno_in  — total: 15528  min: 0  max: 22  mean: 0.47
-  gno_out — total: 15528  min: 2  max: 8  mean: 4.33
-
-Sample 108
-  gno_in  — total: 15958  min: 0  max: 13  mean: 0.49
-  gno_out — total: 15958  min: 2  max: 8  mean: 4.45
-
-Sample 109
-  gno_in  — total: 16757  min: 0  max: 13  mean: 0.51
-  gno_out — total: 16757  min: 2  max: 8  mean: 4.67
-
-Sample 110
-  gno_in  — total: 16084  min: 0  max: 10  mean: 0.49
-  gno_out — total: 16084  min: 2  max: 8  mean: 4.49
-
-Sample 111
-  gno_in  — total: 16289  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16289  min: 2  max: 8  mean: 4.54
-
-Sample 112
-  gno_in  — total: 16311  min: 0  max: 16  mean: 0.50
-  gno_out — total: 16311  min: 2  max: 8  mean: 4.55
-
-Sample 113
-  gno_in  — total: 16590  min: 0  max: 11  mean: 0.51
-  gno_out — total: 16590  min: 2  max: 8  mean: 4.63
-
-Sample 114
-  gno_in  — total: 16126  min: 0  max: 10  mean: 0.49
-  gno_out — total: 16126  min: 2  max: 8  mean: 4.50
-
-Sample 115
-  gno_in  — total: 16090  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16090  min: 2  max: 8  mean: 4.49
-
-Sample 116
-  gno_in  — total: 16164  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16164  min: 2  max: 8  mean: 4.51
-
-Sample 117
-  gno_in  — total: 16248  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16248  min: 2  max: 8  mean: 4.53
-
-Sample 118
-  gno_in  — total: 16299  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16299  min: 2  max: 8  mean: 4.55
-
-Sample 119
-  gno_in  — total: 16585  min: 0  max: 14  mean: 0.51
-  gno_out — total: 16585  min: 2  max: 8  mean: 4.62
-
-Sample 120
-  gno_in  — total: 16367  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16367  min: 2  max: 8  mean: 4.56
-
-Sample 121
-  gno_in  — total: 16545  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16545  min: 2  max: 8  mean: 4.61
-
-Sample 122
-  gno_in  — total: 15942  min: 0  max: 17  mean: 0.49
-  gno_out — total: 15942  min: 2  max: 8  mean: 4.45
-
-Sample 123
-  gno_in  — total: 16166  min: 0  max: 17  mean: 0.49
-  gno_out — total: 16166  min: 2  max: 8  mean: 4.51
-
-Sample 124
-  gno_in  — total: 16845  min: 0  max: 8  mean: 0.51
-  gno_out — total: 16845  min: 2  max: 8  mean: 4.70
-
-Sample 125
-  gno_in  — total: 15950  min: 0  max: 12  mean: 0.49
-  gno_out — total: 15950  min: 2  max: 8  mean: 4.45
-
-Sample 126
-  gno_in  — total: 16433  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16433  min: 2  max: 8  mean: 4.58
-
-Sample 127
-  gno_in  — total: 15968  min: 0  max: 13  mean: 0.49
-  gno_out — total: 15968  min: 2  max: 8  mean: 4.45
-
-Sample 128
-  gno_in  — total: 15967  min: 0  max: 13  mean: 0.49
+Sample 041
+  gno_in  — total: 15967  min: 0  max: 20  mean: 0.49
   gno_out — total: 15967  min: 2  max: 8  mean: 4.45
 
-Sample 129
-  gno_in  — total: 16395  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16395  min: 2  max: 8  mean: 4.57
-
-Sample 130
-  gno_in  — total: 16246  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16246  min: 2  max: 8  mean: 4.53
-
-Sample 131
-  gno_in  — total: 16047  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16047  min: 2  max: 8  mean: 4.47
-
-Sample 132
-  gno_in  — total: 16329  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16329  min: 2  max: 8  mean: 4.55
-
-Sample 133
-  gno_in  — total: 16318  min: 0  max: 16  mean: 0.50
-  gno_out — total: 16318  min: 2  max: 8  mean: 4.55
-
-Sample 134
-  gno_in  — total: 16256  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16256  min: 2  max: 8  mean: 4.53
-
-Sample 135
-  gno_in  — total: 16656  min: 0  max: 11  mean: 0.51
-  gno_out — total: 16656  min: 2  max: 8  mean: 4.64
-
-Sample 136
-  gno_in  — total: 15844  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15844  min: 2  max: 8  mean: 4.42
-
-Sample 137
-  gno_in  — total: 16303  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16303  min: 2  max: 8  mean: 4.55
-
-Sample 138
-  gno_in  — total: 16637  min: 0  max: 11  mean: 0.51
-  gno_out — total: 16637  min: 2  max: 8  mean: 4.64
-
-Sample 139
-  gno_in  — total: 16702  min: 0  max: 18  mean: 0.51
-  gno_out — total: 16702  min: 2  max: 8  mean: 4.66
-
-Sample 140
-  gno_in  — total: 15832  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15832  min: 2  max: 8  mean: 4.41
-
-Sample 141
-  gno_in  — total: 15736  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15736  min: 2  max: 8  mean: 4.39
-
-Sample 142
-  gno_in  — total: 16521  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16521  min: 2  max: 8  mean: 4.61
-
-Sample 143
-  gno_in  — total: 16178  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16178  min: 2  max: 8  mean: 4.51
-
-Sample 144
-  gno_in  — total: 15925  min: 0  max: 13  mean: 0.49
-  gno_out — total: 15925  min: 2  max: 8  mean: 4.44
-
-Sample 145
-  gno_in  — total: 16089  min: 0  max: 17  mean: 0.49
-  gno_out — total: 16089  min: 2  max: 8  mean: 4.49
-
-Sample 146
-  gno_in  — total: 16124  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16124  min: 2  max: 8  mean: 4.50
-
-Sample 147
-  gno_in  — total: 16387  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16387  min: 2  max: 8  mean: 4.57
-
-Sample 148
-  gno_in  — total: 15990  min: 0  max: 17  mean: 0.49
-  gno_out — total: 15990  min: 2  max: 8  mean: 4.46
-
-Sample 149
-  gno_in  — total: 16086  min: 0  max: 15  mean: 0.49
-  gno_out — total: 16086  min: 2  max: 8  mean: 4.49
-
-Sample 150
-  gno_in  — total: 15977  min: 0  max: 15  mean: 0.49
-  gno_out — total: 15977  min: 2  max: 8  mean: 4.46
-
-Sample 151
-  gno_in  — total: 15903  min: 0  max: 12  mean: 0.49
-  gno_out — total: 15903  min: 2  max: 8  mean: 4.43
-
-Sample 152
-  gno_in  — total: 16268  min: 0  max: 17  mean: 0.50
-  gno_out — total: 16268  min: 2  max: 8  mean: 4.54
-
-Sample 153
-  gno_in  — total: 15930  min: 0  max: 10  mean: 0.49
-  gno_out — total: 15930  min: 2  max: 8  mean: 4.44
-
-Sample 154
-  gno_in  — total: 15118  min: 0  max: 18  mean: 0.46
-  gno_out — total: 15118  min: 2  max: 8  mean: 4.22
-
-Sample 155
-  gno_in  — total: 16323  min: 0  max: 14  mean: 0.50
-  gno_out — total: 16323  min: 2  max: 8  mean: 4.55
-
-Sample 156
-  gno_in  — total: 16147  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16147  min: 2  max: 8  mean: 4.50
-
-Sample 157
-  gno_in  — total: 16439  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16439  min: 2  max: 8  mean: 4.58
-
-Sample 158
-  gno_in  — total: 16095  min: 0  max: 18  mean: 0.49
-  gno_out — total: 16095  min: 2  max: 8  mean: 4.49
-
-Sample 159
-  gno_in  — total: 15640  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15640  min: 2  max: 8  mean: 4.36
-
-Sample 160
-  gno_in  — total: 16046  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16046  min: 2  max: 8  mean: 4.47
-
-Sample 161
-  gno_in  — total: 16355  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16355  min: 2  max: 8  mean: 4.56
-
-Sample 162
-  gno_in  — total: 16202  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16202  min: 2  max: 8  mean: 4.52
-
-Sample 163
-  gno_in  — total: 15563  min: 0  max: 16  mean: 0.47
-  gno_out — total: 15563  min: 2  max: 8  mean: 4.34
-
-Sample 164
-  gno_in  — total: 16328  min: 0  max: 14  mean: 0.50
-  gno_out — total: 16328  min: 2  max: 8  mean: 4.55
-
-Sample 165
-  gno_in  — total: 16405  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16405  min: 2  max: 8  mean: 4.57
-
-Sample 166
-  gno_in  — total: 16176  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16176  min: 2  max: 8  mean: 4.51
-
-Sample 167
-  gno_in  — total: 16215  min: 0  max: 15  mean: 0.49
-  gno_out — total: 16215  min: 2  max: 8  mean: 4.52
-
-Sample 168
-  gno_in  — total: 16352  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16352  min: 2  max: 8  mean: 4.56
-
-Sample 169
-  gno_in  — total: 16601  min: 0  max: 12  mean: 0.51
-  gno_out — total: 16601  min: 2  max: 8  mean: 4.63
-
-Sample 170
-  gno_in  — total: 16104  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16104  min: 2  max: 8  mean: 4.49
-
-Sample 171
-  gno_in  — total: 16019  min: 0  max: 17  mean: 0.49
-  gno_out — total: 16019  min: 2  max: 8  mean: 4.47
-
-Sample 172
-  gno_in  — total: 16394  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16394  min: 2  max: 8  mean: 4.57
-
-Sample 173
-  gno_in  — total: 16372  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16372  min: 2  max: 8  mean: 4.57
-
-Sample 174
-  gno_in  — total: 15870  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15870  min: 2  max: 8  mean: 4.43
-
-Sample 175
-  gno_in  — total: 16141  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16141  min: 2  max: 8  mean: 4.50
-
-Sample 176
-  gno_in  — total: 15918  min: 0  max: 14  mean: 0.49
-  gno_out — total: 15918  min: 2  max: 8  mean: 4.44
-
-Sample 177
-  gno_in  — total: 15887  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15887  min: 2  max: 8  mean: 4.43
-
-Sample 178
-  gno_in  — total: 15852  min: 0  max: 10  mean: 0.48
-  gno_out — total: 15852  min: 2  max: 8  mean: 4.42
-
-Sample 179
-  gno_in  — total: 15927  min: 0  max: 16  mean: 0.49
-  gno_out — total: 15927  min: 2  max: 8  mean: 4.44
-
-Sample 180
-  gno_in  — total: 16330  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16330  min: 2  max: 8  mean: 4.55
-
-Sample 181
-  gno_in  — total: 16096  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16096  min: 2  max: 8  mean: 4.49
-
-Sample 182
-  gno_in  — total: 16185  min: 0  max: 17  mean: 0.49
-  gno_out — total: 16185  min: 2  max: 8  mean: 4.51
-
-Sample 183
-  gno_in  — total: 15523  min: 0  max: 18  mean: 0.47
-  gno_out — total: 15523  min: 2  max: 8  mean: 4.33
-
-Sample 184
-  gno_in  — total: 16670  min: 0  max: 11  mean: 0.51
-  gno_out — total: 16670  min: 2  max: 8  mean: 4.65
-
-Sample 185
-  gno_in  — total: 16507  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16507  min: 2  max: 8  mean: 4.60
-
-Sample 186
-  gno_in  — total: 16556  min: 0  max: 10  mean: 0.51
-  gno_out — total: 16556  min: 2  max: 8  mean: 4.62
-
-Sample 187
-  gno_in  — total: 16561  min: 0  max: 10  mean: 0.51
-  gno_out — total: 16561  min: 2  max: 8  mean: 4.62
-
-Sample 188
-  gno_in  — total: 15764  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15764  min: 2  max: 8  mean: 4.40
-
-Sample 189
-  gno_in  — total: 15608  min: 0  max: 10  mean: 0.48
-  gno_out — total: 15608  min: 2  max: 8  mean: 4.35
-
-Sample 190
-  gno_in  — total: 16166  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16166  min: 2  max: 8  mean: 4.51
-
-Sample 191
-  gno_in  — total: 15795  min: 0  max: 11  mean: 0.48
-  gno_out — total: 15795  min: 2  max: 8  mean: 4.40
-
-Sample 192
-  gno_in  — total: 16302  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16302  min: 2  max: 8  mean: 4.55
-
-Sample 193
-  gno_in  — total: 16180  min: 0  max: 18  mean: 0.49
-  gno_out — total: 16180  min: 2  max: 8  mean: 4.51
-
-Sample 194
+Sample 042
+  gno_in  — total: 15566  min: 0  max: 15  mean: 0.48
+  gno_out — total: 15566  min: 2  max: 8  mean: 4.34
+
+Sample 043
+  gno_in  — total: 16307  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16307  min: 2  max: 8  mean: 4.55
+
+Sample 044
   gno_in  — total: 16548  min: 0  max: 14  mean: 0.51
   gno_out — total: 16548  min: 2  max: 8  mean: 4.61
 
-Sample 195
-  gno_in  — total: 15800  min: 0  max: 19  mean: 0.48
-  gno_out — total: 15800  min: 2  max: 8  mean: 4.41
+Sample 045
+  gno_in  — total: 16672  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16672  min: 2  max: 8  mean: 4.65
 
-Sample 196
-  gno_in  — total: 15531  min: 0  max: 15  mean: 0.47
-  gno_out — total: 15531  min: 2  max: 8  mean: 4.33
+Sample 046
+  gno_in  — total: 16186  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16186  min: 2  max: 8  mean: 4.51
 
-Sample 197
-  gno_in  — total: 16483  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16483  min: 2  max: 8  mean: 4.60
+Sample 047
+  gno_in  — total: 16368  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16368  min: 2  max: 8  mean: 4.56
 
-Sample 198
-  gno_in  — total: 16184  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16184  min: 2  max: 8  mean: 4.51
+Sample 048
+  gno_in  — total: 15767  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15767  min: 2  max: 8  mean: 4.40
 
-Sample 199
-  gno_in  — total: 16068  min: 0  max: 14  mean: 0.49
-  gno_out — total: 16068  min: 2  max: 8  mean: 4.48
+Sample 049
+  gno_in  — total: 15824  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15824  min: 2  max: 8  mean: 4.41
 
-Sample 200
-  gno_in  — total: 16296  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16296  min: 2  max: 8  mean: 4.54
+Sample 050
+  gno_in  — total: 16137  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16137  min: 2  max: 8  mean: 4.50
 
-Sample 201
-  gno_in  — total: 16122  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16122  min: 2  max: 8  mean: 4.50
+Sample 051
+  gno_in  — total: 16236  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16236  min: 2  max: 8  mean: 4.53
 
-Sample 202
-  gno_in  — total: 16331  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16331  min: 2  max: 8  mean: 4.55
+Sample 052
+  gno_in  — total: 16030  min: 0  max: 21  mean: 0.49
+  gno_out — total: 16030  min: 2  max: 8  mean: 4.47
 
-Sample 203
-  gno_in  — total: 15887  min: 0  max: 12  mean: 0.48
-  gno_out — total: 15887  min: 2  max: 8  mean: 4.43
+Sample 053
+  gno_in  — total: 15985  min: 0  max: 19  mean: 0.49
+  gno_out — total: 15985  min: 2  max: 8  mean: 4.46
 
-Sample 204
-  gno_in  — total: 16392  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16392  min: 2  max: 8  mean: 4.57
+Sample 054
+  gno_in  — total: 15293  min: 0  max: 18  mean: 0.47
+  gno_out — total: 15293  min: 2  max: 8  mean: 4.26
 
-Sample 205
-  gno_in  — total: 15947  min: 0  max: 18  mean: 0.49
+Sample 055
+  gno_in  — total: 16260  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16260  min: 2  max: 8  mean: 4.53
+
+Sample 056
+  gno_in  — total: 16556  min: 0  max: 10  mean: 0.51
+  gno_out — total: 16556  min: 2  max: 8  mean: 4.62
+
+Sample 057
+  gno_in  — total: 16311  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16311  min: 2  max: 8  mean: 4.55
+
+Sample 058
+  gno_in  — total: 16175  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16175  min: 2  max: 8  mean: 4.51
+
+Sample 059
+  gno_in  — total: 16154  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16154  min: 2  max: 8  mean: 4.50
+
+Sample 060
+  gno_in  — total: 16064  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16064  min: 2  max: 8  mean: 4.48
+
+Sample 061
+  gno_in  — total: 15947  min: 0  max: 16  mean: 0.49
   gno_out — total: 15947  min: 2  max: 8  mean: 4.45
 
-Sample 206
-  gno_in  — total: 16567  min: 0  max: 10  mean: 0.51
-  gno_out — total: 16567  min: 2  max: 8  mean: 4.62
+Sample 062
+  gno_in  — total: 16436  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16436  min: 2  max: 8  mean: 4.58
 
-Sample 207
-  gno_in  — total: 16077  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16077  min: 2  max: 8  mean: 4.48
+Sample 063
+  gno_in  — total: 16509  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16509  min: 2  max: 8  mean: 4.60
 
-Sample 208
-  gno_in  — total: 15545  min: 0  max: 12  mean: 0.47
-  gno_out — total: 15545  min: 2  max: 8  mean: 4.33
+Sample 064
+  gno_in  — total: 16047  min: 0  max: 10  mean: 0.49
+  gno_out — total: 16047  min: 2  max: 8  mean: 4.47
 
-Sample 209
-  gno_in  — total: 16577  min: 0  max: 18  mean: 0.51
-  gno_out — total: 16577  min: 2  max: 8  mean: 4.62
+Sample 065
+  gno_in  — total: 16356  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16356  min: 2  max: 8  mean: 4.56
 
-Sample 210
-  gno_in  — total: 15472  min: 0  max: 19  mean: 0.47
-  gno_out — total: 15472  min: 2  max: 8  mean: 4.31
+Sample 066
+  gno_in  — total: 16131  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16131  min: 2  max: 8  mean: 4.50
 
-Sample 211
-  gno_in  — total: 16281  min: 0  max: 9  mean: 0.50
-  gno_out — total: 16281  min: 2  max: 8  mean: 4.54
+Sample 067
+  gno_in  — total: 16297  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16297  min: 2  max: 8  mean: 4.54
 
-Sample 212
-  gno_in  — total: 16255  min: 0  max: 14  mean: 0.50
+Sample 068
+  gno_in  — total: 16081  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16081  min: 2  max: 8  mean: 4.48
+
+Sample 069
+  gno_in  — total: 16328  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16328  min: 2  max: 8  mean: 4.55
+
+Sample 070
+  gno_in  — total: 16234  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16234  min: 2  max: 8  mean: 4.53
+
+Sample 071
+  gno_in  — total: 15926  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15926  min: 2  max: 8  mean: 4.44
+
+Sample 072
+  gno_in  — total: 16261  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16261  min: 2  max: 8  mean: 4.53
+
+Sample 073
+  gno_in  — total: 16610  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16610  min: 2  max: 8  mean: 4.63
+
+Sample 074
+  gno_in  — total: 16621  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16621  min: 2  max: 8  mean: 4.63
+
+Sample 075
+  gno_in  — total: 15928  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15928  min: 2  max: 8  mean: 4.44
+
+Sample 076
+  gno_in  — total: 16181  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16181  min: 2  max: 8  mean: 4.51
+
+Sample 077
+  gno_in  — total: 16336  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16336  min: 2  max: 8  mean: 4.56
+
+Sample 078
+  gno_in  — total: 16185  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16185  min: 2  max: 8  mean: 4.51
+
+Sample 079
+  gno_in  — total: 15969  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15969  min: 2  max: 8  mean: 4.45
+
+Sample 080
+  gno_in  — total: 15383  min: 0  max: 20  mean: 0.47
+  gno_out — total: 15383  min: 2  max: 8  mean: 4.29
+
+Sample 081
+  gno_in  — total: 15982  min: 0  max: 16  mean: 0.49
+  gno_out — total: 15982  min: 2  max: 8  mean: 4.46
+
+Sample 082
+  gno_in  — total: 16139  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16139  min: 2  max: 8  mean: 4.50
+
+Sample 083
+  gno_in  — total: 16162  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16162  min: 2  max: 8  mean: 4.51
+
+Sample 084
+  gno_in  — total: 16404  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16404  min: 2  max: 8  mean: 4.57
+
+Sample 085
+  gno_in  — total: 16631  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16631  min: 2  max: 8  mean: 4.64
+
+Sample 086
+  gno_in  — total: 15989  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15989  min: 2  max: 8  mean: 4.46
+
+Sample 087
+  gno_in  — total: 16280  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16280  min: 2  max: 8  mean: 4.54
+
+Sample 088
+  gno_in  — total: 16449  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16449  min: 2  max: 8  mean: 4.59
+
+Sample 089
+  gno_in  — total: 16154  min: 0  max: 9  mean: 0.49
+  gno_out — total: 16154  min: 2  max: 8  mean: 4.50
+
+Sample 090
+  gno_in  — total: 15988  min: 0  max: 16  mean: 0.49
+  gno_out — total: 15988  min: 2  max: 8  mean: 4.46
+
+Sample 091
+  gno_in  — total: 15943  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15943  min: 2  max: 8  mean: 4.45
+
+Sample 092
+  gno_in  — total: 16080  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16080  min: 2  max: 8  mean: 4.48
+
+Sample 093
+  gno_in  — total: 16315  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16315  min: 2  max: 8  mean: 4.55
+
+Sample 094
+  gno_in  — total: 15886  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15886  min: 2  max: 8  mean: 4.43
+
+Sample 095
+  gno_in  — total: 16549  min: 0  max: 10  mean: 0.51
+  gno_out — total: 16549  min: 2  max: 8  mean: 4.61
+
+Sample 096
+  gno_in  — total: 16327  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16327  min: 2  max: 8  mean: 4.55
+
+Sample 097
+  gno_in  — total: 16356  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16356  min: 2  max: 8  mean: 4.56
+
+Sample 098
+  gno_in  — total: 15877  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15877  min: 2  max: 8  mean: 4.43
+
+Sample 099
+  gno_in  — total: 16002  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16002  min: 2  max: 8  mean: 4.46
+
+Sample 100
+  gno_in  — total: 16308  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16308  min: 2  max: 8  mean: 4.55
+
+Sample 101
+  gno_in  — total: 16149  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16149  min: 2  max: 8  mean: 4.50
+
+Sample 102
+  gno_in  — total: 16122  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16122  min: 2  max: 8  mean: 4.50
+
+Sample 103
+  gno_in  — total: 16519  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16519  min: 2  max: 8  mean: 4.61
+
+Sample 104
+  gno_in  — total: 16194  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16194  min: 2  max: 8  mean: 4.52
+
+Sample 105
+  gno_in  — total: 16020  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16020  min: 2  max: 8  mean: 4.47
+
+Sample 106
+  gno_in  — total: 16428  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16428  min: 2  max: 8  mean: 4.58
+
+Sample 107
+  gno_in  — total: 15554  min: 0  max: 22  mean: 0.47
+  gno_out — total: 15554  min: 2  max: 8  mean: 4.34
+
+Sample 108
+  gno_in  — total: 15948  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15948  min: 2  max: 8  mean: 4.45
+
+Sample 109
+  gno_in  — total: 16770  min: 0  max: 14  mean: 0.51
+  gno_out — total: 16770  min: 2  max: 8  mean: 4.68
+
+Sample 110
+  gno_in  — total: 16036  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16036  min: 2  max: 8  mean: 4.47
+
+Sample 111
+  gno_in  — total: 16314  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16314  min: 2  max: 8  mean: 4.55
+
+Sample 112
+  gno_in  — total: 16325  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16325  min: 2  max: 8  mean: 4.55
+
+Sample 113
+  gno_in  — total: 16604  min: 0  max: 10  mean: 0.51
+  gno_out — total: 16604  min: 2  max: 8  mean: 4.63
+
+Sample 114
+  gno_in  — total: 16146  min: 0  max: 10  mean: 0.49
+  gno_out — total: 16146  min: 2  max: 8  mean: 4.50
+
+Sample 115
+  gno_in  — total: 16046  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16046  min: 2  max: 8  mean: 4.47
+
+Sample 116
+  gno_in  — total: 16337  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16337  min: 2  max: 8  mean: 4.56
+
+Sample 117
+  gno_in  — total: 16259  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16259  min: 2  max: 8  mean: 4.53
+
+Sample 118
+  gno_in  — total: 16292  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16292  min: 2  max: 8  mean: 4.54
+
+Sample 119
+  gno_in  — total: 16511  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16511  min: 2  max: 8  mean: 4.60
+
+Sample 120
+  gno_in  — total: 16324  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16324  min: 2  max: 8  mean: 4.55
+
+Sample 121
+  gno_in  — total: 16503  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16503  min: 2  max: 8  mean: 4.60
+
+Sample 122
+  gno_in  — total: 16001  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16001  min: 2  max: 8  mean: 4.46
+
+Sample 123
+  gno_in  — total: 16181  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16181  min: 2  max: 8  mean: 4.51
+
+Sample 124
+  gno_in  — total: 16814  min: 0  max: 8  mean: 0.51
+  gno_out — total: 16814  min: 2  max: 8  mean: 4.69
+
+Sample 125
+  gno_in  — total: 15970  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15970  min: 2  max: 8  mean: 4.45
+
+Sample 126
+  gno_in  — total: 16410  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16410  min: 2  max: 8  mean: 4.58
+
+Sample 127
+  gno_in  — total: 16035  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16035  min: 2  max: 8  mean: 4.47
+
+Sample 128
+  gno_in  — total: 16029  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16029  min: 2  max: 8  mean: 4.47
+
+Sample 129
+  gno_in  — total: 16354  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16354  min: 2  max: 8  mean: 4.56
+
+Sample 130
+  gno_in  — total: 16255  min: 0  max: 12  mean: 0.50
   gno_out — total: 16255  min: 2  max: 8  mean: 4.53
 
-Sample 213
-  gno_in  — total: 16636  min: 0  max: 14  mean: 0.51
-  gno_out — total: 16636  min: 2  max: 8  mean: 4.64
+Sample 131
+  gno_in  — total: 16031  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16031  min: 2  max: 8  mean: 4.47
 
-Sample 214
-  gno_in  — total: 15941  min: 0  max: 14  mean: 0.49
-  gno_out — total: 15941  min: 2  max: 8  mean: 4.45
+Sample 132
+  gno_in  — total: 16363  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16363  min: 2  max: 8  mean: 4.56
 
-Sample 215
-  gno_in  — total: 16632  min: 0  max: 13  mean: 0.51
-  gno_out — total: 16632  min: 2  max: 8  mean: 4.64
+Sample 133
+  gno_in  — total: 16342  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16342  min: 2  max: 8  mean: 4.56
 
-Sample 216
-  gno_in  — total: 16596  min: 0  max: 14  mean: 0.51
-  gno_out — total: 16596  min: 2  max: 8  mean: 4.63
+Sample 134
+  gno_in  — total: 16201  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16201  min: 2  max: 8  mean: 4.52
 
-Sample 217
-  gno_in  — total: 16103  min: 0  max: 11  mean: 0.49
+Sample 135
+  gno_in  — total: 16604  min: 0  max: 11  mean: 0.51
+  gno_out — total: 16604  min: 2  max: 8  mean: 4.63
+
+Sample 136
+  gno_in  — total: 15883  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15883  min: 2  max: 8  mean: 4.43
+
+Sample 137
+  gno_in  — total: 16376  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16376  min: 2  max: 8  mean: 4.57
+
+Sample 138
+  gno_in  — total: 16532  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16532  min: 2  max: 8  mean: 4.61
+
+Sample 139
+  gno_in  — total: 16629  min: 0  max: 19  mean: 0.51
+  gno_out — total: 16629  min: 2  max: 8  mean: 4.64
+
+Sample 140
+  gno_in  — total: 15845  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15845  min: 2  max: 8  mean: 4.42
+
+Sample 141
+  gno_in  — total: 15571  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15571  min: 2  max: 8  mean: 4.34
+
+Sample 142
+  gno_in  — total: 16461  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16461  min: 2  max: 8  mean: 4.59
+
+Sample 143
+  gno_in  — total: 16138  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16138  min: 2  max: 8  mean: 4.50
+
+Sample 144
+  gno_in  — total: 15842  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15842  min: 2  max: 8  mean: 4.42
+
+Sample 145
+  gno_in  — total: 16061  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16061  min: 2  max: 8  mean: 4.48
+
+Sample 146
+  gno_in  — total: 16122  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16122  min: 2  max: 8  mean: 4.50
+
+Sample 147
+  gno_in  — total: 16382  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16382  min: 2  max: 8  mean: 4.57
+
+Sample 148
+  gno_in  — total: 15988  min: 0  max: 16  mean: 0.49
+  gno_out — total: 15988  min: 2  max: 8  mean: 4.46
+
+Sample 149
+  gno_in  — total: 16059  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16059  min: 2  max: 8  mean: 4.48
+
+Sample 150
+  gno_in  — total: 16094  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16094  min: 2  max: 8  mean: 4.49
+
+Sample 151
+  gno_in  — total: 15935  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15935  min: 2  max: 8  mean: 4.44
+
+Sample 152
+  gno_in  — total: 16179  min: 0  max: 18  mean: 0.49
+  gno_out — total: 16179  min: 2  max: 8  mean: 4.51
+
+Sample 153
+  gno_in  — total: 15948  min: 0  max: 10  mean: 0.49
+  gno_out — total: 15948  min: 2  max: 8  mean: 4.45
+
+Sample 154
+  gno_in  — total: 15211  min: 0  max: 18  mean: 0.46
+  gno_out — total: 15211  min: 2  max: 8  mean: 4.24
+
+Sample 155
+  gno_in  — total: 16381  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16381  min: 2  max: 8  mean: 4.57
+
+Sample 156
+  gno_in  — total: 16062  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16062  min: 2  max: 8  mean: 4.48
+
+Sample 157
+  gno_in  — total: 16465  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16465  min: 2  max: 8  mean: 4.59
+
+Sample 158
+  gno_in  — total: 16109  min: 0  max: 18  mean: 0.49
+  gno_out — total: 16109  min: 2  max: 8  mean: 4.49
+
+Sample 159
+  gno_in  — total: 15719  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15719  min: 2  max: 8  mean: 4.38
+
+Sample 160
+  gno_in  — total: 16039  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16039  min: 2  max: 8  mean: 4.47
+
+Sample 161
+  gno_in  — total: 16371  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16371  min: 2  max: 8  mean: 4.57
+
+Sample 162
+  gno_in  — total: 16292  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16292  min: 2  max: 8  mean: 4.54
+
+Sample 163
+  gno_in  — total: 15598  min: 0  max: 15  mean: 0.48
+  gno_out — total: 15598  min: 2  max: 8  mean: 4.35
+
+Sample 164
+  gno_in  — total: 16359  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16359  min: 2  max: 8  mean: 4.56
+
+Sample 165
+  gno_in  — total: 16486  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16486  min: 2  max: 8  mean: 4.60
+
+Sample 166
+  gno_in  — total: 16097  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16097  min: 2  max: 8  mean: 4.49
+
+Sample 167
+  gno_in  — total: 16205  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16205  min: 2  max: 8  mean: 4.52
+
+Sample 168
+  gno_in  — total: 16250  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16250  min: 2  max: 8  mean: 4.53
+
+Sample 169
+  gno_in  — total: 16517  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16517  min: 2  max: 8  mean: 4.61
+
+Sample 170
+  gno_in  — total: 16098  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16098  min: 2  max: 8  mean: 4.49
+
+Sample 171
+  gno_in  — total: 16088  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16088  min: 2  max: 8  mean: 4.49
+
+Sample 172
+  gno_in  — total: 16338  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16338  min: 2  max: 8  mean: 4.56
+
+Sample 173
+  gno_in  — total: 16397  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16397  min: 2  max: 8  mean: 4.57
+
+Sample 174
+  gno_in  — total: 15927  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15927  min: 2  max: 8  mean: 4.44
+
+Sample 175
+  gno_in  — total: 16017  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16017  min: 2  max: 8  mean: 4.47
+
+Sample 176
+  gno_in  — total: 15833  min: 0  max: 16  mean: 0.48
+  gno_out — total: 15833  min: 2  max: 8  mean: 4.42
+
+Sample 177
+  gno_in  — total: 15837  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15837  min: 2  max: 8  mean: 4.42
+
+Sample 178
+  gno_in  — total: 15831  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15831  min: 2  max: 8  mean: 4.41
+
+Sample 179
+  gno_in  — total: 15870  min: 0  max: 16  mean: 0.48
+  gno_out — total: 15870  min: 2  max: 8  mean: 4.43
+
+Sample 180
+  gno_in  — total: 16372  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16372  min: 2  max: 8  mean: 4.57
+
+Sample 181
+  gno_in  — total: 16034  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16034  min: 2  max: 8  mean: 4.47
+
+Sample 182
+  gno_in  — total: 16313  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16313  min: 2  max: 8  mean: 4.55
+
+Sample 183
+  gno_in  — total: 15749  min: 0  max: 19  mean: 0.48
+  gno_out — total: 15749  min: 2  max: 8  mean: 4.39
+
+Sample 184
+  gno_in  — total: 16660  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16660  min: 2  max: 8  mean: 4.65
+
+Sample 185
+  gno_in  — total: 16543  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16543  min: 2  max: 8  mean: 4.61
+
+Sample 186
+  gno_in  — total: 16598  min: 0  max: 10  mean: 0.51
+  gno_out — total: 16598  min: 2  max: 8  mean: 4.63
+
+Sample 187
+  gno_in  — total: 16543  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16543  min: 2  max: 8  mean: 4.61
+
+Sample 188
+  gno_in  — total: 15863  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15863  min: 2  max: 8  mean: 4.42
+
+Sample 189
+  gno_in  — total: 15657  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15657  min: 2  max: 8  mean: 4.37
+
+Sample 190
+  gno_in  — total: 16103  min: 0  max: 14  mean: 0.49
   gno_out — total: 16103  min: 2  max: 8  mean: 4.49
 
+Sample 191
+  gno_in  — total: 15771  min: 0  max: 10  mean: 0.48
+  gno_out — total: 15771  min: 2  max: 8  mean: 4.40
+
+Sample 192
+  gno_in  — total: 16391  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16391  min: 2  max: 8  mean: 4.57
+
+Sample 193
+  gno_in  — total: 16192  min: 0  max: 18  mean: 0.49
+  gno_out — total: 16192  min: 2  max: 8  mean: 4.52
+
+Sample 194
+  gno_in  — total: 16543  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16543  min: 2  max: 8  mean: 4.61
+
+Sample 195
+  gno_in  — total: 15887  min: 0  max: 19  mean: 0.48
+  gno_out — total: 15887  min: 2  max: 8  mean: 4.43
+
+Sample 196
+  gno_in  — total: 15546  min: 0  max: 15  mean: 0.47
+  gno_out — total: 15546  min: 2  max: 8  mean: 4.34
+
+Sample 197
+  gno_in  — total: 16462  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16462  min: 2  max: 8  mean: 4.59
+
+Sample 198
+  gno_in  — total: 16277  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16277  min: 2  max: 8  mean: 4.54
+
+Sample 199
+  gno_in  — total: 16126  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16126  min: 2  max: 8  mean: 4.50
+
+Sample 200
+  gno_in  — total: 16373  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16373  min: 2  max: 8  mean: 4.57
+
+Sample 201
+  gno_in  — total: 16243  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16243  min: 2  max: 8  mean: 4.53
+
+Sample 202
+  gno_in  — total: 16321  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16321  min: 2  max: 8  mean: 4.55
+
+Sample 203
+  gno_in  — total: 16083  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16083  min: 2  max: 8  mean: 4.48
+
+Sample 204
+  gno_in  — total: 16338  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16338  min: 2  max: 8  mean: 4.56
+
+Sample 205
+  gno_in  — total: 15950  min: 0  max: 19  mean: 0.49
+  gno_out — total: 15950  min: 2  max: 8  mean: 4.45
+
+Sample 206
+  gno_in  — total: 16530  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16530  min: 2  max: 8  mean: 4.61
+
+Sample 207
+  gno_in  — total: 16085  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16085  min: 2  max: 8  mean: 4.49
+
+Sample 208
+  gno_in  — total: 15525  min: 0  max: 11  mean: 0.47
+  gno_out — total: 15525  min: 2  max: 8  mean: 4.33
+
+Sample 209
+  gno_in  — total: 16558  min: 0  max: 18  mean: 0.51
+  gno_out — total: 16558  min: 2  max: 8  mean: 4.62
+
+Sample 210
+  gno_in  — total: 15603  min: 0  max: 18  mean: 0.48
+  gno_out — total: 15603  min: 2  max: 8  mean: 4.35
+
+Sample 211
+  gno_in  — total: 16358  min: 0  max: 9  mean: 0.50
+  gno_out — total: 16358  min: 2  max: 8  mean: 4.56
+
+Sample 212
+  gno_in  — total: 16217  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16217  min: 2  max: 8  mean: 4.52
+
+Sample 213
+  gno_in  — total: 16544  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16544  min: 2  max: 8  mean: 4.61
+
+Sample 214
+  gno_in  — total: 15902  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15902  min: 2  max: 8  mean: 4.43
+
+Sample 215
+  gno_in  — total: 16677  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16677  min: 2  max: 8  mean: 4.65
+
+Sample 216
+  gno_in  — total: 16585  min: 0  max: 14  mean: 0.51
+  gno_out — total: 16585  min: 2  max: 8  mean: 4.62
+
+Sample 217
+  gno_in  — total: 16142  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16142  min: 2  max: 8  mean: 4.50
+
 Sample 218
-  gno_in  — total: 15819  min: 0  max: 14  mean: 0.48
-  gno_out — total: 15819  min: 2  max: 8  mean: 4.41
+  gno_in  — total: 15878  min: 0  max: 15  mean: 0.48
+  gno_out — total: 15878  min: 2  max: 8  mean: 4.43
 
 Sample 219
-  gno_in  — total: 16242  min: 0  max: 18  mean: 0.50
-  gno_out — total: 16242  min: 2  max: 8  mean: 4.53
+  gno_in  — total: 16346  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16346  min: 2  max: 8  mean: 4.56
 
 Sample 220
-  gno_in  — total: 16495  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16495  min: 2  max: 8  mean: 4.60
+  gno_in  — total: 16538  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16538  min: 2  max: 8  mean: 4.61
 
 Sample 221
-  gno_in  — total: 16498  min: 0  max: 10  mean: 0.50
-  gno_out — total: 16498  min: 2  max: 8  mean: 4.60
+  gno_in  — total: 16488  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16488  min: 2  max: 8  mean: 4.60
 
 Sample 222
-  gno_in  — total: 15908  min: 0  max: 17  mean: 0.49
-  gno_out — total: 15908  min: 2  max: 8  mean: 4.44
+  gno_in  — total: 15870  min: 0  max: 17  mean: 0.48
+  gno_out — total: 15870  min: 2  max: 8  mean: 4.43
 
 Sample 223
-  gno_in  — total: 16229  min: 0  max: 14  mean: 0.50
-  gno_out — total: 16229  min: 2  max: 8  mean: 4.53
+  gno_in  — total: 16268  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16268  min: 2  max: 8  mean: 4.54
 
 Sample 224
-  gno_in  — total: 15953  min: 0  max: 15  mean: 0.49
-  gno_out — total: 15953  min: 2  max: 8  mean: 4.45
+  gno_in  — total: 15901  min: 0  max: 15  mean: 0.49
+  gno_out — total: 15901  min: 2  max: 8  mean: 4.43
 
 Sample 225
-  gno_in  — total: 16233  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16233  min: 2  max: 8  mean: 4.53
+  gno_in  — total: 16161  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16161  min: 2  max: 8  mean: 4.51
 
 Sample 226
-  gno_in  — total: 16339  min: 0  max: 10  mean: 0.50
-  gno_out — total: 16339  min: 2  max: 8  mean: 4.56
+  gno_in  — total: 16447  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16447  min: 2  max: 8  mean: 4.59
 
 Sample 227
-  gno_in  — total: 16664  min: 0  max: 22  mean: 0.51
-  gno_out — total: 16664  min: 2  max: 8  mean: 4.65
+  gno_in  — total: 16692  min: 0  max: 21  mean: 0.51
+  gno_out — total: 16692  min: 2  max: 8  mean: 4.65
 
 Sample 228
+  gno_in  — total: 15915  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15915  min: 2  max: 8  mean: 4.44
+
+Sample 229
+  gno_in  — total: 16186  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16186  min: 2  max: 8  mean: 4.51
+
+Sample 230
+  gno_in  — total: 16393  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16393  min: 2  max: 8  mean: 4.57
+
+Sample 231
+  gno_in  — total: 16369  min: 0  max: 7  mean: 0.50
+  gno_out — total: 16369  min: 2  max: 8  mean: 4.56
+
+Sample 232
+  gno_in  — total: 16200  min: 0  max: 9  mean: 0.49
+  gno_out — total: 16200  min: 2  max: 8  mean: 4.52
+
+Sample 233
+  gno_in  — total: 15968  min: 0  max: 18  mean: 0.49
+  gno_out — total: 15968  min: 2  max: 8  mean: 4.45
+
+Sample 234
+  gno_in  — total: 16402  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16402  min: 2  max: 8  mean: 4.57
+
+Sample 235
+  gno_in  — total: 16365  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16365  min: 2  max: 8  mean: 4.56
+
+Sample 236
+  gno_in  — total: 15762  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15762  min: 2  max: 8  mean: 4.40
+
+Sample 237
+  gno_in  — total: 15886  min: 0  max: 10  mean: 0.48
+  gno_out — total: 15886  min: 2  max: 8  mean: 4.43
+
+Sample 238
+  gno_in  — total: 16026  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16026  min: 2  max: 8  mean: 4.47
+
+Sample 239
+  gno_in  — total: 15957  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15957  min: 2  max: 8  mean: 4.45
+
+Sample 240
+  gno_in  — total: 16018  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16018  min: 2  max: 8  mean: 4.47
+
+Sample 241
+  gno_in  — total: 16460  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16460  min: 2  max: 8  mean: 4.59
+
+Sample 242
+  gno_in  — total: 16283  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16283  min: 2  max: 8  mean: 4.54
+
+Sample 243
+  gno_in  — total: 16173  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16173  min: 2  max: 8  mean: 4.51
+
+Sample 244
+  gno_in  — total: 16094  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16094  min: 2  max: 8  mean: 4.49
+
+Sample 245
+  gno_in  — total: 16314  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16314  min: 2  max: 8  mean: 4.55
+
+Sample 246
+  gno_in  — total: 16500  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16500  min: 2  max: 8  mean: 4.60
+
+Sample 247
+  gno_in  — total: 16380  min: 0  max: 20  mean: 0.50
+  gno_out — total: 16380  min: 2  max: 8  mean: 4.57
+
+Sample 248
+  gno_in  — total: 16165  min: 0  max: 10  mean: 0.49
+  gno_out — total: 16165  min: 2  max: 8  mean: 4.51
+
+Sample 249
+  gno_in  — total: 16205  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16205  min: 2  max: 8  mean: 4.52
+
+Sample 250
+  gno_in  — total: 16055  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16055  min: 2  max: 8  mean: 4.48
+
+Sample 251
+  gno_in  — total: 15762  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15762  min: 2  max: 8  mean: 4.40
+
+Sample 252
+  gno_in  — total: 15846  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15846  min: 2  max: 8  mean: 4.42
+
+Sample 253
+  gno_in  — total: 16328  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16328  min: 2  max: 8  mean: 4.55
+
+Sample 254
+  gno_in  — total: 15790  min: 0  max: 9  mean: 0.48
+  gno_out — total: 15790  min: 2  max: 8  mean: 4.40
+
+Sample 255
+  gno_in  — total: 16496  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16496  min: 2  max: 8  mean: 4.60
+
+Sample 256
+  gno_in  — total: 16105  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16105  min: 2  max: 8  mean: 4.49
+
+Sample 257
+  gno_in  — total: 16432  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16432  min: 2  max: 8  mean: 4.58
+
+Sample 258
+  gno_in  — total: 16089  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16089  min: 2  max: 8  mean: 4.49
+
+Sample 259
+  gno_in  — total: 16306  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16306  min: 2  max: 8  mean: 4.55
+
+Sample 260
+  gno_in  — total: 16099  min: 0  max: 10  mean: 0.49
+  gno_out — total: 16099  min: 2  max: 8  mean: 4.49
+
+Sample 261
+  gno_in  — total: 15988  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15988  min: 2  max: 8  mean: 4.46
+
+Sample 262
+  gno_in  — total: 15154  min: 0  max: 15  mean: 0.46
+  gno_out — total: 15154  min: 2  max: 8  mean: 4.23
+
+Sample 263
+  gno_in  — total: 16159  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16159  min: 2  max: 8  mean: 4.51
+
+Sample 264
+  gno_in  — total: 16380  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16380  min: 2  max: 8  mean: 4.57
+
+Sample 265
+  gno_in  — total: 16286  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16286  min: 2  max: 8  mean: 4.54
+
+Sample 266
+  gno_in  — total: 16321  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16321  min: 2  max: 8  mean: 4.55
+
+Sample 267
+  gno_in  — total: 16460  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16460  min: 2  max: 8  mean: 4.59
+
+Sample 268
+  gno_in  — total: 16220  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16220  min: 2  max: 8  mean: 4.52
+
+Sample 269
+  gno_in  — total: 16489  min: 0  max: 9  mean: 0.50
+  gno_out — total: 16489  min: 2  max: 8  mean: 4.60
+
+Sample 270
+  gno_in  — total: 16552  min: 0  max: 13  mean: 0.51
+  gno_out — total: 16552  min: 2  max: 8  mean: 4.62
+
+Sample 271
+  gno_in  — total: 16392  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16392  min: 2  max: 8  mean: 4.57
+
+Sample 272
+  gno_in  — total: 16173  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16173  min: 2  max: 8  mean: 4.51
+
+Sample 273
+  gno_in  — total: 15872  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15872  min: 2  max: 8  mean: 4.43
+
+Sample 274
+  gno_in  — total: 16450  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16450  min: 2  max: 8  mean: 4.59
+
+Sample 275
+  gno_in  — total: 16391  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16391  min: 2  max: 8  mean: 4.57
+
+Sample 276
+  gno_in  — total: 16036  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16036  min: 2  max: 8  mean: 4.47
+
+Sample 277
+  gno_in  — total: 15270  min: 0  max: 23  mean: 0.47
+  gno_out — total: 15270  min: 2  max: 8  mean: 4.26
+
+Sample 278
+  gno_in  — total: 16318  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16318  min: 2  max: 8  mean: 4.55
+
+Sample 279
+  gno_in  — total: 16184  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16184  min: 2  max: 8  mean: 4.51
+
+Sample 280
+  gno_in  — total: 16282  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16282  min: 2  max: 8  mean: 4.54
+
+Sample 281
+  gno_in  — total: 16282  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16282  min: 2  max: 8  mean: 4.54
+
+Sample 282
+  gno_in  — total: 16015  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16015  min: 2  max: 8  mean: 4.47
+
+Sample 283
+  gno_in  — total: 15942  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15942  min: 2  max: 8  mean: 4.45
+
+Sample 284
+  gno_in  — total: 16301  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16301  min: 2  max: 8  mean: 4.55
+
+Sample 285
+  gno_in  — total: 16091  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16091  min: 2  max: 8  mean: 4.49
+
+Sample 286
+  gno_in  — total: 15504  min: 0  max: 14  mean: 0.47
+  gno_out — total: 15504  min: 2  max: 8  mean: 4.32
+
+Sample 287
+  gno_in  — total: 16445  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16445  min: 2  max: 8  mean: 4.59
+
+Sample 288
+  gno_in  — total: 16452  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16452  min: 2  max: 8  mean: 4.59
+
+Sample 289
+  gno_in  — total: 16295  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16295  min: 2  max: 8  mean: 4.54
+
+Sample 290
+  gno_in  — total: 15695  min: 0  max: 10  mean: 0.48
+  gno_out — total: 15695  min: 2  max: 8  mean: 4.38
+
+Sample 291
+  gno_in  — total: 15898  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15898  min: 2  max: 8  mean: 4.43
+
+Sample 292
+  gno_in  — total: 16144  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16144  min: 2  max: 8  mean: 4.50
+
+Sample 293
+  gno_in  — total: 16440  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16440  min: 2  max: 8  mean: 4.58
+
+Sample 294
+  gno_in  — total: 16295  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16295  min: 2  max: 8  mean: 4.54
+
+Sample 295
+  gno_in  — total: 16228  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16228  min: 2  max: 8  mean: 4.53
+
+Sample 296
+  gno_in  — total: 16280  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16280  min: 2  max: 8  mean: 4.54
+
+Sample 297
+  gno_in  — total: 15512  min: 0  max: 18  mean: 0.47
+  gno_out — total: 15512  min: 2  max: 8  mean: 4.33
+
+Sample 298
+  gno_in  — total: 15834  min: 0  max: 16  mean: 0.48
+  gno_out — total: 15834  min: 2  max: 8  mean: 4.42
+
+Sample 299
+  gno_in  — total: 16348  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16348  min: 2  max: 8  mean: 4.56
+
+Sample 300
+  gno_in  — total: 16336  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16336  min: 2  max: 8  mean: 4.56
+
+Sample 301
+  gno_in  — total: 16649  min: 0  max: 16  mean: 0.51
+  gno_out — total: 16649  min: 2  max: 8  mean: 4.64
+
+Sample 302
+  gno_in  — total: 16019  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16019  min: 2  max: 8  mean: 4.47
+
+Sample 303
+  gno_in  — total: 15063  min: 0  max: 11  mean: 0.46
+  gno_out — total: 15063  min: 2  max: 8  mean: 4.20
+
+Sample 304
+  gno_in  — total: 16214  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16214  min: 2  max: 8  mean: 4.52
+
+Sample 305
+  gno_in  — total: 16341  min: 0  max: 9  mean: 0.50
+  gno_out — total: 16341  min: 2  max: 8  mean: 4.56
+
+Sample 306
+  gno_in  — total: 16222  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16222  min: 2  max: 8  mean: 4.52
+
+Sample 307
+  gno_in  — total: 16443  min: 0  max: 9  mean: 0.50
+  gno_out — total: 16443  min: 2  max: 8  mean: 4.59
+
+Sample 308
+  gno_in  — total: 16041  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16041  min: 2  max: 8  mean: 4.47
+
+Sample 309
+  gno_in  — total: 16556  min: 0  max: 13  mean: 0.51
+  gno_out — total: 16556  min: 2  max: 8  mean: 4.62
+
+Sample 310
+  gno_in  — total: 16454  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16454  min: 2  max: 8  mean: 4.59
+
+Sample 311
+  gno_in  — total: 16113  min: 0  max: 8  mean: 0.49
+  gno_out — total: 16113  min: 2  max: 8  mean: 4.49
+
+Sample 312
+  gno_in  — total: 15846  min: 0  max: 23  mean: 0.48
+  gno_out — total: 15846  min: 2  max: 8  mean: 4.42
+
+Sample 313
+  gno_in  — total: 16525  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16525  min: 2  max: 8  mean: 4.61
+
+Sample 314
+  gno_in  — total: 16263  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16263  min: 2  max: 8  mean: 4.54
+
+Sample 315
+  gno_in  — total: 16120  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16120  min: 2  max: 8  mean: 4.50
+
+Sample 316
+  gno_in  — total: 16512  min: 0  max: 9  mean: 0.50
+  gno_out — total: 16512  min: 2  max: 8  mean: 4.60
+
+Sample 317
+  gno_in  — total: 16111  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16111  min: 2  max: 8  mean: 4.49
+
+Sample 318
+  gno_in  — total: 15710  min: 0  max: 15  mean: 0.48
+  gno_out — total: 15710  min: 2  max: 8  mean: 4.38
+
+Sample 319
+  gno_in  — total: 16416  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16416  min: 2  max: 8  mean: 4.58
+
+Sample 320
+  gno_in  — total: 16651  min: 0  max: 13  mean: 0.51
+  gno_out — total: 16651  min: 2  max: 8  mean: 4.64
+
+Sample 321
+  gno_in  — total: 16292  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16292  min: 2  max: 8  mean: 4.54
+
+Sample 322
+  gno_in  — total: 16088  min: 0  max: 22  mean: 0.49
+  gno_out — total: 16088  min: 2  max: 8  mean: 4.49
+
+Sample 323
+  gno_in  — total: 16383  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16383  min: 2  max: 8  mean: 4.57
+
+Sample 324
+  gno_in  — total: 16531  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16531  min: 2  max: 8  mean: 4.61
+
+Sample 325
+  gno_in  — total: 16353  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16353  min: 2  max: 8  mean: 4.56
+
+Sample 326
+  gno_in  — total: 16086  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16086  min: 2  max: 8  mean: 4.49
+
+Sample 327
+  gno_in  — total: 15989  min: 0  max: 13  mean: 0.49
+  gno_out — total: 15989  min: 2  max: 8  mean: 4.46
+
+Sample 328
+  gno_in  — total: 16158  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16158  min: 2  max: 8  mean: 4.51
+
+Sample 329
+  gno_in  — total: 16153  min: 0  max: 16  mean: 0.49
+  gno_out — total: 16153  min: 2  max: 8  mean: 4.50
+
+Sample 330
+  gno_in  — total: 16158  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16158  min: 2  max: 8  mean: 4.51
+
+Sample 331
+  gno_in  — total: 16485  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16485  min: 2  max: 8  mean: 4.60
+
+Sample 332
+  gno_in  — total: 16405  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16405  min: 2  max: 8  mean: 4.57
+
+Sample 333
+  gno_in  — total: 16156  min: 0  max: 9  mean: 0.49
+  gno_out — total: 16156  min: 2  max: 8  mean: 4.51
+
+Sample 334
+  gno_in  — total: 16312  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16312  min: 2  max: 8  mean: 4.55
+
+Sample 335
+  gno_in  — total: 16062  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16062  min: 2  max: 8  mean: 4.48
+
+Sample 336
+  gno_in  — total: 16083  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16083  min: 2  max: 8  mean: 4.48
+
+Sample 337
+  gno_in  — total: 15705  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15705  min: 2  max: 8  mean: 4.38
+
+Sample 338
+  gno_in  — total: 15675  min: 0  max: 24  mean: 0.48
+  gno_out — total: 15675  min: 2  max: 8  mean: 4.37
+
+Sample 339
+  gno_in  — total: 16310  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16310  min: 2  max: 8  mean: 4.55
+
+Sample 340
+  gno_in  — total: 16045  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16045  min: 2  max: 8  mean: 4.47
+
+Sample 341
+  gno_in  — total: 16010  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16010  min: 2  max: 8  mean: 4.46
+
+Sample 342
+  gno_in  — total: 16511  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16511  min: 2  max: 8  mean: 4.60
+
+Sample 343
+  gno_in  — total: 16257  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16257  min: 2  max: 8  mean: 4.53
+
+Sample 344
+  gno_in  — total: 16112  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16112  min: 2  max: 8  mean: 4.49
+
+Sample 345
+  gno_in  — total: 15399  min: 0  max: 14  mean: 0.47
+  gno_out — total: 15399  min: 2  max: 8  mean: 4.29
+
+Sample 346
+  gno_in  — total: 15605  min: 0  max: 19  mean: 0.48
+  gno_out — total: 15605  min: 2  max: 8  mean: 4.35
+
+Sample 347
+  gno_in  — total: 15950  min: 0  max: 24  mean: 0.49
+  gno_out — total: 15950  min: 2  max: 8  mean: 4.45
+
+Sample 348
+  gno_in  — total: 16451  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16451  min: 2  max: 8  mean: 4.59
+
+Sample 349
+  gno_in  — total: 15944  min: 0  max: 18  mean: 0.49
+  gno_out — total: 15944  min: 2  max: 8  mean: 4.45
+
+Sample 350
+  gno_in  — total: 16152  min: 0  max: 10  mean: 0.49
+  gno_out — total: 16152  min: 2  max: 8  mean: 4.50
+
+Sample 351
+  gno_in  — total: 16303  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16303  min: 2  max: 8  mean: 4.55
+
+Sample 352
+  gno_in  — total: 16191  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16191  min: 2  max: 8  mean: 4.52
+
+Sample 353
+  gno_in  — total: 15948  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15948  min: 2  max: 8  mean: 4.45
+
+Sample 354
+  gno_in  — total: 16446  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16446  min: 2  max: 8  mean: 4.59
+
+Sample 355
+  gno_in  — total: 15667  min: 0  max: 17  mean: 0.48
+  gno_out — total: 15667  min: 2  max: 8  mean: 4.37
+
+Sample 356
+  gno_in  — total: 16159  min: 0  max: 18  mean: 0.49
+  gno_out — total: 16159  min: 2  max: 8  mean: 4.51
+
+Sample 357
+  gno_in  — total: 15853  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15853  min: 2  max: 8  mean: 4.42
+
+Sample 358
+  gno_in  — total: 15838  min: 0  max: 12  mean: 0.48
+  gno_out — total: 15838  min: 2  max: 8  mean: 4.42
+
+Sample 359
+  gno_in  — total: 16213  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16213  min: 2  max: 8  mean: 4.52
+
+Sample 360
+  gno_in  — total: 15086  min: 0  max: 15  mean: 0.46
+  gno_out — total: 15086  min: 2  max: 8  mean: 4.21
+
+Sample 361
+  gno_in  — total: 16362  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16362  min: 2  max: 8  mean: 4.56
+
+Sample 362
+  gno_in  — total: 15708  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15708  min: 2  max: 8  mean: 4.38
+
+Sample 363
+  gno_in  — total: 16549  min: 0  max: 11  mean: 0.51
+  gno_out — total: 16549  min: 2  max: 8  mean: 4.61
+
+Sample 364
+  gno_in  — total: 16197  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16197  min: 2  max: 8  mean: 4.52
+
+Sample 365
+  gno_in  — total: 16239  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16239  min: 2  max: 8  mean: 4.53
+
+Sample 366
+  gno_in  — total: 16242  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16242  min: 2  max: 8  mean: 4.53
+
+Sample 367
+  gno_in  — total: 15681  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15681  min: 2  max: 8  mean: 4.37
+
+Sample 368
+  gno_in  — total: 16041  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16041  min: 2  max: 8  mean: 4.47
+
+Sample 369
+  gno_in  — total: 16072  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16072  min: 2  max: 8  mean: 4.48
+
+Sample 370
+  gno_in  — total: 16191  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16191  min: 2  max: 8  mean: 4.52
+
+Sample 371
+  gno_in  — total: 16179  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16179  min: 2  max: 8  mean: 4.51
+
+Sample 372
+  gno_in  — total: 16733  min: 0  max: 16  mean: 0.51
+  gno_out — total: 16733  min: 2  max: 8  mean: 4.67
+
+Sample 373
+  gno_in  — total: 16549  min: 0  max: 17  mean: 0.51
+  gno_out — total: 16549  min: 2  max: 8  mean: 4.61
+
+Sample 374
+  gno_in  — total: 15649  min: 0  max: 18  mean: 0.48
+  gno_out — total: 15649  min: 2  max: 8  mean: 4.36
+
+Sample 375
+  gno_in  — total: 16158  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16158  min: 2  max: 8  mean: 4.51
+
+Sample 376
   gno_in  — total: 15917  min: 0  max: 11  mean: 0.49
   gno_out — total: 15917  min: 2  max: 8  mean: 4.44
 
-Sample 229
-  gno_in  — total: 16256  min: 0  max: 11  mean: 0.50
-  gno_out — total: 16256  min: 2  max: 8  mean: 4.53
+Sample 377
+  gno_in  — total: 15727  min: 0  max: 10  mean: 0.48
+  gno_out — total: 15727  min: 2  max: 8  mean: 4.39
 
-Sample 230
-  gno_in  — total: 16397  min: 0  max: 13  mean: 0.50
-  gno_out — total: 16397  min: 2  max: 8  mean: 4.57
+Sample 378
+  gno_in  — total: 16351  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16351  min: 2  max: 8  mean: 4.56
 
-Sample 231
-  gno_in  — total: 16423  min: 0  max: 7  mean: 0.50
-  gno_out — total: 16423  min: 2  max: 8  mean: 4.58
+Sample 379
+  gno_in  — total: 15758  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15758  min: 2  max: 8  mean: 4.39
 
-Sample 232
-  gno_in  — total: 16158  min: 0  max: 9  mean: 0.49
-  gno_out — total: 16158  min: 2  max: 8  mean: 4.51
+Sample 380
+  gno_in  — total: 15601  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15601  min: 2  max: 8  mean: 4.35
 
-Sample 233
-  gno_in  — total: 15945  min: 0  max: 17  mean: 0.49
-  gno_out — total: 15945  min: 2  max: 8  mean: 4.45
+Sample 381
+  gno_in  — total: 15941  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15941  min: 2  max: 8  mean: 4.45
 
-Sample 234
-  gno_in  — total: 16379  min: 0  max: 14  mean: 0.50
+Sample 382
+  gno_in  — total: 15776  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15776  min: 2  max: 8  mean: 4.40
+
+Sample 383
+  gno_in  — total: 16490  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16490  min: 2  max: 8  mean: 4.60
+
+Sample 384
+  gno_in  — total: 16322  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16322  min: 2  max: 8  mean: 4.55
+
+Sample 385
+  gno_in  — total: 15958  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15958  min: 2  max: 8  mean: 4.45
+
+Sample 386
+  gno_in  — total: 16471  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16471  min: 2  max: 8  mean: 4.59
+
+Sample 387
+  gno_in  — total: 15312  min: 0  max: 11  mean: 0.47
+  gno_out — total: 15312  min: 2  max: 8  mean: 4.27
+
+Sample 388
+  gno_in  — total: 16512  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16512  min: 2  max: 8  mean: 4.60
+
+Sample 389
+  gno_in  — total: 16083  min: 0  max: 9  mean: 0.49
+  gno_out — total: 16083  min: 2  max: 8  mean: 4.48
+
+Sample 390
+  gno_in  — total: 16462  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16462  min: 2  max: 8  mean: 4.59
+
+Sample 391
+  gno_in  — total: 15840  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15840  min: 2  max: 8  mean: 4.42
+
+Sample 392
+  gno_in  — total: 16344  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16344  min: 2  max: 8  mean: 4.56
+
+Sample 393
+  gno_in  — total: 16214  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16214  min: 2  max: 8  mean: 4.52
+
+Sample 394
+  gno_in  — total: 16221  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16221  min: 2  max: 8  mean: 4.52
+
+Sample 395
+  gno_in  — total: 16422  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16422  min: 2  max: 8  mean: 4.58
+
+Sample 396
+  gno_in  — total: 16017  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16017  min: 2  max: 8  mean: 4.47
+
+Sample 397
+  gno_in  — total: 16530  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16530  min: 2  max: 8  mean: 4.61
+
+Sample 398
+  gno_in  — total: 16610  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16610  min: 2  max: 8  mean: 4.63
+
+Sample 399
+  gno_in  — total: 16739  min: 0  max: 16  mean: 0.51
+  gno_out — total: 16739  min: 2  max: 8  mean: 4.67
+
+Sample 400
+  gno_in  — total: 16040  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16040  min: 2  max: 8  mean: 4.47
+
+Sample 401
+  gno_in  — total: 15987  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15987  min: 2  max: 8  mean: 4.46
+
+Sample 402
+  gno_in  — total: 16204  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16204  min: 2  max: 8  mean: 4.52
+
+Sample 403
+  gno_in  — total: 16198  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16198  min: 2  max: 8  mean: 4.52
+
+Sample 404
+  gno_in  — total: 15939  min: 0  max: 15  mean: 0.49
+  gno_out — total: 15939  min: 2  max: 8  mean: 4.44
+
+Sample 405
+  gno_in  — total: 16344  min: 0  max: 15  mean: 0.50
+  gno_out — total: 16344  min: 2  max: 8  mean: 4.56
+
+Sample 406
+  gno_in  — total: 16236  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16236  min: 2  max: 8  mean: 4.53
+
+Sample 407
+  gno_in  — total: 16505  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16505  min: 2  max: 8  mean: 4.60
+
+Sample 408
+  gno_in  — total: 16221  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16221  min: 2  max: 8  mean: 4.52
+
+Sample 409
+  gno_in  — total: 16154  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16154  min: 2  max: 8  mean: 4.50
+
+Sample 410
+  gno_in  — total: 15875  min: 0  max: 17  mean: 0.48
+  gno_out — total: 15875  min: 2  max: 8  mean: 4.43
+
+Sample 411
+  gno_in  — total: 16037  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16037  min: 2  max: 8  mean: 4.47
+
+Sample 412
+  gno_in  — total: 15793  min: 0  max: 15  mean: 0.48
+  gno_out — total: 15793  min: 2  max: 8  mean: 4.40
+
+Sample 413
+  gno_in  — total: 16339  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16339  min: 2  max: 8  mean: 4.56
+
+Sample 414
+  gno_in  — total: 16145  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16145  min: 2  max: 8  mean: 4.50
+
+Sample 415
+  gno_in  — total: 16193  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16193  min: 2  max: 8  mean: 4.52
+
+Sample 416
+  gno_in  — total: 16622  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16622  min: 2  max: 8  mean: 4.64
+
+Sample 417
+  gno_in  — total: 15903  min: 0  max: 15  mean: 0.49
+  gno_out — total: 15903  min: 2  max: 8  mean: 4.43
+
+Sample 418
+  gno_in  — total: 15715  min: 0  max: 16  mean: 0.48
+  gno_out — total: 15715  min: 2  max: 8  mean: 4.38
+
+Sample 419
+  gno_in  — total: 16213  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16213  min: 2  max: 8  mean: 4.52
+
+Sample 420
+  gno_in  — total: 16660  min: 0  max: 11  mean: 0.51
+  gno_out — total: 16660  min: 2  max: 8  mean: 4.65
+
+Sample 421
+  gno_in  — total: 16106  min: 0  max: 18  mean: 0.49
+  gno_out — total: 16106  min: 2  max: 8  mean: 4.49
+
+Sample 422
+  gno_in  — total: 15878  min: 0  max: 13  mean: 0.48
+  gno_out — total: 15878  min: 2  max: 8  mean: 4.43
+
+Sample 423
+  gno_in  — total: 16336  min: 0  max: 20  mean: 0.50
+  gno_out — total: 16336  min: 2  max: 8  mean: 4.56
+
+Sample 424
+  gno_in  — total: 16429  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16429  min: 2  max: 8  mean: 4.58
+
+Sample 425
+  gno_in  — total: 15961  min: 0  max: 11  mean: 0.49
+  gno_out — total: 15961  min: 2  max: 8  mean: 4.45
+
+Sample 426
+  gno_in  — total: 16078  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16078  min: 2  max: 8  mean: 4.48
+
+Sample 427
+  gno_in  — total: 16479  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16479  min: 2  max: 8  mean: 4.60
+
+Sample 428
+  gno_in  — total: 16531  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16531  min: 2  max: 8  mean: 4.61
+
+Sample 429
+  gno_in  — total: 16267  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16267  min: 2  max: 8  mean: 4.54
+
+Sample 430
+  gno_in  — total: 15399  min: 0  max: 12  mean: 0.47
+  gno_out — total: 15399  min: 2  max: 8  mean: 4.29
+
+Sample 431
+  gno_in  — total: 16770  min: 0  max: 10  mean: 0.51
+  gno_out — total: 16770  min: 2  max: 8  mean: 4.68
+
+Sample 432
+  gno_in  — total: 16141  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16141  min: 2  max: 8  mean: 4.50
+
+Sample 433
+  gno_in  — total: 15932  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15932  min: 2  max: 8  mean: 4.44
+
+Sample 434
+  gno_in  — total: 16141  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16141  min: 2  max: 8  mean: 4.50
+
+Sample 435
+  gno_in  — total: 16238  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16238  min: 2  max: 8  mean: 4.53
+
+Sample 436
+  gno_in  — total: 15949  min: 0  max: 12  mean: 0.49
+  gno_out — total: 15949  min: 2  max: 8  mean: 4.45
+
+Sample 437
+  gno_in  — total: 16345  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16345  min: 2  max: 8  mean: 4.56
+
+Sample 438
+  gno_in  — total: 16041  min: 0  max: 17  mean: 0.49
+  gno_out — total: 16041  min: 2  max: 8  mean: 4.47
+
+Sample 439
+  gno_in  — total: 16283  min: 0  max: 14  mean: 0.50
+  gno_out — total: 16283  min: 2  max: 8  mean: 4.54
+
+Sample 440
+  gno_in  — total: 15971  min: 0  max: 21  mean: 0.49
+  gno_out — total: 15971  min: 2  max: 8  mean: 4.45
+
+Sample 441
+  gno_in  — total: 16192  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16192  min: 2  max: 8  mean: 4.52
+
+Sample 442
+  gno_in  — total: 16501  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16501  min: 2  max: 8  mean: 4.60
+
+Sample 443
+  gno_in  — total: 15999  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15999  min: 2  max: 8  mean: 4.46
+
+Sample 444
+  gno_in  — total: 16479  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16479  min: 2  max: 8  mean: 4.60
+
+Sample 445
+  gno_in  — total: 16224  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16224  min: 2  max: 8  mean: 4.52
+
+Sample 446
+  gno_in  — total: 16295  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16295  min: 2  max: 8  mean: 4.54
+
+Sample 447
+  gno_in  — total: 16193  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16193  min: 2  max: 8  mean: 4.52
+
+Sample 448
+  gno_in  — total: 16379  min: 0  max: 10  mean: 0.50
   gno_out — total: 16379  min: 2  max: 8  mean: 4.57
 
-Sample 235
-  gno_in  — total: 16277  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16277  min: 2  max: 8  mean: 4.54
+Sample 449
+  gno_in  — total: 16275  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16275  min: 2  max: 8  mean: 4.54
 
-Sample 236
-  gno_in  — total: 15640  min: 0  max: 13  mean: 0.48
-  gno_out — total: 15640  min: 2  max: 8  mean: 4.36
+Sample 450
+  gno_in  — total: 16069  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16069  min: 2  max: 8  mean: 4.48
 
-Sample 237
-  gno_in  — total: 15981  min: 0  max: 10  mean: 0.49
+Sample 451
+  gno_in  — total: 16367  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16367  min: 2  max: 8  mean: 4.56
+
+Sample 452
+  gno_in  — total: 16028  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16028  min: 2  max: 8  mean: 4.47
+
+Sample 453
+  gno_in  — total: 15981  min: 0  max: 14  mean: 0.49
   gno_out — total: 15981  min: 2  max: 8  mean: 4.46
 
-Sample 238
-  gno_in  — total: 15933  min: 0  max: 11  mean: 0.49
-  gno_out — total: 15933  min: 2  max: 8  mean: 4.44
-
-Sample 239
-  gno_in  — total: 15902  min: 0  max: 12  mean: 0.49
-  gno_out — total: 15902  min: 2  max: 8  mean: 4.43
-
-Sample 240
-  gno_in  — total: 16067  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16067  min: 2  max: 8  mean: 4.48
-
-Sample 241
-  gno_in  — total: 16468  min: 0  max: 12  mean: 0.50
-  gno_out — total: 16468  min: 2  max: 8  mean: 4.59
-
-Sample 242
-  gno_in  — total: 16313  min: 0  max: 13  mean: 0.50
+Sample 454
+  gno_in  — total: 16313  min: 0  max: 10  mean: 0.50
   gno_out — total: 16313  min: 2  max: 8  mean: 4.55
 
-Sample 243
-  gno_in  — total: 16160  min: 0  max: 13  mean: 0.49
-  gno_out — total: 16160  min: 2  max: 8  mean: 4.51
+Sample 455
+  gno_in  — total: 16337  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16337  min: 2  max: 8  mean: 4.56
 
-Sample 244
-  gno_in  — total: 16091  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16091  min: 2  max: 8  mean: 4.49
+Sample 456
+  gno_in  — total: 16221  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16221  min: 2  max: 8  mean: 4.52
 
-Sample 245
-  gno_in  — total: 16229  min: 0  max: 10  mean: 0.50
-  gno_out — total: 16229  min: 2  max: 8  mean: 4.53
+Sample 457
+  gno_in  — total: 16475  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16475  min: 2  max: 8  mean: 4.59
 
-Sample 246
-  gno_in  — total: 16463  min: 0  max: 15  mean: 0.50
-  gno_out — total: 16463  min: 2  max: 8  mean: 4.59
+Sample 458
+  gno_in  — total: 16281  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16281  min: 2  max: 8  mean: 4.54
 
-Sample 247
-  gno_in  — total: 16348  min: 0  max: 19  mean: 0.50
-  gno_out — total: 16348  min: 2  max: 8  mean: 4.56
+Sample 459
+  gno_in  — total: 16367  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16367  min: 2  max: 8  mean: 4.56
 
-Sample 248
-  gno_in  — total: 16090  min: 0  max: 11  mean: 0.49
-  gno_out — total: 16090  min: 2  max: 8  mean: 4.49
+Sample 460
+  gno_in  — total: 15965  min: 0  max: 15  mean: 0.49
+  gno_out — total: 15965  min: 2  max: 8  mean: 4.45
 
-Sample 249
-  gno_in  — total: 16271  min: 0  max: 16  mean: 0.50
-  gno_out — total: 16271  min: 2  max: 8  mean: 4.54
+Sample 461
+  gno_in  — total: 16573  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16573  min: 2  max: 8  mean: 4.62
 
-Sample 250
-  gno_in  — total: 16092  min: 0  max: 12  mean: 0.49
-  gno_out — total: 16092  min: 2  max: 8  mean: 4.49
+Sample 462
+  gno_in  — total: 16476  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16476  min: 2  max: 8  mean: 4.59
+
+Sample 463
+  gno_in  — total: 15917  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15917  min: 2  max: 8  mean: 4.44
+
+Sample 464
+  gno_in  — total: 16445  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16445  min: 2  max: 8  mean: 4.59
+
+Sample 465
+  gno_in  — total: 16165  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16165  min: 2  max: 8  mean: 4.51
+
+Sample 466
+  gno_in  — total: 16185  min: 0  max: 25  mean: 0.49
+  gno_out — total: 16185  min: 2  max: 8  mean: 4.51
+
+Sample 467
+  gno_in  — total: 16413  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16413  min: 2  max: 8  mean: 4.58
+
+Sample 468
+  gno_in  — total: 15796  min: 0  max: 11  mean: 0.48
+  gno_out — total: 15796  min: 2  max: 8  mean: 4.40
+
+Sample 469
+  gno_in  — total: 16576  min: 0  max: 12  mean: 0.51
+  gno_out — total: 16576  min: 2  max: 8  mean: 4.62
+
+Sample 470
+  gno_in  — total: 16332  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16332  min: 2  max: 8  mean: 4.55
+
+Sample 471
+  gno_in  — total: 16415  min: 0  max: 12  mean: 0.50
+  gno_out — total: 16415  min: 2  max: 8  mean: 4.58
+
+Sample 472
+  gno_in  — total: 15996  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15996  min: 2  max: 8  mean: 4.46
+
+Sample 473
+  gno_in  — total: 16296  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16296  min: 2  max: 8  mean: 4.54
+
+Sample 474
+  gno_in  — total: 16192  min: 0  max: 15  mean: 0.49
+  gno_out — total: 16192  min: 2  max: 8  mean: 4.52
+
+Sample 475
+  gno_in  — total: 16058  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16058  min: 2  max: 8  mean: 4.48
+
+Sample 476
+  gno_in  — total: 15927  min: 0  max: 16  mean: 0.49
+  gno_out — total: 15927  min: 2  max: 8  mean: 4.44
+
+Sample 477
+  gno_in  — total: 15998  min: 0  max: 13  mean: 0.49
+  gno_out — total: 15998  min: 2  max: 8  mean: 4.46
+
+Sample 478
+  gno_in  — total: 16005  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16005  min: 2  max: 8  mean: 4.46
+
+Sample 479
+  gno_in  — total: 16470  min: 0  max: 11  mean: 0.50
+  gno_out — total: 16470  min: 2  max: 8  mean: 4.59
+
+Sample 480
+  gno_in  — total: 16169  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16169  min: 2  max: 8  mean: 4.51
+
+Sample 481
+  gno_in  — total: 16355  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16355  min: 2  max: 8  mean: 4.56
+
+Sample 482
+  gno_in  — total: 16456  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16456  min: 2  max: 8  mean: 4.59
+
+Sample 483
+  gno_in  — total: 14960  min: 0  max: 18  mean: 0.46
+  gno_out — total: 14960  min: 2  max: 8  mean: 4.17
+
+Sample 484
+  gno_in  — total: 16250  min: 0  max: 9  mean: 0.50
+  gno_out — total: 16250  min: 2  max: 8  mean: 4.53
+
+Sample 485
+  gno_in  — total: 16099  min: 0  max: 14  mean: 0.49
+  gno_out — total: 16099  min: 2  max: 8  mean: 4.49
+
+Sample 486
+  gno_in  — total: 15865  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15865  min: 2  max: 8  mean: 4.42
+
+Sample 487
+  gno_in  — total: 15984  min: 0  max: 14  mean: 0.49
+  gno_out — total: 15984  min: 2  max: 8  mean: 4.46
+
+Sample 488
+  gno_in  — total: 16945  min: 0  max: 12  mean: 0.52
+  gno_out — total: 16945  min: 2  max: 8  mean: 4.73
+
+Sample 489
+  gno_in  — total: 16176  min: 0  max: 13  mean: 0.49
+  gno_out — total: 16176  min: 2  max: 8  mean: 4.51
+
+Sample 490
+  gno_in  — total: 16143  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16143  min: 2  max: 8  mean: 4.50
+
+Sample 491
+  gno_in  — total: 15765  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15765  min: 2  max: 8  mean: 4.40
+
+Sample 492
+  gno_in  — total: 16254  min: 0  max: 13  mean: 0.50
+  gno_out — total: 16254  min: 2  max: 8  mean: 4.53
+
+Sample 493
+  gno_in  — total: 16034  min: 0  max: 12  mean: 0.49
+  gno_out — total: 16034  min: 2  max: 8  mean: 4.47
+
+Sample 494
+  gno_in  — total: 15772  min: 0  max: 14  mean: 0.48
+  gno_out — total: 15772  min: 2  max: 8  mean: 4.40
+
+Sample 495
+  gno_in  — total: 16396  min: 0  max: 16  mean: 0.50
+  gno_out — total: 16396  min: 2  max: 8  mean: 4.57
+
+Sample 496
+  gno_in  — total: 16068  min: 0  max: 10  mean: 0.49
+  gno_out — total: 16068  min: 2  max: 8  mean: 4.48
+
+Sample 497
+  gno_in  — total: 16120  min: 0  max: 11  mean: 0.49
+  gno_out — total: 16120  min: 2  max: 8  mean: 4.50
+
+Sample 498
+  gno_in  — total: 16386  min: 0  max: 10  mean: 0.50
+  gno_out — total: 16386  min: 2  max: 8  mean: 4.57
+
+Sample 499
+  gno_in  — total: 16319  min: 0  max: 18  mean: 0.50
+  gno_out — total: 16319  min: 2  max: 8  mean: 4.55
+
+Sample 500
+  gno_in  — total: 16270  min: 0  max: 17  mean: 0.50
+  gno_out — total: 16270  min: 2  max: 8  mean: 4.54
 

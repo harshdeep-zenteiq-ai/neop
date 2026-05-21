@@ -1,0 +1,316 @@
+root_dir /home/deepan/data/car-pressure-data/processed-car-pressure-data
+data_module <neuralop.data.datasets.car_cfd_dataset.CarCFDDataset object at 0x7ff04b302b00>
+neighbor precomputation done in pytorch version with time 6.476853341999913
+Training on 10 samples
+Testing on [4] samples         on resolutions ['test'].
+  Preprocessing: 0.0003s
+Raw outputs of shape torch.Size([1, 3586, 1])
+  Model train_step (forward + backward + update): 0.3121s
+  Regularizer loss: 0.0000s
+Batch 0: Total time 0.3126s
+  Backward pass: 0.2419s
+  Optimizer step: 0.0168s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0293s
+  Regularizer loss: 0.0000s
+Batch 1: Total time 0.0297s
+  Backward pass: 0.0628s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0306s
+  Regularizer loss: 0.0000s
+Batch 2: Total time 0.0310s
+  Backward pass: 0.0632s
+  Optimizer step: 0.0022s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0321s
+  Regularizer loss: 0.0000s
+Batch 3: Total time 0.0325s
+  Backward pass: 0.0687s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0006s
+  Model train_step (forward + backward + update): 0.0323s
+  Regularizer loss: 0.0000s
+Batch 4: Total time 0.0329s
+  Backward pass: 0.0739s
+  Optimizer step: 0.0016s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0355s
+  Regularizer loss: 0.0000s
+Batch 5: Total time 0.0360s
+  Backward pass: 0.0728s
+  Optimizer step: 0.0016s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0356s
+  Regularizer loss: 0.0000s
+Batch 6: Total time 0.0360s
+  Backward pass: 0.0688s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0306s
+  Regularizer loss: 0.0000s
+Batch 7: Total time 0.0310s
+  Backward pass: 0.0643s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 8: Total time 0.0292s
+  Backward pass: 0.0624s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 9: Total time 0.0291s
+  Backward pass: 0.0621s
+  Optimizer step: 0.0013s
+[0] time=1.86, avg_loss=0.7821, train_err=0.7821
+Eval: test_l2=0.4530
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0287s
+  Regularizer loss: 0.0000s
+Batch 0: Total time 0.0290s
+  Backward pass: 0.0629s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 1: Total time 0.0291s
+  Backward pass: 0.0626s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0303s
+  Regularizer loss: 0.0000s
+Batch 2: Total time 0.0307s
+  Backward pass: 0.0653s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0298s
+  Regularizer loss: 0.0000s
+Batch 3: Total time 0.0301s
+  Backward pass: 0.0652s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0286s
+  Regularizer loss: 0.0000s
+Batch 4: Total time 0.0290s
+  Backward pass: 0.0617s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0292s
+  Regularizer loss: 0.0000s
+Batch 5: Total time 0.0295s
+  Backward pass: 0.0653s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0299s
+  Regularizer loss: 0.0000s
+Batch 6: Total time 0.0303s
+  Backward pass: 0.0651s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0298s
+  Regularizer loss: 0.0000s
+Batch 7: Total time 0.0302s
+  Backward pass: 0.0648s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0334s
+  Regularizer loss: 0.0000s
+Batch 8: Total time 0.0339s
+  Backward pass: 0.0683s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0322s
+  Regularizer loss: 0.0000s
+Batch 9: Total time 0.0326s
+  Backward pass: 0.0663s
+  Optimizer step: 0.0015s
+[1] time=1.35, avg_loss=0.4598, train_err=0.4598
+Eval: test_l2=0.3820
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0310s
+  Regularizer loss: 0.0000s
+Batch 0: Total time 0.0314s
+  Backward pass: 0.0645s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0295s
+  Regularizer loss: 0.0000s
+Batch 1: Total time 0.0298s
+  Backward pass: 0.0665s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0303s
+  Regularizer loss: 0.0000s
+Batch 2: Total time 0.0307s
+  Backward pass: 0.0648s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0290s
+  Regularizer loss: 0.0000s
+Batch 3: Total time 0.0295s
+  Backward pass: 0.0646s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0304s
+  Regularizer loss: 0.0000s
+Batch 4: Total time 0.0308s
+  Backward pass: 0.0648s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 5: Total time 0.0292s
+  Backward pass: 0.0622s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0287s
+  Regularizer loss: 0.0000s
+Batch 6: Total time 0.0291s
+  Backward pass: 0.0626s
+  Optimizer step: 0.0013s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0287s
+  Regularizer loss: 0.0000s
+Batch 7: Total time 0.0291s
+  Backward pass: 0.0620s
+  Optimizer step: 0.0013s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0287s
+  Regularizer loss: 0.0000s
+Batch 8: Total time 0.0290s
+  Backward pass: 0.0663s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0006s
+  Model train_step (forward + backward + update): 0.0322s
+  Regularizer loss: 0.0000s
+Batch 9: Total time 0.0329s
+  Backward pass: 0.0689s
+  Optimizer step: 0.0015s
+[2] time=1.35, avg_loss=0.3782, train_err=0.3782
+Eval: test_l2=0.3349
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0332s
+  Regularizer loss: 0.0000s
+Batch 0: Total time 0.0336s
+  Backward pass: 0.0712s
+  Optimizer step: 0.0016s
+  Preprocessing: 0.0004s
+  Model train_step (forward + backward + update): 0.0366s
+  Regularizer loss: 0.0000s
+Batch 1: Total time 0.0372s
+  Backward pass: 0.0718s
+  Optimizer step: 0.0022s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0326s
+  Regularizer loss: 0.0000s
+Batch 2: Total time 0.0331s
+  Backward pass: 0.0663s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0298s
+  Regularizer loss: 0.0000s
+Batch 3: Total time 0.0303s
+  Backward pass: 0.0658s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0304s
+  Regularizer loss: 0.0000s
+Batch 4: Total time 0.0308s
+  Backward pass: 0.0653s
+  Optimizer step: 0.0015s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0303s
+  Regularizer loss: 0.0000s
+Batch 5: Total time 0.0307s
+  Backward pass: 0.0656s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0304s
+  Regularizer loss: 0.0000s
+Batch 6: Total time 0.0308s
+  Backward pass: 0.0656s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0005s
+  Model train_step (forward + backward + update): 0.0302s
+  Regularizer loss: 0.0000s
+Batch 7: Total time 0.0308s
+  Backward pass: 0.0658s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0305s
+  Regularizer loss: 0.0000s
+Batch 8: Total time 0.0309s
+  Backward pass: 0.0661s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0304s
+  Regularizer loss: 0.0000s
+Batch 9: Total time 0.0307s
+  Backward pass: 0.0659s
+  Optimizer step: 0.0014s
+[3] time=1.40, avg_loss=0.3234, train_err=0.3234
+Eval: test_l2=0.3388
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0305s
+  Regularizer loss: 0.0000s
+Batch 0: Total time 0.0309s
+  Backward pass: 0.0656s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0005s
+  Model train_step (forward + backward + update): 0.0299s
+  Regularizer loss: 0.0000s
+Batch 1: Total time 0.0305s
+  Backward pass: 0.0639s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0003s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 2: Total time 0.0292s
+  Backward pass: 0.0621s
+  Optimizer step: 0.0013s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 3: Total time 0.0291s
+  Backward pass: 0.0621s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0293s
+  Regularizer loss: 0.0000s
+Batch 4: Total time 0.0296s
+  Backward pass: 0.0627s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 5: Total time 0.0292s
+  Backward pass: 0.0623s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0286s
+  Regularizer loss: 0.0000s
+Batch 6: Total time 0.0290s
+  Backward pass: 0.0621s
+  Optimizer step: 0.0013s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0287s
+  Regularizer loss: 0.0000s
+Batch 7: Total time 0.0290s
+  Backward pass: 0.0621s
+  Optimizer step: 0.0013s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0288s
+  Regularizer loss: 0.0000s
+Batch 8: Total time 0.0291s
+  Backward pass: 0.0623s
+  Optimizer step: 0.0014s
+  Preprocessing: 0.0002s
+  Model train_step (forward + backward + update): 0.0297s
+  Regularizer loss: 0.0000s
+Batch 9: Total time 0.0301s
+  Backward pass: 0.0652s
+  Optimizer step: 0.0014s
+[4] time=1.32, avg_loss=0.2875, train_err=0.2875
+Eval: test_l2=0.3222

@@ -48,7 +48,8 @@ class _LazyLoader:
                 if isinstance(values[0], dict):
                     batch[key] = values[0] if len(values) == 1 else values
                 else:
-                    batch[key] = jnp.stack(values)
+                    # batch[key] = jnp.stack(values)
+                    batch[key] = np.stack(values)
             yield batch
 
 
@@ -220,7 +221,33 @@ class MeshDataModule:
             # poly_data.GetPointData().SetScalars(pressure_vtk)
 
             # # 4a. Smooth geometry — scalars are now correctly vertex-aligned
-            # smoother = vtk.vtkSmoothPolyDataFilter()
+            # smoother = vtk.vtkSmoothPolyDataFilter()            # surface_actor = vtk.vtkActor()
+            # surface_actor.SetMapper(surface_mapper)
+            # surface_actor.GetProperty().SetOpacity(0.85)
+
+            # # 6. Scalar bar (colorbar)
+            # scalar_bar = vtk.vtkScalarBarActor()
+            # scalar_bar.SetLookupTable(lut)
+            # scalar_bar.SetTitle("Pressure")
+            # scalar_bar.SetNumberOfLabels(5)
+
+            # # 8. Render
+            # renderer = vtk.vtkRenderer()
+            # renderer.AddActor(surface_actor)
+            # renderer.AddActor2D(scalar_bar)
+            # renderer.SetBackground(0.1, 0.1, 0.1)
+
+            # render_window = vtk.vtkRenderWindow()
+            # render_window.SetWindowName(f"Car CFD Pressure – {ind}")
+            # render_window.SetSize(1024, 768)
+            # render_window.AddRenderer(renderer)
+
+            # interactor = vtk.vtkRenderWindowInteractor()
+            # interactor.SetRenderWindow(render_window)
+            # interactor.SetInteractorStyle(vtk.vtkInteractorStyleTrackballCamera())
+
+            # render_window.Render()
+            # interactor.Start()
             # smoother.SetInputData(poly_data)
             # smoother.SetNumberOfIterations(50)
             # smoother.SetRelaxationFactor(0.1)

@@ -161,7 +161,7 @@ class GINOConfig(ModelConfig):
     fno_use_channel_mlp: bool = True
     fno_norm: str = "instance_norm"
     fno_ada_in_features: int = 32
-    fno_factorization: str = "tucker"
+    fno_factorization: Optional[str] = "tucker"
     fno_rank: float = 0.4
     fno_domain_padding: float = 0.125
     fno_channel_mlp_expansion: float = 1.0

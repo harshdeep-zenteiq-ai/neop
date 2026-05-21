@@ -51,8 +51,8 @@ def style_axis(ax, title, xlabel, ylabel):
     ax.tick_params(colors='#555555', length=0, pad=8)
 
 def main():
-    torch_file = 'log_run_torch.txt'
-    jax_file = 'log_run_jax.txt'
+    torch_file = 'log_run_jax_new.txt'
+    jax_file = 'log_run.txt'
     
     torch_ep, _, torch_train, torch_test = parse_log_file(torch_file)
     jax_ep, _, jax_train, jax_test = parse_log_file(jax_file)
@@ -79,7 +79,7 @@ def main():
     
     if torch_ep:
         ep_sub, train_sub = torch_ep[::N], torch_train[::N]
-        ax1.plot(ep_sub, train_sub, marker='o', color=c_torch, label='GINO PyTorch (Reference)',
+        ax1.plot(ep_sub, train_sub, marker='o', color=c_torch, label='GINO JAX (Updated)',
                  linewidth=2.5, markersize=8, markeredgecolor='white', markeredgewidth=2, zorder=3)
         ax1.fill_between(ep_sub, train_sub, alpha=0.1, color=c_torch, zorder=2)
         
@@ -101,7 +101,7 @@ def main():
         ep_test = torch_ep[:len(torch_test)]
         ep_sub, test_sub = ep_test[::N], torch_test[::N]
         
-        ax2.plot(ep_sub, test_sub, marker='o', color=c_torch, label='GINO PyTorch (Reference)',
+        ax2.plot(ep_sub, test_sub, marker='o', color=c_torch, label='GINO JAX (Updated)',
                  linewidth=2.5, markersize=8, markeredgecolor='white', markeredgewidth=2, zorder=3)
         ax2.fill_between(ep_sub, test_sub, alpha=0.1, color=c_torch, zorder=2)
         
@@ -127,3 +127,88 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# import re
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# import pandas as pd
+# import numpy as np
+
+# def parse_log(file_path, label):
+#     epochs, times = [], []
+#     pattern = re.compile(r"\[(\d+)\]\s+time=([\d.]+)")
+#     try:
+#         with open(file_path, 'r') as f:
+#             for line in f:
+#                 match = pattern.search(line)
+#                 if match:
+#                     epochs.append(int(match.group(1)))
+#                     times.append(float(match.group(2)))
+#     except FileNotFoundError:
+#         return pd.DataFrame()
+#     return pd.DataFrame({'Epoch': epochs, 'Time': times, 'Framework': label})
+
+# def plot_beautiful_comparison(torch_file, jax_file):
+#     # 1. Set sophisticated style
+#     sns.set_theme(style="ticks")
+#     plt.rcParams.update({'font.family': 'serif', 'font.size': 12})
+    
+#     df_torch = parse_log(torch_file, 'PyTorch (Reference)')
+#     df_jax = parse_log(jax_file, 'JAX (Implementation)')
+    
+#     if df_torch.empty or df_jax.empty:
+#         print("Error: Log files are empty or missing.")
+#         return
+
+#     # Calculate statistics for the "Value Add" box
+#     avg_torch = df_torch['Time'].mean()
+#     avg_jax = df_jax[df_jax['Epoch'] > 0]['Time'].mean() # Exclude compilation spike
+#     speedup = avg_torch / avg_jax
+
+#     plt.figure(figsize=(11, 6), dpi=300)
+    
+#     # 2. Plot lines with 'markevery' to prevent the "messy" look
+#     # PyTorch: Dashed line, subtle markers
+#     plt.plot(df_torch['Epoch'], df_torch['Time'], label='PyTorch (Reference)', 
+#              color='#DE2D26', linestyle='--', linewidth=2, 
+#              marker='o', markersize=6, markevery=25, alpha=0.8)
+
+#     # JAX: Bold solid line, distinct markers
+#     plt.plot(df_jax['Epoch'], df_jax['Time'], label='JAX (Implementation)', 
+#              color='#3182BD', linestyle='-', linewidth=2.5, 
+#              marker='X', markersize=7, markevery=25)
+
+#     # 3. Clean up the axes
+#     plt.title('Training Performance: GINO Implementation Comparison', fontsize=16, fontweight='bold', pad=20)
+#     plt.xlabel('Epoch Number', fontsize=12, labelpad=10)
+#     plt.ylabel('Time per Epoch (seconds)', fontsize=12, labelpad=10)
+#     sns.despine(trim=True) # Makes it look "Modern Scientific"
+    
+#     # 4. Smart Annotation for Compilation
+#     jax_spike = df_jax.iloc[0]['Time']
+#     plt.annotate('JAX Compilation\nOverhead', 
+#                  xy=(0, jax_spike), xytext=(20, jax_spike + 2),
+#                  arrowprops=dict(arrowstyle='->', connectionstyle="arc3,rad=.2", color='black'),
+#                  fontsize=10, fontweight='bold')
+
+#     # 5. Performance Summary Box
+#     stats_text = f"Avg. PyTorch: {avg_torch:.2f}s\nAvg. JAX: {avg_jax:.2f}s\nSpeedup: {speedup:.1f}x"
+#     plt.gca().text(0.95, 0.5, stats_text, transform=plt.gca().transAxes,
+#                    fontsize=11, verticalalignment='center', horizontalalignment='right',
+#                    bbox=dict(boxstyle='round,pad=0.5', facecolor='white', alpha=0.8, edgecolor='#CCCCCC'))
+
+#     plt.legend(loc='upper right', frameon=False)
+#     plt.grid(axis='y', linestyle=':', alpha=0.6)
+#     plt.tight_layout()
+    
+#     # Place legend in the bottom right corner
+#     plt.legend(loc='lower right', bbox_to_anchor=(1.0, 0.8), frameon=True, facecolor='white', framealpha=0.9)
+
+#     plt.savefig('gino_performance_comparison_v2.png')
+#     print("Beautiful plot saved as gino_performance_comparison_v2.png")
+#     plt.show()
+
+# # Execution
+# if __name__ == "__main__":
+#     # Ensure these files exist in your directory
+#     plot_beautiful_comparison('log_run_jax_new.txt', 'log_run.txt')
