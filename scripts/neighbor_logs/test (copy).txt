@@ -1,0 +1,7 @@
+Neighbor search summary — test
+============================================================
+
+Sample 001
+  gno_in  — total: 16541  min: 0  max: 6  mean: 0.50
+  gno_out — total: 16541  min: 2  max: 8  mean: 4.61
+

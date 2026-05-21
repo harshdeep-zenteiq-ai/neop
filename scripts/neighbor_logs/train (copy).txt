@@ -1,0 +1,7 @@
+Neighbor search summary — train
+============================================================
+
+Sample 001
+  gno_in  — total: 16045  min: 0  max: 8  mean: 0.49
+  gno_out — total: 16045  min: 2  max: 8  mean: 4.47
+

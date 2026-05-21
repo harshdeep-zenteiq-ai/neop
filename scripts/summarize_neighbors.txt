@@ -1,0 +1,32 @@
+
+==================================================
+  TRAIN  (neighbor_logs/train.txt)
+==================================================
+  gno_in (500 samples):
+    total neighbors — min: 14957  max: 16943  mean: 16166.5
+    per-query min   — min: 0  max: 0  mean: 0.00
+    per-query max   — min: 7  max: 25  mean: 13.27
+    per-query mean  — min: 0.46  max: 0.52  mean: 0.49
+
+  gno_out (500 samples):
+    total neighbors — min: 14957  max: 16943  mean: 16166.5
+    per-query min   — min: 2  max: 2  mean: 2.00
+    per-query max   — min: 8  max: 8  mean: 8.00
+    per-query mean  — min: 4.17  max: 4.72  mean: 4.51
+
+==================================================
+  TEST  (neighbor_logs/test.txt)
+==================================================
+  gno_in (111 samples):
+    total neighbors — min: 14972  max: 16739  mean: 16104.8
+    per-query min   — min: 0  max: 0  mean: 0.00
+    per-query max   — min: 8  max: 24  mean: 13.23
+    per-query mean  — min: 0.46  max: 0.51  mean: 0.49
+
+  gno_out (111 samples):
+    total neighbors — min: 14972  max: 16739  mean: 16104.8
+    per-query min   — min: 2  max: 2  mean: 2.00
+    per-query max   — min: 8  max: 8  mean: 8.00
+    per-query mean  — min: 4.18  max: 4.67  mean: 4.49
+
+
