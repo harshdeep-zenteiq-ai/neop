@@ -16,3 +16,4 @@ from .otno import OTNO
 from .base_model import get_model
 from .base_model_jax import get_model_jax
 from .gino_jax import GINO as GINOJax
+from .fno_jax import FNO as FNOJax

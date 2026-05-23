@@ -1,6 +1,19 @@
+import math
+import jax
 import jax.numpy as jnp
 import flax.linen as nn
 from typing import Optional
+
+
+def _pytorch_conv_init(in_features: int):
+    """Kernel initializer matching PyTorch Conv1d (Kaiming uniform, a=sqrt(5)).
+
+    For kernel_size=1, fan_in = in_channels, giving Uniform(-1/sqrt(fan_in), 1/sqrt(fan_in)).
+    """
+    bound = 1.0 / math.sqrt(in_features)
+    def init(key, shape, dtype=jnp.float32):
+        return jax.random.uniform(key, shape, dtype, minval=-bound, maxval=bound)
+    return init
 
 
 def skip_connection(
@@ -132,6 +145,7 @@ class Flattened1dConv(nn.Module):
         self.conv = nn.Conv(
             features=self.out_channels,
             kernel_size=(self.kernel_size,),
+            kernel_init=_pytorch_conv_init(self.in_channels),
             use_bias=self.bias,
         )
 

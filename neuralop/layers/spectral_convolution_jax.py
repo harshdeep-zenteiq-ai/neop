@@ -304,8 +304,9 @@ class SpectralConv(BaseSpectralConv):
         # Tucker: core tensor + per-dim factor matrices — 70x smaller than dense.
         def _cx_init(rng, shape):
             std = self._init_std
-            return (std * jax.random.normal(rng, shape, dtype=jnp.float32)
-                    + 1j * std * jax.random.normal(rng, shape, dtype=jnp.float32)
+            rng_r, rng_i = jax.random.split(rng)
+            return (std * jax.random.normal(rng_r, shape, dtype=jnp.float32)
+                    + 1j * std * jax.random.normal(rng_i, shape, dtype=jnp.float32)
                     ).astype(jnp.complex64)
 
         if factorization.lower() == "dense":

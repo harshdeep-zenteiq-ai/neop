@@ -11,7 +11,7 @@ from typing import List
 
 import torch
 
-# from .differentiation import FiniteDiff
+from .differentiation import FiniteDiff
 
 # Set warning filter to show each warning only once
 warnings.filterwarnings("once", category=UserWarning)

@@ -29,7 +29,6 @@ import sys
 sys.path.insert(0, "../")
 from config.darcy_config import Default
 
-
 config = make_config_from_cli(Default)
 config = config.to_dict()
 

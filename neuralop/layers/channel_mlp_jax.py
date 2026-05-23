@@ -1,6 +1,20 @@
+import math
+import jax
 import jax.numpy as jnp
 import flax.linen as nn
 from typing import Callable, Optional, List
+
+
+def _pytorch_conv_init(in_features: int):
+    """Weight/bias initializer matching PyTorch Conv1d defaults.
+
+    Both kernel (Kaiming uniform, a=sqrt(5)) and bias use Uniform(-1/sqrt(fan_in), 1/sqrt(fan_in))
+    when kernel_size=1, so a single function covers both.
+    """
+    bound = 1.0 / math.sqrt(in_features)
+    def init(key, shape, dtype=jnp.float32):
+        return jax.random.uniform(key, shape, dtype, minval=-bound, maxval=bound)
+    return init
 
 
 class ChannelMLP(nn.Module):
@@ -77,6 +91,8 @@ class ChannelMLP(nn.Module):
         x = jnp.transpose(x, (0, 2, 1))  # (batch, length, channels)
 
         for i in range(self.n_layers):
+            in_feats = self.in_channels if i == 0 else hidden_channels
+
             if i == 0 and i == (self.n_layers - 1):
                 features = out_channels
             elif i == 0:
@@ -86,7 +102,13 @@ class ChannelMLP(nn.Module):
             else:
                 features = hidden_channels
 
-            x = nn.Conv(features=features, kernel_size=(1,), name=f"fc_{i}")(x)
+            x = nn.Conv(
+                features=features,
+                kernel_size=(1,),
+                kernel_init=_pytorch_conv_init(in_feats),
+                bias_init=_pytorch_conv_init(in_feats),
+                name=f"fc_{i}",
+            )(x)
 
             if i < self.n_layers - 1:
                 x = self.non_linearity(x)

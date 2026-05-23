@@ -105,8 +105,11 @@ class GridEmbeddingND(nn.Module):
             f"Error: expected grid_boundaries to be an iterable of length {self.dim}, "
             f"received {self.grid_boundaries}"
         )
-        self._grid = None
-        self._res = None
+        # Use a mutable dict cache (object.__setattr__ bypasses Flax freeze) so that
+        # __call__ can populate the cache via dict mutation without triggering
+        # SetAttributeFrozenModuleError (same pattern as DomainPadding._padding).
+        object.__setattr__(self, '_grid', {})
+        object.__setattr__(self, '_res', {})
 
     @property
     def out_channels(self):
@@ -128,13 +131,14 @@ class GridEmbeddingND(nn.Module):
         jnp.ndarray
             output grids to concatenate
         """
-        if self._grid is None or self._res != spatial_dims:
+        key = f"{spatial_dims}"
+        if key not in self._grid or self._res.get(key) != spatial_dims:
             grids_by_dim = regular_grid_nd(spatial_dims, grid_boundaries=self.grid_boundaries)
             grids_by_dim = [x.astype(dtype)[jnp.newaxis, jnp.newaxis, ...] for x in grids_by_dim]
-            self._grid = grids_by_dim
-            self._res = spatial_dims
+            self._grid[key] = grids_by_dim
+            self._res[key] = spatial_dims
 
-        return self._grid
+        return self._grid[key]
 
     def __call__(self, data, batched=True):
         """

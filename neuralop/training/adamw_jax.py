@@ -1,10 +1,95 @@
 import math
 import warnings
-from typing import Callable, Iterable, Tuple, Union, Dict, Any
+from typing import Callable, Iterable, NamedTuple, Tuple, Union, Dict, Any
 
 import jax
 import jax.numpy as jnp
+import optax
 from .tensor_galore_projector_jax import TensorGaLoreProjector
+
+
+# ── Complex-aware optax AdamW ─────────────────────────────────────────────────
+# PyTorch uses grad * conj(grad) = |g|² (real) for the second moment of complex
+# parameters. Standard optax.adam uses jnp.square(g) = g*g (complex), which
+# breaks the adaptive scaling for SpectralConv weights. This implementation
+# matches PyTorch by keeping the second moment real for complex parameters.
+
+class _AdamCxState(NamedTuple):
+    count: jnp.ndarray
+    mu: optax.Updates
+    nu: optax.Updates  # always real-dtype
+
+
+def scale_by_adam_cx(b1: float = 0.9, b2: float = 0.999, eps: float = 1e-6):
+    """Adam scale transform that uses |g|² for complex params (matches PyTorch).
+
+    JAX jax.grad returns conj(PyTorch_grad) for complex parameters (Wirtinger
+    convention difference). We conjugate complex gradients here so that the
+    first moment accumulates in the same direction as PyTorch's optimizer,
+    and weight decay shrinks (rather than grows) the imaginary component.
+    |g|² is unchanged by conjugation so nu is not affected.
+    """
+
+    def init_fn(params):
+        mu = jax.tree_util.tree_map(jnp.zeros_like, params)
+        nu = jax.tree_util.tree_map(
+            lambda p: jnp.zeros(
+                p.shape, dtype=jnp.float32 if jnp.iscomplexobj(p) else p.dtype
+            ),
+            params,
+        )
+        return _AdamCxState(count=jnp.zeros([], jnp.int32), mu=mu, nu=nu)
+
+    def update_fn(updates, state, params=None):
+        count = state.count + jnp.ones([], jnp.int32)
+        # Conjugate complex gradients to match PyTorch's Wirtinger convention.
+        # jax.grad returns ∂L/∂w for complex w; PyTorch stores ∂L/∂w̄ = conj(∂L/∂w).
+        # Conjugating here makes mu accumulate in the correct descent direction.
+        updates = jax.tree_util.tree_map(
+            lambda g: jnp.conj(g) if jnp.iscomplexobj(g) else g, updates
+        )
+        mu = jax.tree_util.tree_map(
+            lambda m, g: b1 * m + (1.0 - b1) * g, state.mu, updates
+        )
+        nu = jax.tree_util.tree_map(
+            lambda v, g: (
+                b2 * v + (1.0 - b2) * jnp.abs(g) ** 2
+                if jnp.iscomplexobj(g)
+                else b2 * v + (1.0 - b2) * g ** 2
+            ),
+            state.nu,
+            updates,
+        )
+        bc1 = 1.0 - b1 ** count
+        bc2 = 1.0 - b2 ** count
+        # PyTorch-style bias correction: step = sqrt(bc2)/bc1, denom uses raw (un-corrected)
+        # second moment.  This differs from the standard optax approach (which bias-corrects
+        # both m and v independently) only when |g| << eps — a regime where the raw second
+        # moment is tiny and eps dominates the denominator.  Using the PyTorch formula keeps
+        # the effective step in that regime proportional to sqrt(bc2)/bc1, matching PyTorch.
+        step = jnp.sqrt(bc2) / bc1
+        new_updates = jax.tree_util.tree_map(
+            lambda m, v: step * m / (jnp.sqrt(v) + eps), mu, nu
+        )
+        return new_updates, _AdamCxState(count=count, mu=mu, nu=nu)
+
+    return optax.GradientTransformation(init_fn, update_fn)
+
+
+def adamw_cx(
+    learning_rate: float,
+    weight_decay: float = 0.0,
+    b1: float = 0.9,
+    b2: float = 0.999,
+    eps: float = 1e-6,
+):
+    """AdamW compatible with optax.inject_hyperparams that correctly handles
+    complex parameters by using |g|² (real) for the second moment."""
+    return optax.chain(
+        scale_by_adam_cx(b1=b1, b2=b2, eps=eps),
+        optax.add_decayed_weights(weight_decay),
+        optax.scale(-learning_rate),
+    )
 
 
 class AdamW:

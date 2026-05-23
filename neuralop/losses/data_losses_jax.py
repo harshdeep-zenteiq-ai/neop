@@ -212,3 +212,347 @@ class LpLoss(object):
                 stacklevel=2
             )
         return self.rel(y_pred, y)
+
+
+class H1Loss(object):
+    """H1 Sobolev norm between two d-dimensional discretized functions.
+
+    .. note::
+        In function space, the Sobolev norm is an integral over the
+        entire domain. To ensure the norm converges to the integral,
+        we scale the matrix norm by quadrature weights along each spatial dimension.
+
+        If no quadrature is passed at a call to H1Loss, we assume a regular
+        discretization and take ``1 / measure`` as the quadrature weights.
+
+    Parameters
+    ----------
+    d : int, optional
+        dimension of input functions, by default 1
+    measure : float or list, optional
+        measure of the domain, by default 1.0
+        either single scalar for each dim, or one per dim
+
+        .. note::
+            To perform quadrature, ``H1Loss`` scales ``measure`` by the size
+            of each spatial dimension of ``x``, and multiplies them with
+            ||x-y||, such that the final norm is a scaled average over the spatial
+            dimensions of ``x``.
+
+    reduction : str, optional
+        whether to reduce across the batch and channel dimension
+        by summing ('sum') or averaging ('mean')
+
+        .. warning::
+            H1Loss always averages over the spatial dimensions.
+            `reduction` only applies to the batch and channel dimensions.
+    eps : float, optional
+        small number added to the denominator for numerical stability when using the relative loss
+    periodic_in_x : bool, optional
+        whether to use periodic boundary conditions in x-direction when computing finite differences:
+        - True: periodic in x (default)
+        - False: non-periodic in x with forward/backward differences at boundaries
+        by default True
+    periodic_in_y : bool, optional
+        whether to use periodic boundary conditions in y-direction when computing finite differences:
+        - True: periodic in y (default)
+        - False: non-periodic in y with forward/backward differences at boundaries
+        by default True
+    """
+
+    def __init__(
+        self,
+        d=1,
+        measure=1.0,
+        reduction="sum",
+        eps=1e-8,
+        periodic_in_x=True,
+        periodic_in_y=True,
+        periodic_in_z=True,
+    ):
+        super().__init__()
+
+        assert d > 0 and d < 4, "Currently only implemented for 1, 2, and 3-D."
+
+        self.d = d
+        self.periodic_in_x = periodic_in_x
+        self.periodic_in_y = periodic_in_y
+        self.periodic_in_z = periodic_in_z
+
+        self.eps = eps
+
+        allowed_reductions = ["sum", "mean"]
+        assert (
+            reduction in allowed_reductions
+        ), f"error: expected `reduction` to be one of {allowed_reductions}, got {reduction}"
+        self.reduction = reduction
+
+        if isinstance(measure, float):
+            self.measure = [measure] * self.d
+        else:
+            self.measure = measure
+
+    @property
+    def name(self):
+        return f"H1_{self.d}DLoss"
+
+    def _dx_1d(self, u, h):
+        """First-order x-derivative (1D), periodic or non-periodic."""
+        if self.periodic_in_x:
+            return (jnp.roll(u, -1, axis=-1) - jnp.roll(u, 1, axis=-1)) / (2.0 * h)
+        else:
+            interior = (u[..., 2:] - u[..., :-2]) / (2.0 * h)
+            left = ((-11 * u[..., 0] + 18 * u[..., 1] - 9 * u[..., 2] + 2 * u[..., 3])
+                    / (6.0 * h))[..., jnp.newaxis]
+            right = ((-2 * u[..., -4] + 9 * u[..., -3] - 18 * u[..., -2] + 11 * u[..., -1])
+                     / (6.0 * h))[..., jnp.newaxis]
+            return jnp.concatenate([left, interior, right], axis=-1)
+
+    def _dx_2d(self, u, h):
+        """First-order x-derivative (2D, operates on axis -2)."""
+        if self.periodic_in_x:
+            return (jnp.roll(u, -1, axis=-2) - jnp.roll(u, 1, axis=-2)) / (2.0 * h)
+        else:
+            interior = (u[..., 2:, :] - u[..., :-2, :]) / (2.0 * h)
+            left = (-11 * u[..., 0:1, :] + 18 * u[..., 1:2, :] - 9 * u[..., 2:3, :] + 2 * u[..., 3:4, :]) / (6.0 * h)
+            right = (-2 * u[..., -4:-3, :] + 9 * u[..., -3:-2, :] - 18 * u[..., -2:-1, :] + 11 * u[..., -1:, :]) / (6.0 * h)
+            return jnp.concatenate([left, interior, right], axis=-2)
+
+    def _dy_2d(self, u, h):
+        """First-order y-derivative (2D, operates on axis -1)."""
+        if self.periodic_in_y:
+            return (jnp.roll(u, -1, axis=-1) - jnp.roll(u, 1, axis=-1)) / (2.0 * h)
+        else:
+            interior = (u[..., :, 2:] - u[..., :, :-2]) / (2.0 * h)
+            bottom = (-11 * u[..., :, 0:1] + 18 * u[..., :, 1:2] - 9 * u[..., :, 2:3] + 2 * u[..., :, 3:4]) / (6.0 * h)
+            top = (-2 * u[..., :, -4:-3] + 9 * u[..., :, -3:-2] - 18 * u[..., :, -2:-1] + 11 * u[..., :, -1:]) / (6.0 * h)
+            return jnp.concatenate([bottom, interior, top], axis=-1)
+
+    def _dx_3d(self, u, h):
+        """First-order x-derivative (3D, operates on axis -3)."""
+        if self.periodic_in_x:
+            return (jnp.roll(u, -1, axis=-3) - jnp.roll(u, 1, axis=-3)) / (2.0 * h)
+        else:
+            interior = (u[..., 2:, :, :] - u[..., :-2, :, :]) / (2.0 * h)
+            left = (-11 * u[..., 0:1, :, :] + 18 * u[..., 1:2, :, :] - 9 * u[..., 2:3, :, :] + 2 * u[..., 3:4, :, :]) / (6.0 * h)
+            right = (-2 * u[..., -4:-3, :, :] + 9 * u[..., -3:-2, :, :] - 18 * u[..., -2:-1, :, :] + 11 * u[..., -1:, :, :]) / (6.0 * h)
+            return jnp.concatenate([left, interior, right], axis=-3)
+
+    def _dy_3d(self, u, h):
+        """First-order y-derivative (3D, operates on axis -2)."""
+        if self.periodic_in_y:
+            return (jnp.roll(u, -1, axis=-2) - jnp.roll(u, 1, axis=-2)) / (2.0 * h)
+        else:
+            interior = (u[..., :, 2:, :] - u[..., :, :-2, :]) / (2.0 * h)
+            left = (-11 * u[..., :, 0:1, :] + 18 * u[..., :, 1:2, :] - 9 * u[..., :, 2:3, :] + 2 * u[..., :, 3:4, :]) / (6.0 * h)
+            right = (-2 * u[..., :, -4:-3, :] + 9 * u[..., :, -3:-2, :] - 18 * u[..., :, -2:-1, :] + 11 * u[..., :, -1:, :]) / (6.0 * h)
+            return jnp.concatenate([left, interior, right], axis=-2)
+
+    def _dz_3d(self, u, h):
+        """First-order z-derivative (3D, operates on axis -1)."""
+        if self.periodic_in_z:
+            return (jnp.roll(u, -1, axis=-1) - jnp.roll(u, 1, axis=-1)) / (2.0 * h)
+        else:
+            interior = (u[..., :, :, 2:] - u[..., :, :, :-2]) / (2.0 * h)
+            bottom = (-11 * u[..., :, :, 0:1] + 18 * u[..., :, :, 1:2] - 9 * u[..., :, :, 2:3] + 2 * u[..., :, :, 3:4]) / (6.0 * h)
+            top = (-2 * u[..., :, :, -4:-3] + 9 * u[..., :, :, -3:-2] - 18 * u[..., :, :, -2:-1] + 11 * u[..., :, :, -1:]) / (6.0 * h)
+            return jnp.concatenate([bottom, interior, top], axis=-1)
+
+    def compute_terms(self, x, y, quadrature):
+        """compute_terms computes the necessary
+        finite-difference derivative terms for computing
+        the H1 norm
+
+        Parameters
+        ----------
+        x : jnp.ndarray
+            inputs
+        y : jnp.ndarray
+            targets
+        quadrature : int or list
+            quadrature weights
+
+        """
+        dict_x = {}
+        dict_y = {}
+
+        if self.d == 1:
+            dict_x[0] = x
+            dict_y[0] = y
+
+            x_x = self._dx_1d(x, quadrature[0])
+            y_x = self._dx_1d(y, quadrature[0])
+
+            dict_x[1] = x_x
+            dict_y[1] = y_x
+
+        elif self.d == 2:
+            dict_x[0] = jnp.reshape(x, x.shape[:-2] + (-1,))
+            dict_y[0] = jnp.reshape(y, y.shape[:-2] + (-1,))
+
+            x_x = self._dx_2d(x, quadrature[0])
+            x_y = self._dy_2d(x, quadrature[1])
+            y_x = self._dx_2d(y, quadrature[0])
+            y_y = self._dy_2d(y, quadrature[1])
+
+            dict_x[1] = jnp.reshape(x_x, x_x.shape[:-2] + (-1,))
+            dict_x[2] = jnp.reshape(x_y, x_y.shape[:-2] + (-1,))
+
+            dict_y[1] = jnp.reshape(y_x, y_x.shape[:-2] + (-1,))
+            dict_y[2] = jnp.reshape(y_y, y_y.shape[:-2] + (-1,))
+
+        else:
+            dict_x[0] = jnp.reshape(x, x.shape[:-3] + (-1,))
+            dict_y[0] = jnp.reshape(y, y.shape[:-3] + (-1,))
+
+            x_x = self._dx_3d(x, quadrature[0])
+            x_y = self._dy_3d(x, quadrature[1])
+            x_z = self._dz_3d(x, quadrature[2])
+            y_x = self._dx_3d(y, quadrature[0])
+            y_y = self._dy_3d(y, quadrature[1])
+            y_z = self._dz_3d(y, quadrature[2])
+
+            dict_x[1] = jnp.reshape(x_x, x_x.shape[:-3] + (-1,))
+            dict_x[2] = jnp.reshape(x_y, x_y.shape[:-3] + (-1,))
+            dict_x[3] = jnp.reshape(x_z, x_z.shape[:-3] + (-1,))
+
+            dict_y[1] = jnp.reshape(y_x, y_x.shape[:-3] + (-1,))
+            dict_y[2] = jnp.reshape(y_y, y_y.shape[:-3] + (-1,))
+            dict_y[3] = jnp.reshape(y_z, y_z.shape[:-3] + (-1,))
+
+        return dict_x, dict_y
+
+    def uniform_quadrature(self, x):
+        """
+        uniform_quadrature creates quadrature weights
+        scaled by the spatial size of ``x`` to ensure that
+        ``LpLoss`` computes the average over spatial dims.
+
+        Parameters
+        ----------
+        x : jnp.ndarray
+            input data
+
+        Returns
+        -------
+        quadrature : list
+            list of quadrature weights per-dim
+        """
+        quadrature = [0.0] * self.d
+        for j in range(self.d, 0, -1):
+            quadrature[-j] = self.measure[-j] / x.shape[-j]
+
+        return quadrature
+
+    def reduce_all(self, x):
+        """
+        reduce x across the batch according to `self.reduction`
+
+        Parameters
+        ----------
+        x: jnp.ndarray
+            inputs
+        """
+        if self.reduction == "sum":
+            x = jnp.sum(x)
+        else:
+            x = jnp.mean(x)
+
+        return x
+
+    def abs(self, x, y, quadrature=None, take_root=True):
+        """absolute H1 norm
+
+        Parameters
+        ----------
+        x : jnp.ndarray
+            inputs
+        y : jnp.ndarray
+            targets
+        quadrature : float or list, optional
+            quadrature constant for reduction along each dim, by default None
+        take_root : bool, optional
+            whether to take the square root of the norm, by default True
+        """
+        if quadrature is None:
+            quadrature = self.uniform_quadrature(x)
+        else:
+            if isinstance(quadrature, float):
+                quadrature = [quadrature] * self.d
+
+        dict_x, dict_y = self.compute_terms(x, y, quadrature)
+
+        const = math.prod(quadrature)
+        diff = const * jnp.sum((dict_x[0] - dict_y[0]) ** 2, axis=-1, keepdims=False)
+
+        for j in range(1, self.d + 1):
+            diff += const * jnp.sum((dict_x[j] - dict_y[j]) ** 2, axis=-1, keepdims=False)
+
+        if take_root:
+            diff = diff ** 0.5
+
+        diff = self.reduce_all(diff)
+        diff = jnp.squeeze(diff)
+
+        return diff
+
+    def rel(self, x, y, quadrature=None, take_root=True):
+        """relative H1-norm
+
+        Parameters
+        ----------
+        x : jnp.ndarray
+            inputs
+        y : jnp.ndarray
+            targets
+        quadrature : float or list, optional
+            quadrature constant for reduction along each dim, by default None
+        take_root : bool, optional
+            whether to take the square root of the norm, by default True
+        """
+        if quadrature is None:
+            quadrature = self.uniform_quadrature(x)
+        else:
+            if isinstance(quadrature, float):
+                quadrature = [quadrature] * self.d
+
+        dict_x, dict_y = self.compute_terms(x, y, quadrature)
+
+        diff = jnp.sum((dict_x[0] - dict_y[0]) ** 2, axis=-1, keepdims=False)
+        ynorm = jnp.sum(dict_y[0] ** 2, axis=-1, keepdims=False)
+
+        for j in range(1, self.d + 1):
+            diff += jnp.sum((dict_x[j] - dict_y[j]) ** 2, axis=-1, keepdims=False)
+            ynorm += jnp.sum(dict_y[j] ** 2, axis=-1, keepdims=False)
+
+        if take_root:
+            diff = (diff ** 0.5) / (ynorm ** 0.5 + self.eps)
+        else:
+            diff = diff / (ynorm + self.eps)
+
+        diff = self.reduce_all(diff)
+        diff = jnp.squeeze(diff)
+
+        return diff
+
+    def __call__(self, y_pred, y, quadrature=None, take_root=True, **kwargs):
+        """
+        Parameters
+        ----------
+        y_pred : jnp.ndarray
+            inputs
+        y : jnp.ndarray
+            targets
+        quadrature : float or list, optional
+            normalization constant for reduction, by default None
+        take_root : bool, optional
+            whether to take the square root of the norm, by default True
+        """
+        if kwargs:
+            warnings.warn(
+                f"H1Loss.__call__() received unexpected keyword arguments: {list(kwargs.keys())}. "
+                "These arguments will be ignored.",
+                UserWarning,
+                stacklevel=2
+            )
+        return self.rel(y_pred, y, quadrature=quadrature)
